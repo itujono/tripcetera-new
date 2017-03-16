@@ -2283,6 +2283,9 @@ figure img {
 
 .search-holder {
     padding: 40px 0;
+    background-image: url(../../images/slider/5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .search-tab-content .tab-pane.active {
