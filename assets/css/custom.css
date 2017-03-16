@@ -1302,7 +1302,7 @@ color:#fff;
 
 #air{height:203px; overflow-x: hidden;}
 #hotel{height:203px; overflow-x: hidden;}
-#car{height:203px; overflow-x: hidden;}
+/*#car{height:203px; overflow-x: hidden;}*/
 #vacations{height:203px; overflow-x: hidden;}
 
 /*For the wide tabs*/
@@ -2278,6 +2278,11 @@ a.button.btn-mini {
     margin-top: 4px;
 }
 
+.cta-image {
+    margin: 0;
+    background: url('images/items2/item7.jpg') no-repeat center center;
+}
+
 figure img {
     width: 100%;
     max-height: 204px;
@@ -2285,10 +2290,10 @@ figure img {
 }
 
 .search-holder {
-    padding: 40px 0;
+    padding: 40px 0;/*
     background-image: url(../../images/slider/5.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
 }
 
 .search-tab-content .tab-pane.active {
@@ -2522,22 +2527,92 @@ ul.search-tabs li a {
     text-transform: uppercase;
 }
 
-.search-tab-content {
+.query-tabs {
+    padding: 20px;
+}
+
+.nav.nav-tabs li {
+    float: right;
+    width: 70%;
+    margin-bottom: 40px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: none;
+}
+
+.nav.nav-tabs li img {
+    width: 100%;
+}
+
+.nav-tabs > li > a {
+    color: #999;
+    padding: 0;
+}
+
+.nav-tabs > li > a:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.nav-tabs li a figure img {
+    filter: saturate(10%);
+    -webkit-filter: saturate(10%);
+    -moz-filter: saturate(10%);
+}
+
+.nav-tabs > li > a:hover figure img {
+    filter: initial;
+    -webkit-filter: initial;
+    -moz-filter: initial;    
+}
+
+.nav > li.active > a figure img {
+    filter: initial;
+    -webkit-filter: initial;
+    -moz-filter: initial;
+}
+
+.search-tabs {
     padding: 30px 0;
 }
 
-.search-tab-content .tab-pane {
+.search-tabs .tab-pane {
     display: none;
 }
 
-.search-tab-content input.input-text,
-.search-tab-content select,
-.search-tab-content textarea,
-.search-tab-content span.custom-select {
+.search-tabs input.input-text,
+.search-tabs select,
+.search-tabs textarea,
+.search-tabs span.custom-select {
     background: #eee;
     border: none;
     line-height: normal;
     border-radius: 3px;
+}
+
+.search-form .tab-pane {
+    background-color: #eee;
+    padding: 25px;
+}
+
+#transportation .tab-content {
+    box-shadow: none;
+    background: #ffffff;
+    padding: 0;
+    padding-top: 0;
+}
+
+.cta-image {
+    position: relative;
+    margin: 0;
+    background: url(../../images/items2/item7.jpg) no-repeat center center;
+    background-size: cover;
+    min-height: 160px;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.query-tabs .tab-content {
 }
 
 .tab-pane .row {
