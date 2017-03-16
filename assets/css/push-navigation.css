@@ -1,0 +1,351 @@
+
+/* Post Nav dikastemin sama Pak Tam */
+
+
+
+.logo, .logo-center, .nav-button {
+	z-index: 3;
+	top: 20px
+}
+
+.logo {
+	position: fixed;
+	left: 5%
+}
+
+.logo-center {
+	position: absolute;
+	left: 50%;
+	width: 54px;
+	height: 54px;
+	margin: 20px 0 0 -27px;
+	text-align: center
+}
+
+.logo {
+	transition: filter .3s ease;
+	-webkit-transition: filter .3s ease;
+	-moz-transition: filter .3s ease;
+}
+
+.navigation-is-open .logo img {
+    filter: brightness(100);
+    -webkit-filter: brightness(100);
+    -moz-filter: brightness(100);
+}
+
+.nav-button {
+	position: fixed;
+	right: 5%;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: #FFF;
+	border-radius: 50%;
+	-webkit-transition: all .3s;
+	transition: all .3s
+}
+
+.nav-button.nav-button-dark {
+	background: #fe6600;
+}
+
+.nav-button.nav-button-dark:hover {
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);;
+    -moz-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);;
+    -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);;
+}
+
+.navigation-is-open .nav-button.nav-button-dark:hover span:before {
+    transform: translateY(7px) translateX(5px) rotate(-90deg);
+    -webkit-transform: translateY(7px) translateX(5px) rotate(90deg);
+    -moz-transform: translateY(7px) translateX(5px) rotate(-90deg);
+}
+
+.navigation-is-open .nav-button.nav-button-dark:hover span:after {
+    transform: translateY(-7px) translateX(-5px) rotate(-90deg);
+    -webkit-transform: translateY(-7px) translateX(-5px) rotate(-90deg);
+    -moz-transform: translateY(-7px) translateX(-5px) rotate(-90deg);
+}
+
+.nav-button span {
+	display: block;
+	background: #111;
+	height: 2px;
+	width: 18px;
+	position: absolute;
+	margin-top: 4px;
+	margin-left: 13px;
+	-webkit-transition: all .3s;
+	transition: all .3s
+}
+.nav-button.nav-button-dark span {
+	background: #FFF
+}
+.nav-button span:after, .nav-button span:before {
+	content: "";
+	display: block;
+	height: 2px;
+	position: absolute;
+	background: #111;
+	-webkit-transition: all .3s;
+	transition: all .3s
+}
+.nav-button.nav-button-dark span:after, .nav-button.nav-button-dark span:before {
+	background: #FFF
+}
+.nav-button span:before {
+	margin-top: -7px;
+	width: 24px
+}
+.nav-button span:after {
+	margin-top: 7px;
+	width: 12px
+}
+.nav-button:hover span:before {
+	width: 12px
+}
+.nav-button:hover span:after {
+	width: 24px
+}
+.navigation-is-open .nav-button span {
+	width: 24px;
+	background: 0 0
+}
+.navigation-is-open .nav-button span:before {
+	width: 24px;
+	-webkit-transform: translateY(7px) translateX(0) rotate(45deg);
+	-moz-transform: translateY(7px) translateX(0) rotate(45deg);
+	-ms-transform: translateY(7px) translateX(0) rotate(45deg);
+	transform: translateY(7px) translateX(0) rotate(45deg)
+}
+.navigation-is-open .nav-button span:after {
+	width: 24px;
+	-webkit-transform: translateY(-7px) translateX(0) rotate(-45deg);
+	-moz-transform: translateY(-7px) translateX(0) rotate(-45deg);
+	-ms-transform: translateY(-7px) translateX(0) rotate(-45deg);
+	transform: translateY(-7px) translateX(0) rotate(-45deg)
+}
+.navigation {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(156, 39, 176, 1);
+	background: linear-gradient(135deg, rgba(156, 39, 176, 1), rgba(46, 113, 242, 1));
+	-ms-filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#B29C27B0, endColorstr=#B22E71F2);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#B29C27B0, endColorstr=#B22E71F2);
+	visibility: hidden;
+	-webkit-transition: visibility 0s .7s;
+	-moz-transition: visibility 0s .7s;
+	transition: visibility 0s .7s
+}
+.navigation .nav-wrapper {
+	height: 100%;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	-webkit-transition: -webkit-transform .7s;
+	-moz-transition: -moz-transform .7s;
+	transition: transform .7s;
+	-webkit-transition-timing-function: ease-in-out;
+	-moz-transition-timing-function: ease-in-out;
+	transition-timing-function: ease-in-out
+}
+.navigation-is-open .navigation {
+	visibility: visible;
+	-webkit-transition: visibility 0s 0s;
+	-moz-transition: visibility 0s 0s;
+	transition: visibility 0s 0s
+}
+.navigation-is-open main {
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	-o-transform: translateX(100%);
+	transform: translateX(100%)
+}
+.navigation-is-open .navigation .nav-wrapper {
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0);
+	-webkit-transition: -webkit-transform .5s;
+	-moz-transition: -moz-transform .5s;
+	transition: transform .5s;
+	-webkit-transition-timing-function: ease-in-out;
+	-moz-transition-timing-function: ease-in-out;
+	transition-timing-function: ease-in-out
+}
+
+.no-js main {
+	height: auto;
+	overflow: visible
+}
+
+.no-js .navigation {
+	position: static;
+	visibility: visible
+}
+
+.no-js .navigation .nav-wrapper {
+	height: auto;
+	overflow: visible;
+	padding: 100px 5%;
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0)
+}
+
+.navigation-block {
+	margin-top: 120px;
+	min-height: 200px;
+	padding: 50px;
+	margin-bottom: 20px
+}
+
+.navigation-block .link-blocks {
+    width: 50%;
+    float: left;
+    padding-top: 0;
+    padding-right: 100px;
+    text-align: right;
+}
+
+.navigation-block .info-blocks {
+	width: 50%;
+	float: left;
+	padding-left: 50px;
+	color: #FFF;
+	border-left: solid 1px rgba(255, 255, 255, .3)
+}
+
+.navigation-block .info-blocks .mail-link {
+	font-family: 'Hind Madurai', 'Segoe UI', 'Helvetica Neue', sans-serif;
+	display: inline-block;
+	color: #DDD;
+	border: 2px solid rgba(255, 255, 255, .3);
+	padding: 8px 15px;
+	border-radius: 25px;
+	transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+}
+
+.navigation-block .info-blocks .mail-link:hover {
+    color: #FFF;
+    border: 2px solid rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+.navigation-block .contact-us {
+	display: block;
+	margin-top: 25px;
+	font-size: 20px
+}
+
+.navigation-block .contact-us .icon {
+	display: inline-block;
+	color: #DDD;
+	margin-right: 10px
+}
+
+.navigation-block .social-nav {
+	margin-top: 20px;
+	margin-left: -5px
+}
+
+.navigation-block .social-nav a {
+	border-color: transparent;
+}
+
+.navigation-block ul li {
+	display: block;
+	margin: 0 0 10px
+}
+
+.navigation-block ul li a {
+	font-family: 'Hind Madurai', sans-serif;
+	padding: 5px 0 0;
+	color: #ddd;
+	letter-spacing: 1px;
+	display: inline-block;
+	box-shadow: 0 0 1px transparent;
+	position: relative;
+	top: -8px;
+	font-size: 18px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease
+}
+
+.navigation-block ul li a i {
+	margin-right: 5px;
+	color: #CCC;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease
+}
+
+.navigation-block ul li a.active, .navigation-block ul li a.active i, .navigation-block ul li a:hover, .navigation-block ul li a:hover i {
+	color: orange;
+	text-decoration: none;
+}
+
+.navigation-block ul li a:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	right: 100%;
+	bottom: 0;
+	height: 1px;
+	background: orange;
+	-webkit-transition-property: right;
+	transition-property: right;
+	-webkit-transition-duration: .3s;
+	transition-duration: .3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out
+}
+
+.navigation-block ul li a.active:before {
+	right: 0
+}
+
+@media only screen and (min-width:1170px) {
+	.logo, .nav-button {
+		top: 40px
+	}
+	.navigation .nav-wrapper::after {
+		clear: both;
+		content: "";
+		display: table
+	}
+}
+@media only screen and (min-width:768px) {
+	.navigation-block ul li a:focus:before, .navigation-block ul li a:hover:before {
+		right: 0
+	}
+}
+

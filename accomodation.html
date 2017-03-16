@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html class="add-oveflow">
+  	<head>
+	  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tripcetera - Your Travel Marketplace</title>
+
+	    <link href="dist/css/bootstrap.css" rel="stylesheet" media="screen">
+	    <link href="assets/css/intro.css" rel="stylesheet" media="screen">
+	    <link href="assets/css/custom.css?v2" rel="stylesheet" media="screen">
+	    <link href="assets/css/owl-carousel.css" rel="stylesheet" media="screen">
+	    <link href="assets/css/themify-icons.css" rel="stylesheet" media="screen">
+	    <link href="assets/css/animate.css" rel="stylesheet" media="screen">
+	    <link href="assets/css/push-navigation.css" rel="stylesheet" media="screen">
+	    <link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+	    <link href="assets/css/responsive.css" rel="stylesheet" media="screen">
+	    <link href="assets/css/bootstrap-datepicker.min.css" rel="stylesheet" media="screen">
+  	</head>
+
+  	<body id="accomodation">
+  
+	  	<main>
+	  		<header class="dark-text">
+	  			<nav class="navbar">
+	  				<div class="container-fluid">
+	  					<div class="navbar-header">
+					      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+					      	</button>
+					      	<a class="navbar-brand wow fadeInLeft" data-wow-delay="2s" href="#">
+					      		<img src="images/logo.png" alt="Logo Utama">
+					      	</a>
+					    </div>
+					    <div class="collapse navbar-collapse" id="navbar-main">
+					    	<ul class="nav navbar-nav navbar-right" >
+					    		<li><a href="index.html">Home</a></li>
+                                <li><a href="#">Join as a Host</a></li>
+                                <li class="dropdown">
+                                	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">A la Carte <span class="caret"></span></a>
+                                	<ul class="dropdown-menu">
+							            <li><a href="accomodation.html">Accomodation</a></li>
+							            <li><a href="transportation.html">Transportation</a></li>
+							            <li><a href="etcetera.html">Et Cetera</a></li>
+							        </ul>
+                                </li>
+                                <li><a href="#">Create my Tour</a></li>
+                                <li><a href="#">Sign up</a></li>
+                                <li><a href="#">Log in</a></li>
+					    	</ul>
+					    </div> <!-- kelar Collapse & Navbar Collape -->
+	  				</div>
+	  			</nav>
+	  		</header>
+
+	  		<section class="search-holder">
+	  			<div class="container">
+	  				<form action="#" method="post">
+                        <div class="row"><!-- 
+                            <div class="form-group col-sm-6 col-md-3">
+                                <h4 class="title">Where</h4>
+                                <label>Your Destination</label>
+                                <input type="text" class="input-text full-width" placeholder="enter a destination or hotel name">
+                            </div>
+                            <div class="form-group col-sm-6 col-md-4">
+                                <h4 class="title">When</h4>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <label>Check In</label>
+                                        <div class="datepicker-wrap">
+                                            <input type="text" name="date_from" class="input-text full-width hasDatepicker" placeholder="mm/dd/yy" id="dp1488811384132"><img class="ui-datepicker-trigger" src="images/icon/blank.png" alt="" title="" data-pin-nopin="true">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <label>Check Out</label>
+                                        <div class="datepicker-wrap">
+                                            <input type="text" name="date_to" class="input-text full-width hasDatepicker" placeholder="mm/dd/yy" id="dp1488811384133"><img class="ui-datepicker-trigger" src="images/icon/blank.png" alt="" title="" data-pin-nopin="true">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            
+                            <div class="form-group col-sm-6 col-md-12 mt40">
+                                <!-- <h4 class="title">Who</h4> -->
+                                <div class="row">
+	                                <div class="col-md-4">
+	                                    <div class="form-group">
+	                                        <label for="txtWherePlace">Where do you want to go?</label>
+	                                        <input name="ctl00$MainContent$txtWherePlace" type="text" id="txtWherePlace" class="form-control ui-autocomplete-input" placeholder="Cities or Locations" autocomplete="off">
+	                                        <input type="hidden" name="ctl00$MainContent$hfID" id="hfID">
+	                                        <input type="hidden" name="ctl00$MainContent$hfLabelDestination" id="hfLabelDestination">
+	                                    </div>
+	                                </div>
+	                                
+	                                <div class="col-md-2">
+	                                    <div class="form-group">
+	                                    	<label for="txtWherePlace">When?</label>
+	                                        <div class="input-group date" data-provide="datepicker" id="date1">
+							                    <input type="text" class="form-control" />
+							                    <span class="input-group-addon">
+							                        <span class="glyphicon glyphicon-th"></span>
+							                    </span>
+							                </div>
+	                                    </div>
+	                                </div>
+	                                <div class="col-md-2">
+	                                    <div class="form-group">
+	                                    	<label for="txtWherePlace">Until?</label>
+	                                        <div class="input-group date" data-provide="datepicker" id="date2">
+							                    <input type="text" class="form-control" />
+							                    <span class="input-group-addon">
+							                        <span class="glyphicon glyphicon-th"></span>
+							                    </span>
+							                </div>
+	                                    </div>
+	                                </div>
+	                                <div class="col-md-2">
+	                                    <div class="form-group">
+	                                        <label>Who?</label>
+	                                        <select class="form-control">
+	                                        	<option>1</option>
+	                                        	<option>2</option>
+	                                        	<option>3</option>
+	                                        	<option>4</option>
+	                                        </select>
+	                                    </div>
+	                                </div>
+		                            <div class="form-group col-sm-6 col-md-2">
+		                                <label class="hidden-xs">&nbsp;</label>
+		                                <button type="submit" class="full-width icon-check wow fadeInUp">SEARCH NOW</button>
+		                            </div>
+                               	</div> <!-- kelar row -->
+                            </div> <!-- kelar form-group -->
+                        </div>
+                    </div> <!-- kelar Container -->
+                </form>
+        	</div>
+	  	</section>
+
+			<section class="destination">
+                <div class="container">
+                    <h3 class="titling">Popular Destinations<span class="orange">.</span></h3>
+                    <div class="row image-box">
+	                    <div class="col-md-3">
+	                    	<article class="box">
+	                            <figure class="wow fadeIn" data-wow-delay="1.3s">
+	                                <a href="#" title="" class="hover-effect">
+	                                	<img src="images/items2/destinations01.jpg" alt="">
+	                                </a>
+	                            </figure>
+	                            <div class="details">
+	                                <a href="#" class="button btn-mini">SEE ALL</a>
+	                                <h4 class="box-title">Indonesia <small>954 places</small></h4>
+	                            </div>
+	                        </article>
+	                    </div>
+	                    <div class="col-md-3">
+	                    	<article class="box">
+	                            <figure class="wow fadeIn" data-wow-delay="1s">
+	                                <a href="#" title="" class="hover-effect">
+	                                	<img src="images/items2/destinations02.jpg" alt="">
+	                                </a>
+	                            </figure>
+	                            <div class="details">
+	                                <a href="#" class="button btn-mini">SEE ALL</a>
+	                                <h4 class="box-title">Thailand <small>954 places</small></h4>
+	                            </div>
+	                        </article>
+	                    </div>
+	                    <div class="col-md-3">
+	                    	<article class="box">
+	                            <figure class="wow fadeIn" data-wow-delay="1.4s">
+	                                <a href="#" title="" class="hover-effect">
+	                                	<img src="images/items2/destinations03.jpg" alt="">
+	                                </a>
+	                            </figure>
+	                            <div class="details">
+	                                <a href="#" class="button btn-mini">SEE ALL</a>
+	                                <h4 class="box-title">Malaysia <small>954 places</small></h4>
+	                            </div>
+	                        </article>
+	                    </div>
+	                    <div class="col-md-3">
+	                    	<article class="box">
+	                            <figure class="wow fadeIn" data-wow-delay="1.2s">
+	                                <a href="#" title="" class="hover-effect">
+	                                	<img src="images/items2/destinations04.jpg" alt="">
+	                                </a>
+	                            </figure>
+	                            <div class="details">
+	                                <a href="#" class="button btn-mini">SEE ALL</a>
+	                                <h4 class="box-title">Phillipines <small>954 places</small></h4>
+	                            </div>
+	                        </article>
+	                    </div>
+	                    <div class="col-md-3">
+	                    	<article class="box">
+	                            <figure class="wow fadeIn" data-wow-delay="1s">
+	                                <a href="#" title="" class="hover-effect">
+	                                	<img src="images/items2/destinations05.png" alt="">
+	                                </a>
+	                            </figure>
+	                            <div class="details">
+	                                <a href="#" class="button btn-mini">SEE ALL</a>
+	                                <h4 class="box-title">Hong Kong <small>954 places</small></h4>
+	                            </div>
+	                        </article>
+	                    </div>
+	                    <div class="col-md-3">
+	                    	<article class="box">
+	                            <figure class="wow fadeIn" data-wow-delay="1.4s">
+	                                <a href="#" title="" class="hover-effect">
+	                                	<img src="images/items2/destinations06.png" alt="">
+	                                </a>
+	                            </figure>
+	                            <div class="details">
+	                                <a href="#" class="button btn-mini">SEE ALL</a>
+	                                <h4 class="box-title">Australia <small>954 places</small></h4>
+	                            </div>
+	                        </article>
+	                    </div>
+	                    <div class="col-md-3">
+	                    	<article class="box">
+	                            <figure class="wow fadeIn" data-wow-delay="1.3s">
+	                                <a href="#" title="" class="hover-effect">
+	                                	<img src="images/items2/destinations07.png" alt="">
+	                                </a>
+	                            </figure>
+	                            <div class="details">
+	                                <a href="#" class="button btn-mini">SEE ALL</a>
+	                                <h4 class="box-title">Japan <small>954 places</small></h4>
+	                            </div>
+	                        </article>
+	                    </div>
+	                    <div class="col-md-3">
+	                    	<article class="box">
+	                            <figure class="wow fadeIn" data-wow-delay="1.5s">
+	                                <a href="#" title="" class="hover-effect">
+	                                	<img src="images/items2/destinations08.png" alt="">
+	                                </a>
+	                            </figure>
+	                            <div class="details">
+	                                <a href="#" class="button btn-mini">SEE ALL</a>
+	                                <h4 class="box-title">South Korea <small>954 places</small></h4>
+	                            </div>
+	                        </article>
+	                    </div>
+	                    <div class="col-md-3">
+	                    	<article class="box">
+	                            <figure class="wow fadeIn" data-wow-delay="1.2s">
+	                                <a href="#" title="" class="hover-effect">
+	                                	<img src="images/items2/destinations05.png" alt="">
+	                                </a>
+	                            </figure>
+	                            <div class="details">
+	                                <a href="#" class="button btn-mini">SEE ALL</a>
+	                                <h4 class="box-title">Singapore <small>954 places</small></h4>
+	                            </div>
+	                        </article>
+	                    </div>
+	                    <div class="col-md-3">
+	                    	<article class="box">
+	                            <figure class="wow fadeIn" data-wow-delay="1.3s">
+	                                <a href="#" title="" class="hover-effect">
+	                                	<img src="images/items2/destinations04.jpg" alt="">
+	                                </a>
+	                            </figure>
+	                            <div class="details">
+	                                <a href="#" class="button btn-mini">SEE ALL</a>
+	                                <h4 class="box-title">China <small>954 places</small></h4>
+	                            </div>
+	                        </article>
+	                    </div>
+	                    <div class="col-md-3">
+	                    	<article class="box">
+	                            <figure class="wow fadeIn" data-wow-delay="1s">
+	                                <a href="#" title="" class="hover-effect">
+	                                	<img src="images/items2/destinations06.png" alt="">
+	                                </a>
+	                            </figure>
+	                            <div class="details">
+	                                <a href="#" class="button btn-mini">SEE ALL</a>
+	                                <h4 class="box-title">Netherland <small>954 places</small></h4>
+	                            </div>
+	                        </article>
+	                    </div>
+	                    <div class="col-md-3">
+	                    	<article class="box">
+	                            <figure class="wow fadeIn" data-wow-delay="1.6s">
+	                                <a href="#" title="" class="hover-effect">
+	                                	<img src="images/items2/destinations07.png" alt="">
+	                                </a>
+	                            </figure>
+	                            <div class="details">
+	                                <a href="#" class="button btn-mini">SEE ALL</a>
+	                                <h4 class="box-title">USA <small>954 places</small></h4>
+	                            </div>
+	                        </article>
+	                    </div>
+                    </div> <!-- kelar row Image-Box -->
+                </div>
+            </section>
+
+			<footer style="background-color: #e7e7e7; color: #666; padding-top: 50px; padding-bottom: 50px;">
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-md-3">
+		                    <h4><strong>Company</strong></h4>
+		                    <div class="deep-link">
+		                        <a href="#" id="linkAbout" href="Info/AboutUs">About Tripcetera</a><br>
+		                        <a href="#" id="linkTerms" href="Info/TermsConditions">Terms &amp; Conditions</a><br>
+		                        <a href="#" id="linkPrivacy" href="Info/PrivacyPolicies">Privacy Policy</a><br>
+		                        <a href="#" id="linkFAQ">Help &amp; FAQ</a><br>
+		                    </div>
+		                </div>
+		                <div class="col-md-3">
+		                    <h4><strong>Hosts</strong></h4>
+		                    <div class="deep-link">
+		                        <a href="#" id="linkAccomodation">Accommodation</a><br>
+		                        <a href="#" id="linkTransportation">Transportation</a><br>
+		                        <a href="#" id="linkOther">Others</a><br>
+		                    </div>
+		                </div>
+		                <div class="col-md-3">
+		                    <h4><strong>Corporate Partners</strong></h4>
+		                    <div class="deep-link">
+		                        <a id="linkPropertyPartner" href="http://partner.tripcetera.com" target="_blank">Property Partners</a><br>
+		                        <a id="linkTransportPartner" href="http://partner.tripcetera.com" target="_blank">Transportation Partners</a><br>
+		                        <a id="linkOtherPartner" href="http://partner.tripcetera.com" target="_blank">Others</a><br>
+		                    </div>
+		                </div>
+		                <div class="col-md-3">
+		                    <h4><strong>For you</strong></h4>
+		                    <div class="deep-link">
+		                        <a id="linkCareers" href="#">Careers</a><br>
+		                        <a id="linkContactUs" href="#">Contact Us</a><br>
+		                        <a id="linkTravelGuru" href="#">Freelance Travel Gurus &amp; Guides</a><br>
+		                    </div>
+		                </div>
+		            </div> <!-- kelar Row footer -->
+		            <div class="row">
+		                <div class="col-md-12 text-center social-section">
+		                    <h4><strong>Get in touch with us</strong></h4>
+		                    <div class="social-link">
+		                        <a href="https://www.facebook.com/tripcetera" target="_blank" class="wow fadeInUp" data-wow-delay="1.5s">
+		                            <img id="Image1" src="images/facebook.png">
+		                        </a>
+		                        <a href="https://twitter.com/tripcetera" target="_blank" class="wow fadeInUp" data-wow-delay="1.2s">
+		                            <img id="Image2" src="images/twitter.png">
+		                        </a>
+		                        <a href="https://www.instagram.com/tripcetera/" target="_blank" class="wow fadeInUp" data-wow-delay="1.7s">
+		                            <img id="Image3" src="images/instagram.png">
+		                        </a>
+		                    </div>
+		                </div>
+		            </div>
+		        </div> <!-- kelar Container Footer -->
+		    </footer>
+
+		    <footer class="footer-pattern">
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-md-6">
+		                    <p>Copyright ©2017 &nbsp;<a class="linkFooter" href="http://www.tripcetera.com">Tripcetera.com™</a>&nbsp;All rights reserved</p>
+		                </div>
+		                <div class="col-md-2 center"></div>
+		                <div class="col-md-2 center"></div>
+		                <div class="col-md-2 center">
+		                    <p>
+		                        Powered by
+		                        <br>
+		                        <a href="http://www.batamfast.com" target="_blank">
+		                            <img id="imgBatafast" src="images/bf.png" alt="Batamfast.com" style="width:130px;">
+		                        </a>
+		                    </p>
+		                </div>
+		            </div>
+		        </div>
+		    </footer>
+	    </main>
+
+<!-- 	    <a href="#" class="logo">
+        	<img src="images/logo.png" width="140" alt="Logo utama">
+        </a>
+
+        <a href="#navigation" class="nav-button nav-button-dark">
+        	Menu <span class="nav-icon"></span>
+        </a> 
+        <div id="navigation" class="navigation">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <div class="col-md-10 just-center navigation-pre-block">
+                        <div class="navigation-block clearfix">
+                            <ul class="link-blocks">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Join as a Host</a></li>
+                                <li><a href="#">A la Carte</a></li>
+                                <li><a href="#">Create my Tour</a></li>
+                                <li><a href="#">Sign up</a></li>
+                                <li><a href="#">Log in</a></li>
+                            </ul>
+                            <div class="info-blocks">
+                                <a href="mailto:contact@tripcetera.com?Subject=Saya%20mau%20nanya%20nih" class="mail-link transition btn-scale" target="_top">contact@tripcetera.com</a>
+                                <span class="contact-us"><span class="ti-mobile icon"></span>0778 325 253</span>
+                                <div class="social-nav">
+                                    <a href="#" class="ti-facebook"></a>
+                                    <a href="#" class="ti-twitter"></a>
+                                    <a href="#" class="ti-linkedin"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>  -->
+	
+		<a href="#top" class="goto-top ti-arrow-up"></a>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <script src="dist/js/bootstrap.min.js"></script>
+	    <script src="assets/js/push.navigation.js"></script>
+	    <script src="assets/js/functions.js"></script>
+	    <script src="assets/js/jquery.preload.js"></script>
+	    <script src="assets/js/jquery.easing.js"></script>
+	    <script src="assets/js/wow.min.js"></script>
+		<script type='text/javascript' src='assets/js/jquery.customSelect.js'></script>
+	    <script src="assets/js/owl.carousel.js"></script>
+	    <script src="assets/js/theme-scripts.js"></script>
+	    <script src="assets/js/bootstrap-datepicker.min.js"></script>
+
+        <script>
+            new WOW().init();
+        </script>
+
+        <script type="text/javascript">
+            $('#date1, #date2').datepicker({
+			    format: 'mm/dd/yyyy',
+			    startDate: '-1d',
+			    todayBtn: true,
+			    autoclose: true
+			});
+        </script>
+
+        <!-- <script type="text/javascript">
+	        $(document).ready(function () {
+	            $("#txtFromDate").datepicker({
+	                dateFormat: "dd M yy",
+	                startDate: "today",
+	                minDate: "today",
+	                autoclose: true,
+	                todayBtn: "linked",
+	                onSelect: function (selected) {
+	                    var dt = new Date(selected);
+	                    dt.setDate(dt.getDate() + 1);
+	                    $("#txtToDate").datepicker("option", "minDate", dt);
+	                }
+	            });
+
+
+	            $("#txtToDate").datepicker({
+	                dateFormat: "dd M yy",
+	                autoclose: true,
+	                todayBtn: "linked"
+	            });
+	        });
+        </script> -->
+
+        <script>
+            jQuery(document).ready(function($){
+                // initialize_scrollreveal();
+                demo_3();				
+            });
+        </script>
+
+	</body>
+</html>

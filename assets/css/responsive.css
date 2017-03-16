@@ -1,0 +1,141 @@
+
+
+
+ /*inilah dia Responsive nan sempardak */
+
+
+
+
+ @media (min-width: 767px) {
+	.visible-mobile {
+	    display: none !important;
+	}
+}
+
+@media only screen and (max-width:767px) {
+
+	.hero-header-1 .text-wrapper {
+	    width: 80%;
+	    margin: 60px auto 0;
+	}
+
+	.hero-header-1 h1 {
+	    font-weight: 600;
+	    color: #fff;
+	    line-height: 1.2em;
+	    font-size: 34px !important;
+	}
+
+	.hero-header-1 .carousel-arrows {
+		display: none;
+	}
+
+	.hero-header-1 .owl-controls {
+	    position: absolute;
+	    left: 0;
+	    width: 100%;
+	    bottom: 20px;
+	}
+
+	.navigation-pre-block {
+		margin-top: 80px;
+		padding: 0
+	}
+
+	.navigation-block h6 {
+		padding-left: 0
+	}
+
+	.navigation-block {
+		margin-top: 20px;
+		padding: 10px 0 0
+	}
+
+	.navigation-block .info-blocks, .navigation-block .link-blocks {
+		width: 100%;
+		float: none;
+		padding: 10px;
+	}
+
+	.navigation-block .info-blocks {
+		margin-top: 30px;
+		padding-left: 10px;
+		border-left: none
+	}
+
+	.navigation-block ul li {
+		margin: 0 0 5px
+	}
+
+	.navigation-block ul li a {
+		display: block;
+		font-size: 20px;
+		padding: 5px 0;
+		border-bottom: solid 1px rgba(255, 255, 255, .2)
+	}
+
+	.social-section {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+}
+
+@media only screen and (max-width:414px) {
+	
+	.navigation-block .col-xs-6 {
+		width: 100%
+	}
+
+	.main-services-1 .table-wrapper {
+		width: 100%;
+	}
+
+	.main-text {
+	    position: absolute;
+	    z-index: 10;
+	}
+
+	.search-wrapper.focused {
+	    width: 300px;
+	    margin-right: -20px;
+	}
+
+	.searchable {
+		width: 100%;
+	}
+
+	.input-group-btn .btn {
+	    border-radius: 50px;
+	    padding: 6px 12px;
+	}
+
+	.nav a {
+		color: #999;
+	}
+
+	.navbar {
+		padding: 0;
+	}
+
+	.navbar-nav {
+	    margin-top: 8px;
+	    background-color: #fff;
+	    padding-left: 10px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.input-group-btn .btn {
+	    border-radius: 50px;
+	    padding: 6px 12px;
+	}
+
+	.navbar {
+		padding: 0;
+	}
+
+	.nav a {
+		color: #999;
+	}
+}
