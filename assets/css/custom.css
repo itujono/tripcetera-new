@@ -226,6 +226,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 img.fullwidth{width:100%; height:261px;}
 
+.navbar-brand {
+    width: 200px;
+}
 
 img.logo {
 	width: 100%;
