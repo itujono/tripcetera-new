@@ -1213,7 +1213,7 @@ color:#fff;
 
 
 /*TABS customisations*/
-.tab-content{background:#ffffff; padding:30px; height:324px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+/*.tab-content{background:#ffffff; padding:30px; height:324px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}*/
 .tab-content2{background:#ffffff; padding:30px 15px 30px 15px; height:324px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);}
 .tab-content3{background:#ffffff; padding:30px; height:324px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);}
 .tab-content4{background:#ffffff; padding:30px 0px 30px 0px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.0); color:#999;}
@@ -2201,7 +2201,7 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
 
 /* Yakkk masuk ke Accomodation wak! Heheh... */
 
-#accomodation {
+#accomodation, #transportation, #etcetera {
     background-color: #f3f3f3;
 }
 
@@ -2476,7 +2476,7 @@ select {
 /* maaak masuk ke Transportation waaak heheh */
 
 .search-box-wrapper {
-    background: #fff;
+    background: transparent;
     margin-top: 100px;
 }
 
@@ -2534,7 +2534,7 @@ ul.search-tabs li a {
 .nav.nav-tabs li {
     float: right;
     width: 70%;
-    margin-bottom: 40px;
+    margin-bottom: 5px;
     border: none;
     border-bottom: 1px solid #ddd;
     background: none;
@@ -2572,6 +2572,25 @@ ul.search-tabs li a {
     -moz-filter: initial;
 }
 
+.nav li a figure {
+    position: relative;
+}
+
+.nav li a figcaption {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    padding: 7px 15px;
+    background-color: #ff6633;
+    border-radius: 4px;
+    transition: all .3s ease;
+}
+
+.nav li a figcaption h4 {
+    font-size: 14px;
+    margin: 0;
+}
+
 .search-tabs {
     padding: 30px 0;
 }
@@ -2591,7 +2610,7 @@ ul.search-tabs li a {
 }
 
 .search-form .tab-pane {
-    background-color: #eee;
+    background-color: #fff;
     padding: 25px;
 }
 
@@ -2612,7 +2631,25 @@ ul.search-tabs li a {
     padding: 0 30px;
 }
 
-.query-tabs .tab-content {
+.query-tabs li a:hover figcaption {
+    visibility: visible;
+    opacity: 1;
+}
+
+.query-tabs li a figcaption {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+
+#transportation input.input-text,
+#transportation select,
+#transportation textarea,
+#transportation span.custom-select {
+    background: #fff;
+    border: 1px solid #ddd;
+    line-height: normal;
 }
 
 .tab-pane .row {
