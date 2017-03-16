@@ -2065,7 +2065,7 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
 
 .searchable {
     margin-bottom: 40px;
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -2143,10 +2143,22 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
 }
 
 .searchable .form-control {
-	color: #333;
-	display: table-cell;
-	border-radius: 50px;
 	margin: 0 auto;
+}
+
+.searchable .form-inline .form-control {
+    display: inline-block;
+    min-width: 550px;
+    border-radius: 1px;
+}
+
+.searchable .form-inline {
+    text-align: center;
+}
+
+.searchable .btn-trip {
+    padding: 5px 24px 7px;
+    border-radius: 1px;
 }
 
 .form-control:focus, .form-group input:focus {
