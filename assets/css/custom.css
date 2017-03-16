@@ -2578,12 +2578,15 @@ ul.search-tabs li a {
 
 .nav li a figcaption {
     position: absolute;
-    bottom: 5px;
+    bottom: -20px;
     left: 5px;
     padding: 7px 15px;
     background-color: #ff6633;
     border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .42);
     transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
 }
 
 .nav li a figcaption h4 {
@@ -2634,6 +2637,7 @@ ul.search-tabs li a {
 .query-tabs li a:hover figcaption {
     visibility: visible;
     opacity: 1;
+    transform: translateY(-30px);
 }
 
 .query-tabs li a figcaption {
