@@ -1774,7 +1774,7 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
 
 .hero-header-1 .overlay {
     background-color: rgb(0, 0, 0);
-    opacity: .6;
+    opacity: .2;
     position: absolute;
     z-index: 1;
     width: 100%;
