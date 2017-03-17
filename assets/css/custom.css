@@ -184,7 +184,6 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 	opacity:1;
 	max-width:300px;
 	max-height:500px;
-
 }
 
 .lightcaret{
@@ -399,8 +398,8 @@ nav .navbar-toggle {
 nav a {
 	color: #fff;
   	font-size: 14px;
-  	padding-bottom: 20px !important;
-  	padding-top: 20px !important;
+  	padding-bottom: 10px !important;
+  	padding-top: 10px !important;
     -webkit-transition: all 0.3s ease;
   	transition: all 0.3s ease;
 }
@@ -2290,10 +2289,9 @@ figure img {
 }
 
 .search-holder {
-    padding: 40px 0;/*
-    background-image: url(../../images/slider/5.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;*/
+    padding: 40px 0;
+    position: relative;
+    z-index: -1;
 }
 
 .search-tab-content .tab-pane.active {
