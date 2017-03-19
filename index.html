@@ -13,11 +13,11 @@
 	    <link href="assets/css/animate.css" rel="stylesheet" media="screen">
 	    <link href="assets/css/push-navigation.css" rel="stylesheet" media="screen">
 	    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="screen">
+	    <link href="assets/css/bootstrap-datepicker.min.css" rel="stylesheet" media="screen">
 	    <link href="assets/css/responsive.css" rel="stylesheet" media="screen">
   	</head>
 
   	<body id="top">
-  
 	  	<main>
 	  		<header>
 	  			<nav class="navbar">
@@ -57,14 +57,78 @@
 				<div class="main-text">
 					<h1 class="wow fadeInUp" data-wow-delay="1s"><img src="images/dreamclickgo_final.png" width="50%" /></h1>
 	            	<div class="searchable wow fadeInUp" data-wow-delay="1.4s">
-	            		<form action="submit" class="form-inline">
-						  	<div class="form-group">
-							    <input type="text" class="form-control" id="inputSearch" placeholder="Your Destination">
-							 </div>
-							 <button type="submit" class="btn-trip">Go!</button>
-						</form>
-	                </div>
-	            </div>
+		            	<div class="panel panel-default panel-seachbox center-block">
+		                	<div class="panel-body">
+		                    	<div class="row">
+
+			                        <div class="col-md-4">
+			                            <div class="form-group">
+			                                <label for="txtWherePlace">Where do you want to go ?</label>
+			                                <input name="ctl00$MainContent$txtWherePlace" type="text" id="MainContent_txtWherePlace" class="form-control ui-autocomplete-input" placeholder="Cities or Locations" autocomplete="off">
+			                                <input type="hidden" name="ctl00$MainContent$hfID" id="MainContent_hfID">
+			                                <input type="hidden" name="ctl00$MainContent$hfLabelDestination" id="MainContent_hfLabelDestination">
+			                            </div>
+			                        </div>
+
+			                        <div class="col-md-2">
+	                                    <div class="form-group">
+	                                    	<label for="txtWherePlace">From</label>
+	                                        <div class="input-group date" data-provide="datepicker" id="date1">
+							                    <input type="text" class="form-control" />
+							                    <span class="input-group-addon">
+							                        <span class="glyphicon glyphicon-th"></span>
+							                    </span>
+							                </div>
+	                                    </div>
+			                        </div>
+
+			                        <div class="col-md-2">
+	                                    <div class="form-group">
+	                                    	<label for="txtWherePlace">Until</label>
+	                                        <div class="input-group date" data-provide="datepicker" id="date2">
+							                    <input type="text" class="form-control" />
+							                    <span class="input-group-addon">
+							                        <span class="glyphicon glyphicon-th"></span>
+							                    </span>
+							                </div>
+	                                    </div>
+			                        </div>
+
+			                        <div class="col-md-2">
+	                                    <div class="form-group">
+	                                        <label>Adult</label>
+	                                        <select class="form-control">
+	                                        	<option>1</option>
+	                                        	<option>2</option>
+	                                        	<option>3</option>
+	                                        	<option>4</option>
+	                                        </select>
+	                                    </div>
+			                        </div>
+
+			                        <div class="col-md-2">
+	                                    <div class="form-group">
+	                                        <label>Child</label>
+	                                        <select class="form-control">
+	                                        	<option>1</option>
+	                                        	<option>2</option>
+	                                        	<option>3</option>
+	                                        	<option>4</option>
+	                                        </select>
+	                                    </div>
+			                        </div>
+
+                                    <div class="col-xs-3">
+                                        <label>&nbsp;</label>
+                                        <button class="full-width icon-check">SEARCH NOW</button>
+                                    </div>
+
+			                    </div> <!-- kelar Row form -->
+		                	</div>
+		            	</div>
+	                </div> <!-- kelar Searchable -->
+	            </div> <!-- kelar Main-Text -->
+
 	            <div id="hero-header-1">
 	                <div class="slide slide-1">
 	                	<div class="overlay"></div>
@@ -78,10 +142,10 @@
 	                	<div class="overlay"></div>
 	                    <div class="slider-caption wow fadeInUp" data-wow-delay="1s"><h3>Hongkong</h3></div>
 	                </div>
-	            </div>
-	            <div class="carousel-arrows">
-	                <a href="#0" class="prev-feature left btn-scale"><i class="fa fa-angle-left"></i></a>
-	                <a href="#0" class="next-feature right btn-scale"><i class="fa fa-angle-right"></i></a>
+		            <div class="carousel-arrows">
+		                <a href="#0" class="prev-feature left btn-scale"><i class="fa fa-angle-left"></i></a>
+		                <a href="#0" class="next-feature right btn-scale"><i class="fa fa-angle-right"></i></a>
+		            </div>
 	            </div>
 	            	
 	        </section>
@@ -243,12 +307,15 @@
 		<script type='text/javascript' src='assets/js/jquery.customSelect.js'></script>
 	    <script src="assets/js/owl.carousel.js"></script>
 	    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	    <script src="assets/js/bootstrap-datepicker.min.js"></script>
 
-	    <script src="assets/js/scrolla.jquery.min.js"></script>
-        <script>
-        	$('.animate').scrolla({
-        		mobile: false;
-        	});
+        <script type="text/javascript">
+            $('#date1, #date2').datepicker({
+			    format: 'mm/dd/yyyy',
+			    startDate: '-1d',
+			    todayBtn: true,
+			    autoclose: true
+			});
         </script>
 
         <script>
