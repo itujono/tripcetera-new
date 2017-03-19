@@ -1780,7 +1780,7 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
 
 .hero-header-1 .overlay {
     background-color: rgb(0, 0, 0);
-    opacity: .14;
+    opacity: .2;
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -1866,12 +1866,12 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
     left: 5%;
     padding: 20px;
     padding-bottom: 45px;
-    background-color: #333;
+    background-color: rgba(234,91,35,.8);
 }
 
 .hero-header-1 .slider-caption h3 {
     color: #fff;
-    font-size: 14px;
+    font-size: 18px;
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
