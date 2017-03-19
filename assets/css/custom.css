@@ -2551,7 +2551,7 @@ ul.search-tabs li a {
     padding: 20px;
 }
 
-.nav.nav-tabs li {
+#transportation .nav.nav-tabs li {
     float: right;
     width: 70%;
     margin-bottom: 5px;
@@ -2560,16 +2560,16 @@ ul.search-tabs li a {
     background: none;
 }
 
-.nav.nav-tabs li img {
+#transportation .nav.nav-tabs li img {
     width: 100%;
 }
 
-.nav-tabs > li > a {
+#transportation .nav-tabs > li > a {
     color: #999;
     padding: 0;
 }
 
-.nav-tabs > li > a:hover {
+#transportation .nav-tabs > li > a:hover {
     background: transparent;
     box-shadow: none;
 }
