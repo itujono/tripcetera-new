@@ -2074,9 +2074,9 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
 }
 
 .btn-med {
-    font-size: .8em;
+    font-size: 1.2em;
     font-weight: 600px;
-    padding: 12px 28px 9px;
+    padding: 6px 28px 5px;
     text-transform: uppercase;
 }
 
@@ -2653,6 +2653,10 @@ ul.search-tabs li a {
     padding: 25px;
 }
 
+.search-form > .tab-pane {
+    padding: 0;
+}
+
 #transportation .tab-content {
     box-shadow: none;
     background: #ffffff;
@@ -2669,6 +2673,52 @@ ul.search-tabs li a {
     width: 100%;
     padding: 0 30px;
 }
+
+
+
+
+.secondary-tab {
+    float: left;
+    width: 100%;
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+    .secondary-tab ul {
+        padding-left: 25px;
+    }
+
+        .secondary-tab ul li {
+            display: inline-block;
+            margin-right: 0;
+            position: relative;
+            top: 2px;
+            margin-left: -5px;
+        }
+
+            .secondary-tab ul li.active a {
+                background-color: #fff;
+                color: #999;
+            }
+
+                .secondary-tab ul li a {
+                    background-color: transparent;
+                    padding: 10px 15px;
+                    border: 1px solid #ddd;
+                    border-bottom: transparent;
+                    border-radius: 2px;
+                }
+
+                    .secondary-tab ul li a.br0 {
+                        border-right: transparent;
+                    }
+
+
+
+
+
 
 .query-tabs li a:hover figcaption {
     visibility: visible;

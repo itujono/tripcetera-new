@@ -138,109 +138,226 @@
 			                <div class="col-md-8">
 			                	<div class="cta-image mt20"></div>
 			                    <div class="search-form tab-content">
-			                        <div class="tab-pane active in" id="flights" role="tabpanel">
-			                            <form action="#" method="post">
-			                                <div class="row">
-												<h3 style="padding:20px 10px;" >AIRLINE TICKETS</h3>
-			                                    <div class="col-md-12">
-			                                        <h4 class="title">Where</h4>
-			                                        <div class="form-group">
-			                                            <label>Leaving From</label>
-			                                            <input type="text" class="input-text full-width" placeholder="city, distirct or specific airpot">
-			                                        </div>
-			                                        <div class="form-group">
-			                                            <label>Going To</label>
-			                                            <input type="text" class="input-text full-width" placeholder="city, distirct or specific airpot">
-			                                        </div>
-			                                    </div>
-			                                    
-			                                    <div class="col-md-6">
-			                                        <h4 class="title">When</h4>
-			                                        <label>Departing On</label>
-			                                        <div class="form-group row">
-			                                            <div class="col-xs-6">
-			                                                <div class="datepicker-wrap">
-			                                                    <input type="text" name="date_from" class="input-text full-width hasDatepicker" placeholder="mm/dd/yy" id="dp1488811384134">
-			                                                </div>
-			                                            </div>
-			                                            <div class="col-xs-6">
-			                                                <div class="">
-			                                                    <select class="form-control">
-			                                                        <option>anytime</option>
-			                                                        <option>morning</option>
-			                                                    </select>
-			                                                </div>
-			                                            </div>
-			                                        </div>
-			                                        <label>Arriving On</label>
-			                                        <div class="form-group row">
-			                                            <div class="col-xs-6">
-			                                                <div class="datepicker-wrap">
-			                                                    <input type="text" name="date_to" class="input-text full-width hasDatepicker" placeholder="mm/dd/yy" id="dp1488811384135">
-			                                                </div>
-			                                            </div>
-			                                            <div class="col-xs-6">
-			                                                <div class="">
-			                                                    <select class="form-control">
-			                                                        <option>anytime</option>
-			                                                        <option>morning</option>
-			                                                    </select>
-			                                                </div>
-			                                            </div>
-			                                        </div>
-			                                    </div>
-			                                    
-			                                    <div class="col-md-6">
-			                                        <h4 class="title">Who</h4>
-			                                        <div class="form-group row">
-			                                            <div class="col-xs-3">
-			                                                <label>Adults</label>
-			                                                <div class="">
-			                                                    <select class="form-control">
-			                                                        <option>01</option>
-			                                                        <option>02</option>
-			                                                        <option>03</option>
-			                                                        <option>04</option>
-			                                                    </select>
-			                                                </div>
-			                                            </div>
-			                                            <div class="col-xs-3">
-			                                                <label>Kids</label>
-			                                                <div class="">
-			                                                    <select class="form-control">
-			                                                        <option>01</option>
-			                                                        <option>02</option>
-			                                                        <option>03</option>
-			                                                        <option>04</option>
-			                                                    </select>
-			                                                </div>
-			                                            </div>
-			                                            <div class="col-xs-6">
-			                                                <label>Promo Code</label>
-			                                                <input type="text" class="input-text full-width" placeholder="type here">
-			                                            </div>
-			                                        </div>
-			                                        <div class="form-group row">
-			                                            <div class="col-xs-3">
-			                                                <label>Infants</label>
-			                                                <div class="">
-			                                                    <select class="form-control">
-			                                                        <option>01</option>
-			                                                        <option>02</option>
-			                                                        <option>03</option>
-			                                                        <option>04</option>
-			                                                    </select>
-			                                                </div>
-			                                            </div>
-			                                            <div class="col-xs-6 pull-right">
-			                                                <label>&nbsp;</label>
-			                                                <button class="full-width icon-check">SEARCH NOW</button>
-			                                            </div>
-			                                        </div>
-			                                    </div> <!-- kelar col-md-6 -->
-			                                </div>
-			                            </form>
-			                        </div> <!-- kelar tab-pane -->
+				                    <div class="tab-pane active" id="flights" role="tabpanel">
+			                        	<div class="secondary-tab">
+			                        		<ul>
+			                        			<li class="active">
+			                        				<a class="br0" href="#discounted" data-toggle="tab">Discounted Voucher</a>
+			                        			</li>
+			                        			<li>
+			                        				<a href="#dbooking" data-toggle="tab" aria-expanded="true">Direct Booking</a>
+			                        			</li>
+			                        		</ul>
+			                        	</div>
+			                        	<div class="tab-content">
+				                        	<div class="tab-pane active" id="discounted" role="tabpanel">
+					                            <form action="#" method="post">
+					                                <div class="row">
+														<h3 style="padding:20px 10px;" >AIRLINE TICKETS</h3>
+					                                    <div class="col-md-12">
+					                                        <h4 class="title">Where</h4>
+					                                        <div class="form-group">
+					                                            <label>Leaving From</label>
+					                                            <input type="text" class="input-text full-width" placeholder="city, distirct or specific airpot">
+					                                        </div>
+					                                        <div class="form-group">
+					                                            <label>Going To</label>
+					                                            <input type="text" class="input-text full-width" placeholder="city, distirct or specific airpot">
+					                                        </div>
+					                                    </div>
+					                                    
+					                                    <div class="col-md-6">
+					                                        <h4 class="title">When</h4>
+					                                        <label>Departing On</label>
+					                                        <div class="form-group row">
+					                                            <div class="col-xs-6">
+					                                                <div class="datepicker-wrap">
+					                                                    <input type="text" name="date_from" class="input-text full-width hasDatepicker" placeholder="mm/dd/yy" id="dp1488811384134">
+					                                                </div>
+					                                            </div>
+					                                            <div class="col-xs-6">
+					                                                <div class="">
+					                                                    <select class="form-control">
+					                                                        <option>anytime</option>
+					                                                        <option>morning</option>
+					                                                    </select>
+					                                                </div>
+					                                            </div>
+					                                        </div>
+					                                        <label>Arriving On</label>
+					                                        <div class="form-group row">
+					                                            <div class="col-xs-6">
+					                                                <div class="datepicker-wrap">
+					                                                    <input type="text" name="date_to" class="input-text full-width hasDatepicker" placeholder="mm/dd/yy" id="dp1488811384135">
+					                                                </div>
+					                                            </div>
+					                                            <div class="col-xs-6">
+					                                                <div class="">
+					                                                    <select class="form-control">
+					                                                        <option>anytime</option>
+					                                                        <option>morning</option>
+					                                                    </select>
+					                                                </div>
+					                                            </div>
+					                                        </div>
+					                                    </div>
+					                                    
+					                                    <div class="col-md-6">
+					                                        <h4 class="title">Who</h4>
+					                                        <div class="form-group row">
+					                                            <div class="col-xs-3">
+					                                                <label>Adults</label>
+					                                                <div class="">
+					                                                    <select class="form-control">
+					                                                        <option>01</option>
+					                                                        <option>02</option>
+					                                                        <option>03</option>
+					                                                        <option>04</option>
+					                                                    </select>
+					                                                </div>
+					                                            </div>
+					                                            <div class="col-xs-3">
+					                                                <label>Kids</label>
+					                                                <div class="">
+					                                                    <select class="form-control">
+					                                                        <option>01</option>
+					                                                        <option>02</option>
+					                                                        <option>03</option>
+					                                                        <option>04</option>
+					                                                    </select>
+					                                                </div>
+					                                            </div>
+					                                            <div class="col-xs-6">
+					                                                <label>Promo Code</label>
+					                                                <input type="text" class="input-text full-width" placeholder="type here">
+					                                            </div>
+					                                        </div>
+					                                        <div class="form-group row">
+					                                            <div class="col-xs-3">
+					                                                <label>Infants</label>
+					                                                <div class="">
+					                                                    <select class="form-control">
+					                                                        <option>01</option>
+					                                                        <option>02</option>
+					                                                        <option>03</option>
+					                                                        <option>04</option>
+					                                                    </select>
+					                                                </div>
+					                                            </div>
+					                                            <div class="col-xs-6 pull-right">
+					                                                <label>&nbsp;</label>
+					                                                <button class="full-width icon-check">SEARCH NOW</button>
+					                                            </div>
+					                                        </div>
+					                                    </div> <!-- kelar col-md-6 -->
+					                                </div>
+					                            </form>
+					                        </div>
+					                        <div class="tab-pane" id="dbooking" role="tabpanel">
+					                            <form action="#" method="post">
+					                                <div class="row">
+														<h3 style="padding:20px 10px;" >DIRECT TICKETS</h3>
+					                                    <div class="col-md-12">
+					                                        <h4 class="title">Where</h4>
+					                                        <div class="form-group">
+					                                            <label>Leaving From</label>
+					                                            <input type="text" class="input-text full-width" placeholder="city, distirct or specific airpot">
+					                                        </div>
+					                                        <div class="form-group">
+					                                            <label>Going To</label>
+					                                            <input type="text" class="input-text full-width" placeholder="city, distirct or specific airpot">
+					                                        </div>
+					                                    </div>
+					                                    
+					                                    <div class="col-md-6">
+					                                        <h4 class="title">When</h4>
+					                                        <label>Departing On</label>
+					                                        <div class="form-group row">
+					                                            <div class="col-xs-6">
+					                                                <div class="datepicker-wrap">
+					                                                    <input type="text" name="date_from" class="input-text full-width hasDatepicker" placeholder="mm/dd/yy" id="dp1488811384134">
+					                                                </div>
+					                                            </div>
+					                                            <div class="col-xs-6">
+					                                                <div class="">
+					                                                    <select class="form-control">
+					                                                        <option>anytime</option>
+					                                                        <option>morning</option>
+					                                                    </select>
+					                                                </div>
+					                                            </div>
+					                                        </div>
+					                                        <label>Arriving On</label>
+					                                        <div class="form-group row">
+					                                            <div class="col-xs-6">
+					                                                <div class="datepicker-wrap">
+					                                                    <input type="text" name="date_to" class="input-text full-width hasDatepicker" placeholder="mm/dd/yy" id="dp1488811384135">
+					                                                </div>
+					                                            </div>
+					                                            <div class="col-xs-6">
+					                                                <div class="">
+					                                                    <select class="form-control">
+					                                                        <option>anytime</option>
+					                                                        <option>morning</option>
+					                                                    </select>
+					                                                </div>
+					                                            </div>
+					                                        </div>
+					                                    </div>
+					                                    
+					                                    <div class="col-md-6">
+					                                        <h4 class="title">Who</h4>
+					                                        <div class="form-group row">
+					                                            <div class="col-xs-3">
+					                                                <label>Adults</label>
+					                                                <div class="">
+					                                                    <select class="form-control">
+					                                                        <option>01</option>
+					                                                        <option>02</option>
+					                                                        <option>03</option>
+					                                                        <option>04</option>
+					                                                    </select>
+					                                                </div>
+					                                            </div>
+					                                            <div class="col-xs-3">
+					                                                <label>Kids</label>
+					                                                <div class="">
+					                                                    <select class="form-control">
+					                                                        <option>01</option>
+					                                                        <option>02</option>
+					                                                        <option>03</option>
+					                                                        <option>04</option>
+					                                                    </select>
+					                                                </div>
+					                                            </div>
+					                                            <div class="col-xs-6">
+					                                                <label>Promo Code</label>
+					                                                <input type="text" class="input-text full-width" placeholder="type here">
+					                                            </div>
+					                                        </div>
+					                                        <div class="form-group row">
+					                                            <div class="col-xs-3">
+					                                                <label>Infants</label>
+					                                                <div class="">
+					                                                    <select class="form-control">
+					                                                        <option>01</option>
+					                                                        <option>02</option>
+					                                                        <option>03</option>
+					                                                        <option>04</option>
+					                                                    </select>
+					                                                </div>
+					                                            </div>
+					                                            <div class="col-xs-6 pull-right">
+					                                                <label>&nbsp;</label>
+					                                                <button class="full-width icon-check">SEARCH NOW</button>
+					                                            </div>
+					                                        </div>
+					                                    </div> <!-- kelar col-md-6 -->
+					                                </div>
+					                            </form>
+					                        </div> <!-- kelar tab-pane -->
+				                        </div>
+				                    </div> <!-- kelar tab-pane -->
 			                        
 			                        <div class="tab-pane" id="car" role="tabpanel">
 			                            <form action="car-list-view.html" method="post">
