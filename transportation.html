@@ -365,298 +365,1151 @@
 				                        </div>
 				                    </div> <!-- kelar tab-pane -->
 			                        
-			                        <div class="tab-pane" id="car" role="tabpanel">
-			                            <form action="car-list-view.html" method="post">
-			                                <div class="row">
-			                                    <div class="col-md-12">
-													<h3 style="padding:20px 0;" >CAR RENTAL</h3>
-			                                        <h4 class="title">Where</h4>
-			                                        <div class="form-group">
-			                                            <label>Pick Up</label>
-			                                            <input type="text" class="input-text full-width" placeholder="city, distirct or specific airpot">
-			                                        </div>
-			                                        <div class="form-group">
-			                                            <label>Drop Off</label>
-			                                            <input type="text" class="input-text full-width" placeholder="city, distirct or specific airpot">
-			                                        </div>
-			                                    </div>
-			                                    
-			                                    <div class="col-md-6">
-			                                        <h4 class="title">When</h4>
-			                                        <div class="form-group">
-			                                            <label>Pick-Up Date / Time</label>
-			                                            <div class="row">
-			                                                <div class="col-xs-6">
-			                                                    <div class="datepicker-wrap">
-			                                                        <input type="text" name="date_from" class="input-text full-width hasDatepicker" placeholder="mm/dd/yy" id="dp1488811384138"><img class="ui-datepicker-trigger" src="images/blank.png" alt="" title="">
-			                                                    </div>
-			                                                </div>
-			                                                <div class="col-xs-6">
-			                                                <div class="">
-			                                                    <select class="form-control">
-			                                                        <option>anytime</option>
-			                                                        <option>morning</option>
-			                                                    </select>
-			                                                </div>
-			                                                </div>
-			                                            </div>
-			                                        </div>
-			                                        <div class="form-group">
-			                                            <label>Drop-Off Date / Time</label>
-			                                            <div class="row">
-			                                                <div class="col-xs-6">
-			                                                    <div class="datepicker-wrap">
-			                                                        <input type="text" name="date_to" class="input-text full-width hasDatepicker" placeholder="mm/dd/yy" id="dp1488811384139"><img class="ui-datepicker-trigger" src="images/blank.png" alt="" title="">
-			                                                    </div>
-			                                                </div>
-			                                                <div class="col-xs-6">
-			                                                <div class="">
-			                                                    <select class="form-control">
-			                                                        <option>anytime</option>
-			                                                        <option>morning</option>
-			                                                    </select>
-			                                                </div>
-			                                                </div>
-			                                            </div>
-			                                        </div>
-			                                    </div>
-			                                    
-			                                    <div class="col-md-6">
-			                                        <h4 class="title">Who</h4>
-			                                        <div class="form-group row">
-			                                            <div class="col-xs-6">
-			                                                <label>Adults</label>
-			                                                <div class="">
-			                                                    <select class="form-control">
-			                                                        <option>01</option>
-			                                                        <option>02</option>
-			                                                        <option>03</option>
-			                                                        <option>04</option>
-			                                                    </select>
-			                                                </div>
-			                                            </div>
-			                                            <div class="col-xs-6">
-			                                                <label>Kids</label>
-			                                                <div class="">
-			                                                    <select class="form-control">
-			                                                        <option>01</option>
-			                                                        <option>02</option>
-			                                                        <option>03</option>
-			                                                        <option>04</option>
-			                                                    </select>
-			                                                </div>
-			                                            </div>
-			                                        </div>
-			                                        <div class="form-group row">
-			                                            <div class="col-xs-6">
-			                                                <label>Car type</label>
-			                                                <div class="">
-			                                                    <select class="form-control">
-			                                                        <option>Select a car type...</option>
-			                                                        <option>Sedan</option>
-			                                                        <option>MPV</option>
-			                                                        <option>SUV</option>
-			                                                        <option>Sport</option>
-			                                                    </select>
-			                                                </div>
-			                                            </div>
-			                                            <div class="col-xs-6">
-			                                                <label>&nbsp;</label>
-			                                                <button class="full-width icon-check">SEARCH NOW</button>
-			                                            </div>
-			                                        </div>
-			                                    </div>
-			                                </div>
-			                            </form>
-			                        </div>
+				                    <div class="tab-pane" id="car" role="tabpanel">
+			                        	<div class="secondary-tab">
+			                        		<ul>
+			                        			<li class="active">
+			                        				<a class="br0" href="#transporthost" data-toggle="tab">Transport Host</a>
+			                        			</li>
+			                        			<li>
+			                        				<a href="#partnerfleet" data-toggle="tab" aria-expanded="true">Partner Fleet</a>
+			                        			</li>
+			                        		</ul>
+			                        	</div>
+			                        	<div class="tab-content">
+				                        	<div class="tab-pane active" id="transporthost" role="tabpanel">
+					                            <form action="#" method="post">
+					                                <div>
+														<h3 style="padding:20px 0;">TRANSPORT HOST</h3>
+														<div class="row">
+						                                    <div class="col-md-12">
+						                                    	<div class="form-group">
+							                                    	<div class="radio-inline">
+																	  	<label>
+																		    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+																		    With driver
+																	  	</label>
+																	</div>
+																	<div class="radio-inline">
+																	  	<label>
+																		    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+																		    Without driver
+																	  	</label>
+																	</div>
+																</div>
+							                                    <div class="row">
+																	<div class="form-group col-md-8">
+																		<label>Country</label>
+						                                                <div class="">
+						                                                    <select class="form-control">
+						                                                        <option>Indonesia</option>
+						                                                        <option>Singapore</option>
+						                                                        <option>United States</option>
+						                                                    </select>
+						                                                </div>
+																	</div>
+																	<div class="form-group col-md-4">
+																		<label>Currency</label>
+						                                                <div class="">
+						                                                    <select class="form-control">
+						                                                        <option>IDR - Indonesian Rupiah</option>
+						                                                        <option>SGD - Singapore Dollar</option>
+						                                                        <option>USD - US Dollar</option>
+						                                                    </select>
+						                                                </div>
+																	</div>
+																</div>
+																<div class="form-group">
+																	<label>Vehicle Type</label>
+					                                                <div class="">
+					                                                    <select class="form-control">
+					                                                        <option>Bus</option>
+					                                                        <option>MPV</option>
+					                                                        <option>Sedan</option>
+					                                                        <option>SUV</option>
+					                                                    </select>
+					                                                </div>
+																</div>
+																<div class="row">
+																	<div class="form-group col-md-8">
+																		<label>Pick-up Location</label>
+						                                                <div class="">
+						                                                    <select class="form-control">
+						                                                        <option>Sekupang</option>
+						                                                        <option>BengkongV</option>
+						                                                        <option>Batu Aji</option>
+						                                                        <option>Majalengka</option>
+						                                                    </select>
+						                                                </div>
+																	</div>
+																	<div class="form-group col-md-4">
+																		<label>No. of Pax</label>
+						                                                <div class="">
+						                                                    <select class="form-control">
+						                                                        <option>1</option>
+						                                                        <option>2</option>
+						                                                        <option>3</option>
+						                                                        <option>4</option>
+						                                                        <option>5</option>
+						                                                        <option>6</option>
+						                                                    </select>
+						                                                </div>
+																	</div>
+																</div>
+																<div class="row">
+								                                    <div class="form-group col-md-6">
+								                                    	<label>Start Date</label>
+								                                        <div class="input-group date" data-provide="datepicker" id="car-date1">
+														                    <input type="text" class="form-control">
+														                    <span class="input-group-addon">
+														                        <span class="glyphicon glyphicon-th"></span>
+														                    </span>
+														                </div>
+								                                    </div>
+								                                    <div class="form-group col-md-6">
+								                                    	<label>End Date</label>
+								                                        <div class="input-group date" data-provide="datepicker" id="car-date2">
+														                    <input type="text" class="form-control">
+														                    <span class="input-group-addon">
+														                        <span class="glyphicon glyphicon-th"></span>
+														                    </span>
+														                </div>
+								                                    </div>
+																</div>
+						                                    </div> <!-- kelar col-md-12 -->
+					                                    </div>
+					                                    <div class="row">
+					                                    	<div class="col-md-4">
+		                                						<button type="submit" class="full-width icon-check wow fadeInUp">SEARCH NOW</button>
+					                                    	</div>
+					                                    </div>
+					                                </div>
+					                            </form>
+					                        </div>
+
+					                        <div class="tab-pane" id="partnerfleet" role="tabpanel">
+					                            <form action="#" method="post">
+					                                <div>
+														<h3 style="padding:20px 0;">PARTNER FLEET</h3>
+														<div class="row">
+						                                    <div class="col-md-12">
+						                                    	<div class="form-group">
+							                                    	<div class="radio-inline">
+																	  	<label>
+																		    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+																		    With driver
+																	  	</label>
+																	</div>
+																	<div class="radio-inline">
+																	  	<label>
+																		    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+																		    Without driver
+																	  	</label>
+																	</div>
+																</div>
+							                                    <div class="row">
+																	<div class="form-group col-md-8">
+																		<label>Country</label>
+						                                                <div class="">
+						                                                    <select class="form-control">
+						                                                        <option>Indonesia</option>
+						                                                        <option>Singapore</option>
+						                                                        <option>United States</option>
+						                                                    </select>
+						                                                </div>
+																	</div>
+																	<div class="form-group col-md-4">
+																		<label>City</label>
+						                                                <div class="">
+						                                                    <select class="form-control">
+						                                                        <option>Batam</option>
+						                                                        <option>Singapore</option>
+						                                                        <option>Johor Bahru</option>
+						                                                        <option>Kuala Lumpur</option>
+						                                                    </select>
+						                                                </div>
+																	</div>
+																</div>
+																<div class="form-group">
+																	<label>Vehicle Type</label>
+					                                                <div class="">
+					                                                    <select class="form-control">
+					                                                        <option>Bus</option>
+					                                                        <option>MPV</option>
+					                                                        <option>Sedan</option>
+					                                                        <option>SUV</option>
+					                                                    </select>
+					                                                </div>
+																</div>
+																<div class="row">
+																	<div class="form-group col-md-6">
+																		<label>Pick-up Location</label>
+						                                                <div class="">
+						                                                    <select class="form-control">
+						                                                        <option>Sekupang</option>
+						                                                        <option>BengkongV</option>
+						                                                        <option>Batu Aji</option>
+						                                                        <option>Majalengka</option>
+						                                                    </select>
+						                                                </div>
+																	</div>
+																	<div class="form-group col-md-6">
+																		<label>Return Location</label>
+						                                                <div class="">
+						                                                    <select class="form-control">
+						                                                        <option>Sekupang</option>
+						                                                        <option>BengkongV</option>
+						                                                        <option>Batu Aji</option>
+						                                                        <option>Majalengka</option>
+						                                                    </select>
+						                                                </div>
+																	</div>
+																</div>
+																<div class="row">
+								                                    <div class="form-group col-md-6">
+								                                    	<label>Start Date</label>
+								                                        <div class="input-group date" data-provide="datepicker" id="fleet-date1">
+														                    <input type="text" class="form-control">
+														                    <span class="input-group-addon">
+														                        <span class="glyphicon glyphicon-th"></span>
+														                    </span>
+														                </div>
+								                                    </div>
+								                                    <div class="form-group col-md-6">
+								                                    	<label>End Date</label>
+								                                        <div class="input-group date" data-provide="datepicker" id="fleet-date2">
+														                    <input type="text" class="form-control">
+														                    <span class="input-group-addon">
+														                        <span class="glyphicon glyphicon-th"></span>
+														                    </span>
+														                </div>
+								                                    </div>
+																</div>
+						                                    </div> <!-- kelar col-md-12 -->
+					                                    </div>
+					                                    <div class="row">
+					                                    	<div class="col-md-4">
+		                                						<button type="submit" class="full-width icon-check wow fadeInUp">SEARCH NOW</button>
+					                                    	</div>
+					                                    </div>
+					                                </div>
+					                            </form>
+					                        </div> <!-- kelar tab-pane -->
+				                        </div>
+				                    </div> <!-- kelar tab-pane -->
 			                        
 			                        <div class="tab-pane" id="ferry" role="tabpanel">
-			                            <form action="#" method="post">
-			                                <div class="row">
-			                                    <div class="col-md-12">
-													<h3 style="padding:20px 0;" >FERRY TICKETS</h3>
-			                                        <h4 class="title">Where</h4>
-			                                        <div class="form-group">
-			                                            <label>Your Destination</label>
-			                                            <input type="text" class="input-text full-width" placeholder="enter a destination or hotel name">
-			                                        </div>
-			                                    </div>
-			                                    
-			                                    <div class="col-md-6">
-			                                        <h4 class="title">When</h4>
-			                                        <div class="form-group row">
-			                                            <div class="col-xs-6">
-			                                                <label>Departure Date</label>
-			                                                <div class="datepicker-wrap">
-			                                                    <input type="text" class="input-text full-width hasDatepicker" placeholder="mm/dd/yy" id="dp1488811384140"><img class="ui-datepicker-trigger" src="images/blank.png" alt="" title="">
-			                                                </div>
-			                                            </div>
-			                                            <div class="col-xs-6">
-			                                                <label>Cruise Length</label>
-			                                                <div class="">
-			                                                    <select class="form-control">
-			                                                        <option>Selec length...</option>
-			                                                        <option>1-2 days</option>
-			                                                        <option>3-4 days</option>
-			                                                        <option>5-6 days</option>
-			                                                    </select>
-			                                                </div>
-			                                            </div>
-			                                        </div>
-			                                    </div>
-			                                    
-			                                    <div class="col-md-6">
-			                                        <h4 class="title">Who</h4>
-			                                        <div class="form-group row">
-			                                            <div class="col-xs-6">
-			                                                <label>Cruise Line</label>
-			                                                <div class="">
-			                                                    <select class="form-control">
-			                                                        <option>Ferry 1</option>
-			                                                        <option>Ferry 2</option>
-			                                                        <option>Ferry 3</option>
-			                                                        <option>Ferry 4</option>
-			                                                    </select>
-			                                                </div>
-			                                            </div>
-			                                            <div class="col-xs-6">
-			                                                <label>&nbsp;</label>
-			                                                <button class="icon-check full-width">SEARCH NOW</button>
-			                                            </div>
-			                                        </div>
-			                                    </div>
-			                                </div>
-			                            </form>
+			                        	<div class="secondary-tab">
+			                        		<ul>
+			                        			<li class="active">
+			                        				<a class="br0" href="#ferry-discounted" data-toggle="tab">Discounted Voucher</a>
+			                        			</li>
+			                        			<li>
+			                        				<a href="#ferry-dbooking" data-toggle="tab" aria-expanded="true">Direct Booking</a>
+			                        			</li>
+			                        		</ul>
+			                        	</div>
+
+			                        	<div class="tab-content">
+				                        	<div class="tab-pane active" id="ferry-discounted" role="tabpanel">
+					                            <form action="#" method="post">
+					                                <div>
+														<h3 style="padding:20px 0;">DISCOUNTED VOUCHERS</h3>
+
+														<div class="row">
+						                                    <div class="col-md-12">
+						                                    	<div class="form-group">
+							                                    	<div class="radio-inline">
+																	  	<label>
+																		    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+																		    One way
+																	  	</label>
+																	</div>
+																	<div class="radio-inline">
+																	  	<label>
+																		    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+																		    Round trip
+																	  	</label>
+																	</div>
+																</div>
+							                                    <div class="form-group">
+							                                    	<label>Booking Date</label>
+							                                        <div class="input-group date" data-provide="datepicker" id="date1">
+													                    <input type="text" class="form-control">
+													                    <span class="input-group-addon">
+													                        <span class="glyphicon glyphicon-th"></span>
+													                    </span>
+													                </div>
+							                                    </div>
+																<div class="form-group">
+																	<label>Currency</label>
+					                                                <div class="">
+					                                                    <select class="form-control">
+					                                                        <option>IDR - Indonesian Rupiah</option>
+					                                                        <option>SGD - Singapore Dollar</option>
+					                                                        <option>USD - US Dollar</option>
+					                                                    </select>
+					                                                </div>
+																</div>
+																<div class="form-group col-md-6 pl0">
+																	<label>Ferry Port Origin</label>
+																	<div class="col-md-6 pl0">
+																		<h3 class="title">Singapore</h3>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="harbourfront">Harbour Front
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="tanahmerah">Tanah Merah
+																			</label>
+																		</div>
+																	</div>
+																	<div class="col-md-6 pl0">
+																		<h3 class="title">Indonesia</h3>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="batamcenter">Batam Center
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="sekupang">Sekupang
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="harbourbay">Harbour Bay
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="nongsapura">Nongsa Pura
+																			</label>
+																		</div>
+																	</div>
+																</div> <!-- kelar Form-Group ferry origin -->
+																<div class="form-group col-md-6 pl0">
+																	<label>Ferry Port Destination</label>
+																	<div class="col-md-6 pl0">
+																		<h3 class="title">Singapore</h3>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="harbourfront">Harbour Front
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="tanahmerah">Tanah Merah
+																			</label>
+																		</div>
+																	</div>
+																</div> <!-- kelar Form-Group ferry destination -->
+						                                    </div>
+					                                    </div>
+					                                    
+					                                    <div class="row">
+					                                    	<div class="col-md-4">
+		                                						<button type="submit" class="full-width icon-check wow fadeInUp">SEARCH NOW</button>
+					                                    	</div>
+					                                    </div>
+					                                </div>
+					                            </form>
+					                        </div>
+					                        <div class="tab-pane" id="ferry-dbooking" role="tabpanel">
+					                            <form action="#" method="post">
+					                                <div>
+														<h3 style="padding:20px 0;" >DIRECT BOOKINGS</h3>
+														
+														<div class="row">
+						                                    <div class="col-md-12">
+						                                    	<div class="form-group">
+							                                    	<div class="radio-inline">
+																	  	<label>
+																		    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+																		    One way
+																	  	</label>
+																	</div>
+																	<div class="radio-inline">
+																	  	<label>
+																		    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+																		    Round trip
+																	  	</label>
+																	</div>
+																</div>
+							                                    <div class="form-group">
+							                                    	<label>Booking Date</label>
+							                                        <div class="input-group date" data-provide="datepicker" id="date1">
+													                    <input type="text" class="form-control">
+													                    <span class="input-group-addon">
+													                        <span class="glyphicon glyphicon-th"></span>
+													                    </span>
+													                </div>
+							                                    </div>
+																<div class="form-group">
+																	<label>Currency</label>
+					                                                <div class="">
+					                                                    <select class="form-control">
+					                                                        <option>IDR - Indonesian Rupiah</option>
+					                                                        <option>SGD - Singapore Dollar</option>
+					                                                        <option>USD - US Dollar</option>
+					                                                    </select>
+					                                                </div>
+																</div>
+																<div class="form-group col-md-6 pl0">
+																	<label>Ferry Port Origin</label>
+																	<div class="col-md-6 pl0">
+																		<h3 class="title">Singapore</h3>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="harbourfront">Harbour Front
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="tanahmerah">Tanah Merah
+																			</label>
+																		</div>
+																	</div>
+																	<div class="col-md-6 pl0">
+																		<h3 class="title">Indonesia</h3>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="batamcenter">Batam Center
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="sekupang">Sekupang
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="harbourbay">Harbour Bay
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="nongsapura">Nongsa Pura
+																			</label>
+																		</div>
+																	</div>
+																</div> <!-- kelar Form-Group ferry origin -->
+																<div class="form-group col-md-6 pl0">
+																	<label>Ferry Port Destination</label>
+																	<div class="col-md-6 pl0">
+																		<h3 class="title">Singapore</h3>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="harbourfront">Harbour Front
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="tanahmerah">Tanah Merah
+																			</label>
+																		</div>
+																	</div>
+																</div> <!-- kelar Form-Group ferry destination -->
+						                                    </div>
+					                                    </div>
+					                                    
+					                                    <div class="row">
+					                                    	<div class="col-md-4">
+		                                						<button type="submit" class="full-width icon-check wow fadeInUp">SEARCH NOW</button>
+					                                    	</div>
+					                                    </div>
+					                                </div>
+					                            </form>
+					                        </div> <!-- kelar tab-pane -->
+				                        </div>
 			                        </div>
-			                        
+
 			                        <div class="tab-pane" id="train" role="tabpanel">
-			                            <form>
-			                                <div class="row">
-			                                    <div class="col-md-12">
-													<h3 style="padding:20px 0;" >TRAIN TICKETS</h3>
-			                                        <h4 class="title">Where</h4>
-			                                        <div class="form-group row">
-			                                            <div class="col-xs-6">
-			                                                <label>Leaving From</label>
-			                                                <input type="text" class="input-text full-width" placeholder="enter a city or place name">
-			                                            </div>
-			                                            <div class="col-xs-6">
-			                                                <label>Going To</label>
-			                                                <input type="text" class="input-text full-width" placeholder="enter a city or place name">
-			                                            </div>
-			                                        </div>
-			                                    </div>
-			                                    
-			                                    <div class="col-xs-6 col-md-6">
-			                                        <h4 class="title">When</h4>
-			                                        <div class="form-group">
-			                                            <label>Departure Date</label>
-			                                            <div class="datepicker-wrap">
-			                                                <input type="text" class="input-text full-width hasDatepicker" placeholder="mm/dd/yy" id="dp1488811384142"><img class="ui-datepicker-trigger" src="images/blank.png" alt="" title="">
-			                                            </div>
-			                                        </div>
-			                                    </div>
-			                                    
-			                                    <div class="col-xs-6 col-md-6">
-			                                        <h4 class="title">Who</h4>
-			                                        <div class="form-group">
-			                                            <label>Full Name</label>
-			                                            <input type="text" class="input-text full-width" placeholder="enter your full name">
-			                                        </div>
-			                                    </div>
-			                                    <div class="form-group col-md-3 fixheight">
-			                                        <label class="hidden-xs">&nbsp;</label>
-			                                        <button class="icon-check full-width">SEARCH NOW</button>
-			                                    </div>
-			                                </div>
-			                            </form>
-			                        </div> <!-- kelar ID Train Tab -->
+			                        	<div class="secondary-tab">
+			                        		<ul>
+			                        			<li class="active">
+			                        				<a class="br0" href="#train-discounted" data-toggle="tab">Discounted Voucher</a>
+			                        			</li>
+			                        			<li>
+			                        				<a href="#train-dbooking" data-toggle="tab" aria-expanded="true">Direct Booking</a>
+			                        			</li>
+			                        		</ul>
+			                        	</div>
+
+			                        	<div class="tab-content">
+				                        	<div class="tab-pane active" id="train-discounted" role="tabpanel">
+					                            <form action="#" method="post">
+					                                <div>
+														<h3 style="padding:20px 0;">DISCOUNTED VOUCHERS</h3>
+
+														<div class="row">
+						                                    <div class="col-md-12">
+						                                    	<div class="form-group">
+							                                    	<div class="radio-inline">
+																	  	<label>
+																		    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+																		    One way
+																	  	</label>
+																	</div>
+																	<div class="radio-inline">
+																	  	<label>
+																		    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+																		    Round trip
+																	  	</label>
+																	</div>
+																</div>
+							                                    <div class="form-group">
+							                                    	<label>Booking Date</label>
+							                                        <div class="input-group date" data-provide="datepicker" id="date1">
+													                    <input type="text" class="form-control">
+													                    <span class="input-group-addon">
+													                        <span class="glyphicon glyphicon-th"></span>
+													                    </span>
+													                </div>
+							                                    </div>
+																<div class="form-group">
+																	<label>Currency</label>
+					                                                <div class="">
+					                                                    <select class="form-control">
+					                                                        <option>IDR - Indonesian Rupiah</option>
+					                                                        <option>SGD - Singapore Dollar</option>
+					                                                        <option>USD - US Dollar</option>
+					                                                    </select>
+					                                                </div>
+																</div>
+																<div class="form-group col-md-6 pl0">
+																	<label>Train Station Origin</label>
+																	<div class="col-md-6 pl0">
+																		<h3 class="title">Singapore</h3>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="harbourfront">Harbour Front
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="tanahmerah">Tanah Merah
+																			</label>
+																		</div>
+																	</div>
+																	<div class="col-md-6 pl0">
+																		<h3 class="title">Indonesia</h3>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="batamcenter">Batam Center
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="sekupang">Sekupang
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="harbourbay">Harbour Bay
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="nongsapura">Nongsa Pura
+																			</label>
+																		</div>
+																	</div>
+																</div> <!-- kelar Form-Group ferry origin -->
+																<div class="form-group col-md-6 pl0">
+																	<label>Train Station Destination</label>
+																	<div class="col-md-6 pl0">
+																		<h3 class="title">Singapore</h3>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="harbourfront">Harbour Front
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="tanahmerah">Tanah Merah
+																			</label>
+																		</div>
+																	</div>
+																</div> <!-- kelar Form-Group ferry destination -->
+						                                    </div>
+					                                    </div>
+					                                    
+					                                    <div class="row">
+					                                    	<div class="col-md-4">
+		                                						<button type="submit" class="full-width icon-check wow fadeInUp">SEARCH NOW</button>
+					                                    	</div>
+					                                    </div>
+					                                </div>
+					                            </form>
+					                        </div>
+					                        <div class="tab-pane" id="train-dbooking" role="tabpanel">
+					                            <form action="#" method="post">
+					                                <div>
+														<h3 style="padding:20px 0;" >DIRECT BOOKINGS</h3>
+														
+														<div class="row">
+						                                    <div class="col-md-12">
+						                                    	<div class="form-group">
+							                                    	<div class="radio-inline">
+																	  	<label>
+																		    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+																		    One way
+																	  	</label>
+																	</div>
+																	<div class="radio-inline">
+																	  	<label>
+																		    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+																		    Round trip
+																	  	</label>
+																	</div>
+																</div>
+							                                    <div class="form-group">
+							                                    	<label>Booking Date</label>
+							                                        <div class="input-group date" data-provide="datepicker" id="date1">
+													                    <input type="text" class="form-control">
+													                    <span class="input-group-addon">
+													                        <span class="glyphicon glyphicon-th"></span>
+													                    </span>
+													                </div>
+							                                    </div>
+																<div class="form-group">
+																	<label>Currency</label>
+					                                                <div class="">
+					                                                    <select class="form-control">
+					                                                        <option>IDR - Indonesian Rupiah</option>
+					                                                        <option>SGD - Singapore Dollar</option>
+					                                                        <option>USD - US Dollar</option>
+					                                                    </select>
+					                                                </div>
+																</div>
+																<div class="form-group col-md-6 pl0">
+																	<label>Ferry Port Origin</label>
+																	<div class="col-md-6 pl0">
+																		<h3 class="title">Singapore</h3>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="harbourfront">Harbour Front
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="tanahmerah">Tanah Merah
+																			</label>
+																		</div>
+																	</div>
+																	<div class="col-md-6 pl0">
+																		<h3 class="title">Indonesia</h3>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="batamcenter">Batam Center
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="sekupang">Sekupang
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="harbourbay">Harbour Bay
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="nongsapura">Nongsa Pura
+																			</label>
+																		</div>
+																	</div>
+																</div> <!-- kelar Form-Group ferry origin -->
+																<div class="form-group col-md-6 pl0">
+																	<label>Ferry Port Destination</label>
+																	<div class="col-md-6 pl0">
+																		<h3 class="title">Singapore</h3>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="harbourfront">Harbour Front
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="tanahmerah">Tanah Merah
+																			</label>
+																		</div>
+																	</div>
+																</div> <!-- kelar Form-Group ferry destination -->
+						                                    </div>
+					                                    </div>
+					                                    
+					                                    <div class="row">
+					                                    	<div class="col-md-4">
+		                                						<button type="submit" class="full-width icon-check wow fadeInUp">SEARCH NOW</button>
+					                                    	</div>
+					                                    </div>
+					                                </div>
+					                            </form>
+					                        </div> <!-- kelar tab-pane -->
+				                        </div>
+			                        </div> <!-- kelar Tab-Pane train -->
 
 			                        <div class="tab-pane" id="bus" role="tabpanel">
-			                            <form>
-			                                <div class="row">
-			                                    <div class="col-md-12">
-													<h3 style="padding:20px 0;" >BUS TICKETS</h3>
-			                                        <h4 class="title">Where</h4>
-			                                        <div class="form-group row">
-			                                            <div class="col-xs-6">
-			                                                <label>Leaving From</label>
-			                                                <input type="text" class="input-text full-width" placeholder="enter a city or place name">
-			                                            </div>
-			                                            <div class="col-xs-6">
-			                                                <label>Going To</label>
-			                                                <input type="text" class="input-text full-width" placeholder="enter a city or place name">
-			                                            </div>
-			                                        </div>
-			                                    </div>
-			                                    
-			                                    <div class="col-xs-6 col-md-6">
-			                                        <h4 class="title">When</h4>
-			                                        <div class="form-group">
-			                                            <label>Departure Date</label>
-			                                            <div class="datepicker-wrap">
-			                                                <input type="text" class="input-text full-width hasDatepicker" placeholder="mm/dd/yy" id="dp1488811384142"><img class="ui-datepicker-trigger" src="images/blank.png" alt="" title="">
-			                                            </div>
-			                                        </div>
-			                                    </div>
-			                                    
-			                                    <div class="col-xs-6 col-md-6">
-			                                        <h4 class="title">Who</h4>
-			                                        <div class="form-group">
-			                                            <label>Full Name</label>
-			                                            <input type="text" class="input-text full-width" placeholder="enter your full name">
-			                                        </div>
-			                                    </div>
-			                                    <div class="form-group col-md-3 fixheight">
-			                                        <label class="hidden-xs">&nbsp;</label>
-			                                        <button class="icon-check full-width">SEARCH NOW</button>
-			                                    </div>
-			                                </div>
-			                            </form>
-			                        </div> <!-- kelar ID Bus Tab -->
+			                        	<div class="secondary-tab">
+			                        		<ul>
+			                        			<li class="active">
+			                        				<a class="br0" href="#bus-discounted" data-toggle="tab">Discounted Voucher</a>
+			                        			</li>
+			                        			<li>
+			                        				<a href="#bus-dbooking" data-toggle="tab" aria-expanded="true">Direct Booking</a>
+			                        			</li>
+			                        		</ul>
+			                        	</div>
+
+			                        	<div class="tab-content">
+				                        	<div class="tab-pane active" id="bus-discounted" role="tabpanel">
+					                            <form action="#" method="post">
+					                                <div>
+														<h3 style="padding:20px 0;">DISCOUNTED VOUCHERS</h3>
+
+														<div class="row">
+						                                    <div class="col-md-12">
+						                                    	<div class="form-group">
+							                                    	<div class="radio-inline">
+																	  	<label>
+																		    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+																		    One way
+																	  	</label>
+																	</div>
+																	<div class="radio-inline">
+																	  	<label>
+																		    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+																		    Round trip
+																	  	</label>
+																	</div>
+																</div>
+							                                    <div class="form-group">
+							                                    	<label>Booking Date</label>
+							                                        <div class="input-group date" data-provide="datepicker" id="date1">
+													                    <input type="text" class="form-control">
+													                    <span class="input-group-addon">
+													                        <span class="glyphicon glyphicon-th"></span>
+													                    </span>
+													                </div>
+							                                    </div>
+																<div class="form-group">
+																	<label>Currency</label>
+					                                                <div class="">
+					                                                    <select class="form-control">
+					                                                        <option>IDR - Indonesian Rupiah</option>
+					                                                        <option>SGD - Singapore Dollar</option>
+					                                                        <option>USD - US Dollar</option>
+					                                                    </select>
+					                                                </div>
+																</div>
+																<div class="form-group col-md-6 pl0">
+																	<label>Bus Terminal Origin</label>
+																	<div class="col-md-6 pl0">
+																		<h3 class="title">Singapore</h3>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="harbourfront">Harbour Front
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="tanahmerah">Tanah Merah
+																			</label>
+																		</div>
+																	</div>
+																	<div class="col-md-6 pl0">
+																		<h3 class="title">Indonesia</h3>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="batamcenter">Batam Center
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="sekupang">Sekupang
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="harbourbay">Harbour Bay
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="nongsapura">Nongsa Pura
+																			</label>
+																		</div>
+																	</div>
+																</div> <!-- kelar Form-Group ferry origin -->
+																<div class="form-group col-md-6 pl0">
+																	<label>Bus Terminal Destination</label>
+																	<div class="col-md-6 pl0">
+																		<h3 class="title">Singapore</h3>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="harbourfront">Harbour Front
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="tanahmerah">Tanah Merah
+																			</label>
+																		</div>
+																	</div>
+																</div> <!-- kelar Form-Group ferry destination -->
+						                                    </div>
+					                                    </div>
+					                                    
+					                                    <div class="row">
+					                                    	<div class="col-md-4">
+		                                						<button type="submit" class="full-width icon-check wow fadeInUp">SEARCH NOW</button>
+					                                    	</div>
+					                                    </div>
+					                                </div>
+					                            </form>
+					                        </div>
+					                        <div class="tab-pane" id="bus-dbooking" role="tabpanel">
+					                            <form action="#" method="post">
+					                                <div>
+														<h3 style="padding:20px 0;" >DIRECT BOOKINGS</h3>
+														
+														<div class="row">
+						                                    <div class="col-md-12">
+						                                    	<div class="form-group">
+							                                    	<div class="radio-inline">
+																	  	<label>
+																		    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+																		    One way
+																	  	</label>
+																	</div>
+																	<div class="radio-inline">
+																	  	<label>
+																		    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+																		    Round trip
+																	  	</label>
+																	</div>
+																</div>
+							                                    <div class="form-group">
+							                                    	<label>Booking Date</label>
+							                                        <div class="input-group date" data-provide="datepicker" id="date1">
+													                    <input type="text" class="form-control">
+													                    <span class="input-group-addon">
+													                        <span class="glyphicon glyphicon-th"></span>
+													                    </span>
+													                </div>
+							                                    </div>
+																<div class="form-group">
+																	<label>Currency</label>
+					                                                <div class="">
+					                                                    <select class="form-control">
+					                                                        <option>IDR - Indonesian Rupiah</option>
+					                                                        <option>SGD - Singapore Dollar</option>
+					                                                        <option>USD - US Dollar</option>
+					                                                    </select>
+					                                                </div>
+																</div>
+																<div class="form-group col-md-6 pl0">
+																	<label>Ferry Port Origin</label>
+																	<div class="col-md-6 pl0">
+																		<h3 class="title">Singapore</h3>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="harbourfront">Harbour Front
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="tanahmerah">Tanah Merah
+																			</label>
+																		</div>
+																	</div>
+																	<div class="col-md-6 pl0">
+																		<h3 class="title">Indonesia</h3>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="batamcenter">Batam Center
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="sekupang">Sekupang
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="harbourbay">Harbour Bay
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="nongsapura">Nongsa Pura
+																			</label>
+																		</div>
+																	</div>
+																</div> <!-- kelar Form-Group ferry origin -->
+																<div class="form-group col-md-6 pl0">
+																	<label>Ferry Port Destination</label>
+																	<div class="col-md-6 pl0">
+																		<h3 class="title">Singapore</h3>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="harbourfront">Harbour Front
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="tanahmerah">Tanah Merah
+																			</label>
+																		</div>
+																	</div>
+																</div> <!-- kelar Form-Group ferry destination -->
+						                                    </div>
+					                                    </div>
+					                                    
+					                                    <div class="row">
+					                                    	<div class="col-md-4">
+		                                						<button type="submit" class="full-width icon-check wow fadeInUp">SEARCH NOW</button>
+					                                    	</div>
+					                                    </div>
+					                                </div>
+					                            </form>
+					                        </div> <!-- kelar tab-pane -->
+				                        </div>
+			                        </div> <!-- kelar Tab-Pane bus -->
 
 			                        <div class="tab-pane" id="cruise" role="tabpanel">
-			                            <form>
-			                                <div class="row">
-			                                    <div class="col-md-12">
-													<h3 style="padding:20px 0;" >CRUISE TICKETS</h3>
-			                                        <h4 class="title">Where</h4>
-			                                        <div class="form-group row">
-			                                            <div class="col-xs-6">
-			                                                <label>Leaving From</label>
-			                                                <input type="text" class="input-text full-width" placeholder="enter a city or place name">
-			                                            </div>
-			                                            <div class="col-xs-6">
-			                                                <label>Going To</label>
-			                                                <input type="text" class="input-text full-width" placeholder="enter a city or place name">
-			                                            </div>
-			                                        </div>
-			                                    </div>
-			                                    
-			                                    <div class="col-xs-6 col-md-12">
-			                                        <h4 class="title">When</h4>
-			                                        <div class="form-group">
-			                                            <label>Departure Date</label>
-			                                            <div class="datepicker-wrap">
-			                                                <input type="text" class="input-text full-width hasDatepicker" placeholder="mm/dd/yy" id="dp1488811384142"><img class="ui-datepicker-trigger" src="images/blank.png" alt="" title="">
-			                                            </div>
-			                                        </div>
-			                                    </div>
-			                                    
-			                                    <div class="col-xs-6 col-md-12">
-			                                        <h4 class="title">Who</h4>
-			                                        <div class="form-group">
-			                                            <label>Full Name</label>
-			                                            <input type="text" class="input-text full-width" placeholder="enter your full name">
-			                                        </div>
-			                                    </div>
-			                                    <div class="form-group col-md-3 fixheight">
-			                                        <label class="hidden-xs">&nbsp;</label>
-			                                        <button class="icon-check full-width">SEARCH NOW</button>
-			                                    </div>
-			                                </div>
-			                            </form>
-			                        </div> <!-- kelar ID Train Tab -->
+			                        	<div class="secondary-tab">
+			                        		<ul>
+			                        			<li class="active">
+			                        				<a class="br0" href="#cruise-discounted" data-toggle="tab">Discounted Voucher</a>
+			                        			</li>
+			                        			<li>
+			                        				<a href="#cruise-dbooking" data-toggle="tab" aria-expanded="true">Direct Booking</a>
+			                        			</li>
+			                        		</ul>
+			                        	</div>
+
+			                        	<div class="tab-content">
+				                        	<div class="tab-pane active" id="cruise-discounted" role="tabpanel">
+					                            <form action="#" method="post">
+					                                <div>
+														<h3 style="padding:20px 0;">DISCOUNTED VOUCHERS</h3>
+
+														<div class="row">
+						                                    <div class="col-md-12">
+						                                    	<div class="form-group">
+							                                    	<div class="radio-inline">
+																	  	<label>
+																		    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+																		    One way
+																	  	</label>
+																	</div>
+																	<div class="radio-inline">
+																	  	<label>
+																		    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+																		    Round trip
+																	  	</label>
+																	</div>
+																</div>
+							                                    <div class="form-group">
+							                                    	<label>Booking Date</label>
+							                                        <div class="input-group date" data-provide="datepicker" id="date1">
+													                    <input type="text" class="form-control">
+													                    <span class="input-group-addon">
+													                        <span class="glyphicon glyphicon-th"></span>
+													                    </span>
+													                </div>
+							                                    </div>
+																<div class="form-group">
+																	<label>Currency</label>
+					                                                <div class="">
+					                                                    <select class="form-control">
+					                                                        <option>IDR - Indonesian Rupiah</option>
+					                                                        <option>SGD - Singapore Dollar</option>
+					                                                        <option>USD - US Dollar</option>
+					                                                    </select>
+					                                                </div>
+																</div>
+																<div class="form-group col-md-6 pl0">
+																	<label>Ferry Port Origin</label>
+																	<div class="col-md-6 pl0">
+																		<h3 class="title">Singapore</h3>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="harbourfront">Harbour Front
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="tanahmerah">Tanah Merah
+																			</label>
+																		</div>
+																	</div>
+																	<div class="col-md-6 pl0">
+																		<h3 class="title">Indonesia</h3>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="batamcenter">Batam Center
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="sekupang">Sekupang
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="harbourbay">Harbour Bay
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="nongsapura">Nongsa Pura
+																			</label>
+																		</div>
+																	</div>
+																</div> <!-- kelar Form-Group ferry origin -->
+																<div class="form-group col-md-6 pl0">
+																	<label>Ferry Port Destination</label>
+																	<div class="col-md-6 pl0">
+																		<h3 class="title">Singapore</h3>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="harbourfront">Harbour Front
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="tanahmerah">Tanah Merah
+																			</label>
+																		</div>
+																	</div>
+																</div> <!-- kelar Form-Group ferry destination -->
+						                                    </div>
+					                                    </div>
+					                                    
+					                                    <div class="row">
+					                                    	<div class="col-md-4">
+		                                						<button type="submit" class="full-width icon-check wow fadeInUp">SEARCH NOW</button>
+					                                    	</div>
+					                                    </div>
+					                                </div>
+					                            </form>
+					                        </div>
+					                        <div class="tab-pane" id="cruise-dbooking" role="tabpanel">
+					                            <form action="#" method="post">
+					                                <div>
+														<h3 style="padding:20px 0;" >DIRECT BOOKINGS</h3>
+														
+														<div class="row">
+						                                    <div class="col-md-12">
+						                                    	<div class="form-group">
+							                                    	<div class="radio-inline">
+																	  	<label>
+																		    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+																		    One way
+																	  	</label>
+																	</div>
+																	<div class="radio-inline">
+																	  	<label>
+																		    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+																		    Round trip
+																	  	</label>
+																	</div>
+																</div>
+							                                    <div class="form-group">
+							                                    	<label>Booking Date</label>
+							                                        <div class="input-group date" data-provide="datepicker" id="date1">
+													                    <input type="text" class="form-control">
+													                    <span class="input-group-addon">
+													                        <span class="glyphicon glyphicon-th"></span>
+													                    </span>
+													                </div>
+							                                    </div>
+																<div class="form-group">
+																	<label>Currency</label>
+					                                                <div class="">
+					                                                    <select class="form-control">
+					                                                        <option>IDR - Indonesian Rupiah</option>
+					                                                        <option>SGD - Singapore Dollar</option>
+					                                                        <option>USD - US Dollar</option>
+					                                                    </select>
+					                                                </div>
+																</div>
+																<div class="form-group col-md-6 pl0">
+																	<label>Ferry Port Origin</label>
+																	<div class="col-md-6 pl0">
+																		<h3 class="title">Singapore</h3>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="harbourfront">Harbour Front
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="tanahmerah">Tanah Merah
+																			</label>
+																		</div>
+																	</div>
+																	<div class="col-md-6 pl0">
+																		<h3 class="title">Indonesia</h3>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="batamcenter">Batam Center
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="sekupang">Sekupang
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="harbourbay">Harbour Bay
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="nongsapura">Nongsa Pura
+																			</label>
+																		</div>
+																	</div>
+																</div> <!-- kelar Form-Group ferry origin -->
+																<div class="form-group col-md-6 pl0">
+																	<label>Ferry Port Destination</label>
+																	<div class="col-md-6 pl0">
+																		<h3 class="title">Singapore</h3>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="harbourfront">Harbour Front
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="tanahmerah">Tanah Merah
+																			</label>
+																		</div>
+																	</div>
+																</div> <!-- kelar Form-Group ferry destination -->
+						                                    </div>
+					                                    </div>
+					                                    
+					                                    <div class="row">
+					                                    	<div class="col-md-4">
+		                                						<button type="submit" class="full-width icon-check wow fadeInUp">SEARCH NOW</button>
+					                                    	</div>
+					                                    </div>
+					                                </div>
+					                            </form>
+					                        </div> <!-- kelar tab-pane -->
+				                        </div>
+			                        </div> <!-- kelar Tab-Pane bus -->
+
 			                    </div> <!-- kelar Search-tab-content -->
 			                </div>
 	                	</div>
@@ -800,7 +1653,7 @@
 
 
         <script type="text/javascript">
-            $('#date1, #date2').datepicker({
+            $('#date1, #car-date1, #car-date2, #fleet-date1, #fleet-date2').datepicker({
 			    format: 'mm/dd/yyyy',
 			    startDate: '-1d',
 			    todayBtn: true,
