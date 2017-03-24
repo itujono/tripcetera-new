@@ -5,8 +5,16 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700');
 
 
-body, h1, h2, h3, h4, h5, h6 {
+body, h1, h2, h5, h6 {
 	font-family: 'Hind Madurai', 'Poppins', sans-serif;
+}
+
+h3, h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+    font-weight: 700;
 }
 
 h1 {
@@ -48,6 +56,15 @@ body.scroll-hide, html.scroll-hide {
 
 .mt40 {
     margin-top: 40px;
+}
+
+.pl0 {
+    padding-left: 0 !important;
+}
+
+.plr0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .just-center {
@@ -2329,6 +2346,44 @@ figure img {
     z-index: -1;
 }
 
+    .search-holder h4.title {
+        margin: 10px 0;
+        height: 20px;
+        color: #999;
+    }
+
+    .search-holder .fixheight {
+        padding-top: 40px;
+    }
+
+    .search-holder form label {
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        display: block;
+        margin-bottom: 15px;
+        font-weight: normal;
+        font-size: 12px;
+    }
+
+    .search-holder .radio label {
+        text-transform: none;
+        color: #777;
+        letter-spacing: .5px;
+    }
+
+    .search-holder .radio-inline input[type=radio] {
+        top: -2px;
+    }
+
+    .search-holder .radio-inline > label {
+        text-transform: none;
+    }
+
+    .search-holder .form-group > label {
+        color: #999;
+        font-weight: 600;
+    }
+
 .search-tab-content .tab-pane.active {
     display: block;
 }
@@ -2336,24 +2391,6 @@ figure img {
 .tab-pane [class^="col-"], .tab-pane [class*=" col-"] {
     padding-left: 10px;
     padding-right: 10px;
-}
-
-.search-holder h4.title {
-    margin: 10px 0;
-    height: 20px;
-    color: #999;
-}
-
-.search-holder .fixheight {
-    padding-top: 40px;
-}
-
-.search-holder form label {
-    text-transform: uppercase;
-    display: block;
-    margin-bottom: 5px;
-    font-weight: normal;
-    font-size: 12px;
 }
 
 input.input-text, textarea, span.custom-select {
@@ -2674,6 +2711,17 @@ ul.search-tabs li a {
     padding: 0 30px;
 }
 
+#transportation h3.title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#transportation .form-group {
+    margin-bottom: 35px;
+}
+
 
 
 
@@ -2709,6 +2757,10 @@ ul.search-tabs li a {
                     border: 1px solid #ddd;
                     border-bottom: transparent;
                     border-radius: 2px;
+                }
+
+                .secondary-tab ul li a:hover {
+                    text-decoration: none;
                 }
 
                     .secondary-tab ul li a.br0 {
