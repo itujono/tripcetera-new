@@ -2365,7 +2365,7 @@ figure img {
         font-size: 12px;
     }
 
-    .search-holder .radio label {
+    .search-holder .radio label, .search-holder .radio-inline label {
         text-transform: none;
         color: #777;
         letter-spacing: .5px;

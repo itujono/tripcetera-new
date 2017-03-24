@@ -153,7 +153,8 @@
 				                        	<div class="tab-pane active" id="discounted" role="tabpanel">
 					                            <form action="#" method="post">
 					                                <div>
-														<h3 style="padding:20px 10px;" >AIRLINE TICKETS</h3>
+														<h3 style="padding:20px 0;">DISCOUNTED VOUCHERS</h3>
+
 														<div class="row">
 						                                    <div class="col-md-12">
 						                                    	<div class="form-group">
@@ -170,6 +171,15 @@
 																	  	</label>
 																	</div>
 																</div>
+							                                    <div class="form-group">
+							                                    	<label>Booking Date</label>
+							                                        <div class="input-group date" data-provide="datepicker" id="date1">
+													                    <input type="text" class="form-control">
+													                    <span class="input-group-addon">
+													                        <span class="glyphicon glyphicon-th"></span>
+													                    </span>
+													                </div>
+							                                    </div>
 																<div class="form-group">
 																	<label>Currency</label>
 					                                                <div class="">
@@ -234,123 +244,121 @@
 																			</label>
 																		</div>
 																	</div>
-																</div> <!-- kelar Form-Group ferry origin -->
+																</div> <!-- kelar Form-Group ferry destination -->
 						                                    </div>
 					                                    </div>
 					                                    
 					                                    <div class="row">
-					                                    	<div class="col-md-12">
-							                                    <div class="form-group">
-							                                    	<label for="txtWherePlace">When?</label>
-							                                        <div class="input-group date" data-provide="datepicker" id="date1">
-													                    <input type="text" class="form-control" />
-													                    <span class="input-group-addon">
-													                        <span class="glyphicon glyphicon-th"></span>
-													                    </span>
-													                </div>
-							                                    </div>
-					                                    	</div> <!-- kelar Col-md-12 -->
+					                                    	<div class="col-md-4">
+		                                						<button type="submit" class="full-width icon-check wow fadeInUp">SEARCH NOW</button>
+					                                    	</div>
 					                                    </div>
 					                                </div>
 					                            </form>
 					                        </div>
 					                        <div class="tab-pane" id="dbooking" role="tabpanel">
 					                            <form action="#" method="post">
-					                                <div class="row">
-														<h3 style="padding:20px 10px;" >DIRECT TICKETS</h3>
-					                                    <div class="col-md-12">
-					                                        <div class="form-group">
-					                                            <label>Leaving From</label>
-					                                            <input type="text" class="input-text full-width" placeholder="city, distirct or specific airpot">
-					                                        </div>
-					                                        <div class="form-group">
-					                                            <label>Going To</label>
-					                                            <input type="text" class="input-text full-width" placeholder="city, distirct or specific airpot">
-					                                        </div>
+					                                <div>
+														<h3 style="padding:20px 10px;" >DIRECT BOOKINGS</h3>
+														
+														<div class="row">
+						                                    <div class="col-md-12">
+						                                    	<div class="form-group">
+							                                    	<div class="radio-inline">
+																	  	<label>
+																		    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+																		    One way
+																	  	</label>
+																	</div>
+																	<div class="radio-inline">
+																	  	<label>
+																		    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+																		    Round trip
+																	  	</label>
+																	</div>
+																</div>
+							                                    <div class="form-group">
+							                                    	<label>Booking Date</label>
+							                                        <div class="input-group date" data-provide="datepicker" id="date1">
+													                    <input type="text" class="form-control">
+													                    <span class="input-group-addon">
+													                        <span class="glyphicon glyphicon-th"></span>
+													                    </span>
+													                </div>
+							                                    </div>
+																<div class="form-group">
+																	<label>Currency</label>
+					                                                <div class="">
+					                                                    <select class="form-control">
+					                                                        <option>IDR - Indonesian Rupiah</option>
+					                                                        <option>SGD - Singapore Dollar</option>
+					                                                        <option>USD - US Dollar</option>
+					                                                    </select>
+					                                                </div>
+																</div>
+																<div class="form-group col-md-6 pl0">
+																	<label>Ferry Port Origin</label>
+																	<div class="col-md-6 pl0">
+																		<h3 class="title">Singapore</h3>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="harbourfront">Harbour Front
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="tanahmerah">Tanah Merah
+																			</label>
+																		</div>
+																	</div>
+																	<div class="col-md-6 pl0">
+																		<h3 class="title">Indonesia</h3>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="batamcenter">Batam Center
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="sekupang">Sekupang
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="harbourbay">Harbour Bay
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="nongsapura">Nongsa Pura
+																			</label>
+																		</div>
+																	</div>
+																</div> <!-- kelar Form-Group ferry origin -->
+																<div class="form-group col-md-6 pl0">
+																	<label>Ferry Port Destination</label>
+																	<div class="col-md-6 pl0">
+																		<h3 class="title">Singapore</h3>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="harbourfront">Harbour Front
+																			</label>
+																		</div>
+																		<div class="radio">
+																			<label>
+																				<input type="radio" name="optionsRadios" value="tanahmerah">Tanah Merah
+																			</label>
+																		</div>
+																	</div>
+																</div> <!-- kelar Form-Group ferry destination -->
+						                                    </div>
 					                                    </div>
 					                                    
-					                                    <div class="col-md-6">
-					                                        <label>Departing On</label>
-					                                        <div class="form-group row">
-					                                            <div class="col-xs-6">
-					                                                <div class="datepicker-wrap">
-					                                                    <input type="text" name="date_from" class="input-text full-width hasDatepicker" placeholder="mm/dd/yy" id="dp1488811384134">
-					                                                </div>
-					                                            </div>
-					                                            <div class="col-xs-6">
-					                                                <div class="">
-					                                                    <select class="form-control">
-					                                                        <option>anytime</option>
-					                                                        <option>morning</option>
-					                                                    </select>
-					                                                </div>
-					                                            </div>
-					                                        </div>
-					                                        <label>Arriving On</label>
-					                                        <div class="form-group row">
-					                                            <div class="col-xs-6">
-					                                                <div class="datepicker-wrap">
-					                                                    <input type="text" name="date_to" class="input-text full-width hasDatepicker" placeholder="mm/dd/yy" id="dp1488811384135">
-					                                                </div>
-					                                            </div>
-					                                            <div class="col-xs-6">
-					                                                <div class="">
-					                                                    <select class="form-control">
-					                                                        <option>anytime</option>
-					                                                        <option>morning</option>
-					                                                    </select>
-					                                                </div>
-					                                            </div>
-					                                        </div>
+					                                    <div class="row">
+					                                    	<div class="col-md-4">
+		                                						<button type="submit" class="full-width icon-check wow fadeInUp">SEARCH NOW</button>
+					                                    	</div>
 					                                    </div>
-					                                    
-					                                    <div class="col-md-6">
-					                                        <div class="form-group row">
-					                                            <div class="col-xs-3">
-					                                                <label>Adults</label>
-					                                                <div class="">
-					                                                    <select class="form-control">
-					                                                        <option>01</option>
-					                                                        <option>02</option>
-					                                                        <option>03</option>
-					                                                        <option>04</option>
-					                                                    </select>
-					                                                </div>
-					                                            </div>
-					                                            <div class="col-xs-3">
-					                                                <label>Kids</label>
-					                                                <div class="">
-					                                                    <select class="form-control">
-					                                                        <option>01</option>
-					                                                        <option>02</option>
-					                                                        <option>03</option>
-					                                                        <option>04</option>
-					                                                    </select>
-					                                                </div>
-					                                            </div>
-					                                            <div class="col-xs-6">
-					                                                <label>Promo Code</label>
-					                                                <input type="text" class="input-text full-width" placeholder="type here">
-					                                            </div>
-					                                        </div>
-					                                        <div class="form-group row">
-					                                            <div class="col-xs-3">
-					                                                <label>Infants</label>
-					                                                <div class="">
-					                                                    <select class="form-control">
-					                                                        <option>01</option>
-					                                                        <option>02</option>
-					                                                        <option>03</option>
-					                                                        <option>04</option>
-					                                                    </select>
-					                                                </div>
-					                                            </div>
-					                                            <div class="col-xs-6 pull-right">
-					                                                <label>&nbsp;</label>
-					                                                <button class="full-width icon-check">SEARCH NOW</button>
-					                                            </div>
-					                                        </div>
-					                                    </div> <!-- kelar col-md-6 -->
 					                                </div>
 					                            </form>
 					                        </div> <!-- kelar tab-pane -->
@@ -784,7 +792,8 @@
 	    <script src="assets/js/wow.min.js"></script>
 		<script type='text/javascript' src='assets/js/jquery.customSelect.js'></script>
 	    <script src="assets/js/owl.carousel.js"></script>
-	    <script src="assets/js/theme-scripts.js"></scriptdate1	    <script src="assets/js/bootstrap-datepicker.min.js"></script>
+	    <script src="assets/js/theme-scripts.js"></script>
+	    <script src="assets/js/bootstrap-datepicker.min.js"></script>
         <script>
             new WOW().init();
         </script>
