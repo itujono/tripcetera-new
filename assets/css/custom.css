@@ -471,7 +471,7 @@ nav.navbar.shrink .navbar-toggle {
 .panel-seachbox {
     padding: 25px;
     border-radius: 2px;
-    background-color: #efefef;
+    background-color: rgba(239, 239, 239, 0.8);
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.25), 0 17px 50px 0 rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.25), 0 17px 50px 0 rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.25), 0 17px 50px 0 rgba(0, 0, 0, 0.25);
@@ -2449,7 +2449,7 @@ input.input-text, select, textarea, span.custom-select {
     overflow: hidden;
     font-size: 0.9167em;
     font-weight: bold;
-    background: #98ce44;
+    background: #ea5d26;
     height: 34px;
     line-height: 34px;
     border: none;
@@ -2465,7 +2465,7 @@ input.input-text, select, textarea, span.custom-select {
     right: 0;
     width: 30px;
     height: 100%;
-    background: url(../../images/icon-check.png) no-repeat center center #7db921;
+    background: url(../../images/icon-check.png) no-repeat center center #da4e17;
 }
 
 .selector {
