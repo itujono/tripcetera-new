@@ -2162,11 +2162,20 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
 
 .main-text {
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
     width: 100%;
+}
+
+.main-text > div {
+    padding:0 20px;
+}
+
+.main-text .img-main {
+    display: block;
+    margin: 0 auto;
 }
 
 #accomodation .main-text {
@@ -2332,33 +2341,34 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
 .slidex1 {
   background: url(../../images/slider2/1.jpg)no-repeat center;
       background-size: cover;
-    animation:fade2 8s infinite;
--webkit-animation:fade2 8s infinite;
+    animation:fade 18s infinite;
+-webkit-animation:fade 18s infinite;
 
 } 
 .slidex2 {
   background: url(../../images/slider2/2.jpg)no-repeat center;
       background-size: cover;
-    animation:fade2 8s infinite;
--webkit-animation:fade2 8s infinite;
+    animation:fade2 18s infinite;
+-webkit-animation:fade2 18s infinite;
 }
 .slidex3 {
     background: url(../../images/slider2/3.jpg)no-repeat center;
       background-size: cover;
-    animation:fade2 8s infinite;
--webkit-animation:fade2 8s infinite;
+    animation:fade3 18s infinite;
+-webkit-animation:fade3 18s infinite;
 }
 .slidex4 {
     background: url(../../images/slider2/4.jpg)no-repeat center;
       background-size: cover;
-    animation:fade2 8s infinite;
--webkit-animation:fade2 8s infinite;
+    animation:fade4 18s infinite;
+-webkit-animation:fade4 18s infinite;
 }
+
 @keyframes fade
 {
   0%   {opacity:1}
   33.333% { opacity: 1}
-  66.666% { opacity: 1}
+  66.666% { opacity: 0}
   100% { opacity: 0}
 }
 @keyframes fade2
@@ -2374,6 +2384,13 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
   33.333% { opacity: 0}
   66.666% { opacity: 1}
   100% { opacity: 0}
+}
+@keyframes fade4
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
 }
 
 
