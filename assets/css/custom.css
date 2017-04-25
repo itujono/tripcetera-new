@@ -275,12 +275,13 @@ img.logo {
 /* ini mungkin adalah Nav sesungguhnya heheh */
 
 header {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 20;
     width: 100%;
     background: transparent;
+    -moz-background: transparent;
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
@@ -1780,7 +1781,12 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
 
 /* owl carousel wak heheh */
 
-.hero-header-1 {
+#hero-header-2 {
+    max-height:500px;
+    overflow:hidden;
+}
+
+.hero-header-1, .hero-header-2 {
     position: relative;
     width: 100%;
     margin-top: -87px;
@@ -1791,7 +1797,11 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
     position: relative;
 }
 
-.hero-header-1 .slide-1, .hero-header-1 .slide-2, .hero-header-1 .slide-3 {
+.hero-header-2 .slide {
+    position:inherit;
+}
+
+.hero-header-1 .slide-1, .hero-header-1 .slide-2, .hero-header-1 .slide-3, .hero-header-2 .slide-1, .hero-header-2 .slide-2, .hero-header-2 .slide-3, .hero-header-2 .slide-4 {
     padding: 60px 0;
     min-height: 700px;
     background-repeat: no-repeat;
@@ -1799,7 +1809,7 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
     background-position: center center;
 }
 
-.hero-header-1 .slide .container {
+.hero-header-1 .slide .container, .hero-header-2 .slide .container {
     margin-bottom: 120px;
 }
 
@@ -1813,12 +1823,39 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
     background-size: cover;
 }
 
-.hero-header-1 .slide-3 {
+.hero-header-1 .slide-3  {
     background: url(../../images/slider/3.jpg) no-repeat #222;
     background-size: cover;
 }
 
-.hero-header-1 .overlay {
+.hero-header-2 .slide-1 {
+    background: url(../../images/slider2/1.jpg) no-repeat #222;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-header-2 .slide-2
+{
+    background: url(../../images/slider2/2.jpg) no-repeat #222;
+    background-size: cover;
+    background-position: center; 
+} 
+
+.hero-header-2 .slide-3
+{
+    background: url(../../images/slider2/3.jpg) no-repeat #222;
+    background-size: cover;
+    background-position: center; 
+}
+
+.hero-header-2 .slide-4
+{
+    background: url(../../images/slider2/4.jpg) no-repeat #222;
+    background-size: cover;
+    background-position: center; 
+}
+
+.hero-header-1 .overlay, .hero-header-2 .overlay {
     background-color: rgb(0, 0, 0);
     opacity: .2;
     position: absolute;
@@ -1828,13 +1865,13 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
     top: -1px;
 }
 
-.hero-header-1 .text-wrapper {
+.hero-header-1 .text-wrapper, .hero-header-2 .text-wrapper {
 	text-align: center;
     width: 75%;
     margin: 130px auto 0;
 }
 
-.hero-header-1 h1 {
+.hero-header-1 h1, .hero-header-2 h1 {
 	text-align: center;
     font-weight: 600;
     color: #FFF;
@@ -1844,24 +1881,28 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
     -moz-text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.68);
 }
 
-.hero-header-1 p {
+.hero-header-1 p, .hero-header-2 p {
     width: 70%;
     color: #CCC;
     font-size: 18px;
     margin: 10px auto 0 auto;
 }
 
-.hero-header-1 .owl-controls {
+.hero-header-1 .owl-controls, .hero-header-2 .owl-controls {
     position: absolute;
     width: 100%;
     bottom: 50px;
 }
 
-.hero-header-1 .owl-controls .owl-page.active span, .hero-header-1 .owl-controls.clickable .owl-page:hover span {
+.hero-header-2 .owl-controls {    
+    visibility:hidden;
+}
+
+.hero-header-1 .owl-controls .owl-page.active span, .hero-header-1 .owl-controls.clickable .owl-page:hover span, .hero-header-2 .owl-controls .owl-page.active span, .hero-header-2 .owl-controls.clickable .owl-page:hover span {
     background: #DDD!important;
 }
 
-.hero-header-1 .owl-controls .owl-page span {
+.hero-header-1 .owl-controls .owl-page span, .hero-header-2 .owl-controls .owl-page span {
     background: rgba(255,255,255,.3)!important;
     width: 50px!important;
     border-radius: 0!important;
@@ -1870,7 +1911,7 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
     transition: all .2s ease-in-out;
 }
 
-.hero-header-1 .carousel-arrows {
+.hero-header-1 .carousel-arrows, .hero-header-2 .carousel-arrows {
     width: 100%;
     left: 0;
     top: 250px;
@@ -1878,7 +1919,7 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
     z-index: 14;
 }
 
-.hero-header-1 .carousel-arrows i {
+.hero-header-1 .carousel-arrows i, .hero-header-2 .carousel-arrows i {
     width: 100px;
     height: 100px;
     text-align: center;
@@ -1893,15 +1934,15 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
     transition: all .3s ease;
 }
 
-.hero-header-1 .carousel-arrows > a {
+.hero-header-1 .carousel-arrows > a, .hero-header-2 .carousel-arrows > a {
 	text-decoration: none;
 }
 
-.hero-header-1 .carousel-arrows > a:hover i {
+.hero-header-1 .carousel-arrows > a:hover i, .hero-header-2 .carousel-arrows > a:hover i {
     color: #fff;
 }
 
-.hero-header-1 .slider-caption {
+.hero-header-1 .slider-caption, .hero-header-2 .slider-caption {
     position: absolute;
     bottom: 0;
     left: 5%;
@@ -1910,7 +1951,7 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
     background-color: rgba(234,91,35,.8);
 }
 
-.hero-header-1 .slider-caption h3 {
+.hero-header-1 .slider-caption h3, .hero-header-2 .slider-caption h3 {
     color: #fff;
     font-size: 18px;
     font-family: "Poppins", sans-serif;
@@ -2128,6 +2169,20 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
     width: 100%;
 }
 
+#accomodation .main-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 100%;
+}
+
+.main-text .img-responsive img {
+    margin: 0 auto;
+    display: block;
+}
+
 .searchable {
     margin-bottom: 40px;
     width: 85%;
@@ -2263,6 +2318,65 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
 
 /* Yakkk masuk ke Accomodation wak! Heheh... */
 
+.sliderx {
+  max-width: 100%;
+  height: 500px;
+  margin: 20px auto;
+  position: relative;
+}
+.slidex1,.slidex2,.slidex3,.slidex4,.slidex5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slidex1 {
+  background: url(../../images/slider2/1.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade2 8s infinite;
+-webkit-animation:fade2 8s infinite;
+
+} 
+.slidex2 {
+  background: url(../../images/slider2/2.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade2 8s infinite;
+-webkit-animation:fade2 8s infinite;
+}
+.slidex3 {
+    background: url(../../images/slider2/3.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade2 8s infinite;
+-webkit-animation:fade2 8s infinite;
+}
+.slidex4 {
+    background: url(../../images/slider2/4.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade2 8s infinite;
+-webkit-animation:fade2 8s infinite;
+}
+@keyframes fade
+{
+  0%   {opacity:1}
+  33.333% { opacity: 1}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}
+
+
 #accomodation, #transportation, #etcetera {
     background-color: #f3f3f3;
 }
@@ -2353,7 +2467,6 @@ a.button.btn-mini {
 
 figure img {
     width: 100%;
-    max-height: 204px;
     border-radius: 5px 5px 0 0;
 }
 

@@ -10,6 +10,7 @@ function demo_3() {
 		    slideSpeed: 300,
 		    paginationSpeed: 500,
 		    rewindSpeed: 400,
+			animateOut: 'fadeOut',
 		    autoHeight: false,
 		    addClassActive: true,
 		    afterMove: function() {

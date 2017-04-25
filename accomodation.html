@@ -15,12 +15,13 @@
 	    <link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
 	    <link href="assets/css/responsive.css" rel="stylesheet" media="screen">
 	    <link href="assets/css/bootstrap-datepicker.min.css" rel="stylesheet" media="screen">
+		
   	</head>
 
   	<body id="accomodation">
   
 	  	<main>
-	  		<header class="dark-text">
+	  		<header>
 	  			<nav class="navbar">
 	  				<div class="container-fluid">
 	  					<div class="navbar-header">
@@ -49,16 +50,18 @@
 	  			</nav>
 	  		</header>
 
-	  		<section class="search-holder bgimage">
-	  			<div class="container">
-	  				<form action="#" method="post">
-                        <div class="row">                                             
-                            <div class="form-group col-sm-6 col-md-12 mt-40">
-                                <div class="row">									
+	  		<section class="hero-header-2">
+				<div class="main-text" style="padding-top:150px;">
+					
+					<!-- <h1 style="font-family: 'Open Sans', sans-serif; font-weight:300; padding-bottom:20px;" class="wow fadeInUp" data-wow-delay="1s">dream<span class="orange">.</span>click<span class="orange">.</span>go<span class="orange">!</span></h1> -->
+	            	<div class="searchable wow fadeInUp" data-wow-delay="1.4s">
+		            	<div class="panel panel-default panel-seachbox center-block">
+		                	<div class="panel-body">
+		                    	<div class="row">
 									<div class="col-md-8"> <!-- ROW SEBELAH KIRI -->
 										<div class="col-md-5">
 											<div class="form-group">
-			                                <label for="txtWherePlace"><span style="background:rgba(234,91,35,0.8); border-radius: 25px; padding: 4px 8px;">Where do you want to go?</span></label>
+			                                <label for="txtWherePlace">Where do you want to go ?</label>
 			                                <input name="ctl00$MainContent$txtWherePlace" type="text" id="MainContent_txtWherePlace" class="form-control ui-autocomplete-input" placeholder="Your destination or country" autocomplete="off">
 			                                <input type="hidden" name="ctl00$MainContent$hfID" id="MainContent_hfID">
 			                                <input type="hidden" name="ctl00$MainContent$hfLabelDestination" id="MainContent_hfLabelDestination">
@@ -67,9 +70,9 @@
 										<div class="col-md-7">
 											<div class="col-md-6">												
 	                                    			<div class="form-group">
-	                                    			<label for="txtWherePlace"><span style="background:rgba(234,91,35,0.8); border-radius: 25px; padding: 4px 8px;">From Date</span></label>
+	                                    			<label for="txtWherePlace">From Date</label>
 	                                        		<div class="input-group date" data-provide="datepicker" id="date1">
-							                    	<input type="text" class="form-control" placeholder="From Date"/>
+							                    	<input type="text" class="form-control" />
 							                    	<span class="input-group-addon">
 							                        	<span class="glyphicon glyphicon-th"></span>
 							                    	</span>
@@ -78,9 +81,9 @@
 											</div>
 											<div class="col-md-6">
 												<div class="form-group">
-	                                    		<label for="txtWherePlace"><span style="background:rgba(234,91,35,0.8); border-radius: 25px; padding: 4px 8px;">To Date</span></label>
+	                                    		<label for="txtWherePlace">To Date</label>
 	                                        	<div class="input-group date" data-provide="datepicker" id="date2">
-							                    <input type="text" class="form-control" placeholder="To Date"/>
+							                    <input type="text" class="form-control" />
 							                    <span class="input-group-addon">
 							                        <span class="glyphicon glyphicon-th"></span>
 							                    </span>
@@ -93,7 +96,7 @@
 										<div class="col-md-7">
 										<div class="col-md-4">
 											<div class="form-group">
-	                                        <label><span style="background:rgba(234,91,35,0.8); border-radius: 25px; padding: 4px 8px;">Rooms</span></label>
+	                                        <label>Rooms</label>
 	                                        <select class="form-control">
 	                                        	<option>1</option>
 	                                        	<option>2</option>
@@ -104,7 +107,7 @@
 										</div>
 										<div class="col-md-4">
 											<div class="form-group">
-	                                        <label><span style="background:rgba(234,91,35,0.8); border-radius: 25px; padding: 4px 8px;">Adult</span></label>
+	                                        <label>Adult</label>
 	                                        <select class="form-control">
 	                                        	<option>1</option>
 	                                        	<option>2</option>
@@ -115,7 +118,7 @@
 										</div>
 										<div class="col-md-4">
 											<div class="form-group">
-	                                        <label><span style="background:rgba(234,91,35,0.8); border-radius: 25px; padding: 4px 8px;">Child</span></label>
+	                                        <label>Child</label>
 	                                        <select class="form-control">
 	                                        	<option>1</option>
 	                                        	<option>2</option>
@@ -131,12 +134,31 @@
 										</div>
 									</div>
 								</div>
-                            </div> <!-- kelar form-group -->
-                        </div>
-                    </div> <!-- kelar Container -->
-                </form>
-        	</div>
-	  	</section>
+			                    </div> <!-- kelar Row form -->
+		                	</div>
+		            	</div>
+	                </div> <!-- kelar Searchable -->
+	            </div> <!-- kelar Main-Text -->
+
+	            <div id="hero-header-2">
+				<div class="sliderx">
+	                <div class="slidex1">
+	                	<div class="overlay"></div>	                    
+	                </div>
+	                <div class="slidex2">
+	                	<div class="overlay"></div>	                    
+	                </div>
+	                <div class="slidex3">
+	                	<div class="overlay"></div>
+	                    <!-- <div class="slider-caption wow fadeInUp" data-wow-delay="1s"><h3>Hongkong</h3></div> -->
+	                </div>
+					<div class="slidex4">
+	                	<div class="overlay"></div>	                    
+	                </div>
+	            </div>
+				</div>
+	            	
+	        </section>
 
 			<section class="destination">
                 <div class="container">
@@ -442,6 +464,10 @@
 			    autoclose: true
 			});
         </script>
+		
+		<script>
+			
+		</script>
 
         <!-- <script type="text/javascript">
 	        $(document).ready(function () {
