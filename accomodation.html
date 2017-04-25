@@ -38,94 +38,99 @@
 					    		<li><a href="index.html">Home</a></li>
                                 <li><a href="#">Join as a Host</a></li>
                                 
-                                <li><a href="accomodation.html">Accomodation</a></li>
+                                <li class="active"><a href="accomodation.html">Accomodation</a></li>
 								<li><a href="transportation.html">Transportation</a></li>
 								<li><a href="etcetera.html">Et Cetera</a></li>
                                 <li><a href="#">Sign up</a></li>
-                                <li><a href="#">Log in</a></li>
+                                <li><a href="login.html">Log in</a></li>
 					    	</ul>
 					    </div> <!-- kelar Collapse & Navbar Collape -->
 	  				</div>
 	  			</nav>
 	  		</header>
 
-	  		<section class="search-holder" style="background-image:url('images/backacco.jpg');" >
+	  		<section class="search-holder bgimage">
 	  			<div class="container">
 	  				<form action="#" method="post">
-                        <div class="row"><!-- 
-                            <div class="form-group col-sm-6 col-md-3">
-                                <h4 class="title">Where</h4>
-                                <label>Your Destination</label>
-                                <input type="text" class="input-text full-width" placeholder="enter a destination or hotel name">
-                            </div>
-                            <div class="form-group col-sm-6 col-md-4">
-                                <h4 class="title">When</h4>
-                                <div class="row">
-                                    <div class="col-xs-6">
-                                        <label>Check In</label>
-                                        <div class="datepicker-wrap">
-                                            <input type="text" name="date_from" class="input-text full-width hasDatepicker" placeholder="mm/dd/yy" id="dp1488811384132"><img class="ui-datepicker-trigger" src="images/icon/blank.png" alt="" title="" data-pin-nopin="true">
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6">
-                                        <label>Check Out</label>
-                                        <div class="datepicker-wrap">
-                                            <input type="text" name="date_to" class="input-text full-width hasDatepicker" placeholder="mm/dd/yy" id="dp1488811384133"><img class="ui-datepicker-trigger" src="images/icon/blank.png" alt="" title="" data-pin-nopin="true">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
-                            
-                            <div class="form-group col-sm-6 col-md-12 mt40">
-                                <!-- <h4 class="title">Who</h4> -->
-                                <div class="row">
-	                                <div class="col-md-4">
-	                                    <div class="form-group">
-	                                        <label for="txtWherePlace">Where do you want to go?</label>
-	                                        <input name="ctl00$MainContent$txtWherePlace" type="text" id="txtWherePlace" class="form-control ui-autocomplete-input" placeholder="Cities or Locations" autocomplete="off">
-	                                        <input type="hidden" name="ctl00$MainContent$hfID" id="hfID">
-	                                        <input type="hidden" name="ctl00$MainContent$hfLabelDestination" id="hfLabelDestination">
-	                                    </div>
-	                                </div>
-	                                
-	                                <div class="col-md-2">
-	                                    <div class="form-group">
-	                                    	<label for="txtWherePlace">When?</label>
-	                                        <div class="input-group date" data-provide="datepicker" id="date1">
-							                    <input type="text" class="form-control" />
+                        <div class="row">                                             
+                            <div class="form-group col-sm-6 col-md-12 mt-40">
+                                <div class="row">									
+									<div class="col-md-8"> <!-- ROW SEBELAH KIRI -->
+										<div class="col-md-5">
+											<div class="form-group">
+			                                <label for="txtWherePlace"><span style="background:rgba(234,91,35,0.8); border-radius: 25px; padding: 4px 8px;">Where do you want to go?</span></label>
+			                                <input name="ctl00$MainContent$txtWherePlace" type="text" id="MainContent_txtWherePlace" class="form-control ui-autocomplete-input" placeholder="Your destination or country" autocomplete="off">
+			                                <input type="hidden" name="ctl00$MainContent$hfID" id="MainContent_hfID">
+			                                <input type="hidden" name="ctl00$MainContent$hfLabelDestination" id="MainContent_hfLabelDestination">
+			                            	</div>
+										</div>
+										<div class="col-md-7">
+											<div class="col-md-6">												
+	                                    			<div class="form-group">
+	                                    			<label for="txtWherePlace"><span style="background:rgba(234,91,35,0.8); border-radius: 25px; padding: 4px 8px;">From Date</span></label>
+	                                        		<div class="input-group date" data-provide="datepicker" id="date1">
+							                    	<input type="text" class="form-control" placeholder="From Date"/>
+							                    	<span class="input-group-addon">
+							                        	<span class="glyphicon glyphicon-th"></span>
+							                    	</span>
+							                		</div>
+	                                    			</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+	                                    		<label for="txtWherePlace"><span style="background:rgba(234,91,35,0.8); border-radius: 25px; padding: 4px 8px;">To Date</span></label>
+	                                        	<div class="input-group date" data-provide="datepicker" id="date2">
+							                    <input type="text" class="form-control" placeholder="To Date"/>
 							                    <span class="input-group-addon">
 							                        <span class="glyphicon glyphicon-th"></span>
 							                    </span>
+												</div>
+												</div>
 							                </div>
 	                                    </div>
-	                                </div>
-	                                <div class="col-md-2">
-	                                    <div class="form-group">
-	                                    	<label for="txtWherePlace">Until?</label>
-	                                        <div class="input-group date" data-provide="datepicker" id="date2">
-							                    <input type="text" class="form-control" />
-							                    <span class="input-group-addon">
-							                        <span class="glyphicon glyphicon-th"></span>
-							                    </span>
-							                </div>
-	                                    </div>
-	                                </div>
-	                                <div class="col-md-2">
-	                                    <div class="form-group">
-	                                        <label>Who?</label>
+									</div> <!-- TUTUP ROW SEBELAH KIRI -->
+									<div class="col-md-4"> <!-- ROW SEBELAH KANAN -->
+										<div class="col-md-7">
+										<div class="col-md-4">
+											<div class="form-group">
+	                                        <label><span style="background:rgba(234,91,35,0.8); border-radius: 25px; padding: 4px 8px;">Rooms</span></label>
 	                                        <select class="form-control">
 	                                        	<option>1</option>
 	                                        	<option>2</option>
 	                                        	<option>3</option>
 	                                        	<option>4</option>
 	                                        </select>
-	                                    </div>
-	                                </div>
-		                            <div class="form-group col-sm-6 col-md-2">
-		                                <label class="hidden-xs">&nbsp;</label>
-		                                <button type="submit" class="full-width icon-check wow fadeInUp">SEARCH NOW</button>
-		                            </div>
-                               	</div> <!-- kelar row -->
+	                                    	</div>
+										</div>
+										<div class="col-md-4">
+											<div class="form-group">
+	                                        <label><span style="background:rgba(234,91,35,0.8); border-radius: 25px; padding: 4px 8px;">Adult</span></label>
+	                                        <select class="form-control">
+	                                        	<option>1</option>
+	                                        	<option>2</option>
+	                                        	<option>3</option>
+	                                        	<option>4</option>
+	                                        </select>
+	                                    	</div>
+										</div>
+										<div class="col-md-4">
+											<div class="form-group">
+	                                        <label><span style="background:rgba(234,91,35,0.8); border-radius: 25px; padding: 4px 8px;">Child</span></label>
+	                                        <select class="form-control">
+	                                        	<option>1</option>
+	                                        	<option>2</option>
+	                                        	<option>3</option>
+	                                        	<option>4</option>
+	                                        </select>
+	                                    	</div>
+										</div>
+										</div>
+										<div class="col-md-5">
+											<label>&nbsp;</label>
+											<button class="full-width icon-check">SEARCH NOW</button>
+										</div>
+									</div>
+								</div>
                             </div> <!-- kelar form-group -->
                         </div>
                     </div> <!-- kelar Container -->
@@ -135,7 +140,7 @@
 
 			<section class="destination">
                 <div class="container">
-                    <h3 class="titling">Popular Destinations<span class="orange">.</span></h3>
+                    <h4 class="titling">Popular Destinations<span class="orange">.</span></h4>
                     <div class="row image-box">
 	                    <div class="col-md-3">
 	                    	<article class="box">
@@ -154,6 +159,19 @@
 	                    	<article class="box">
 	                            <figure class="wow fadeIn" data-wow-delay="1s">
 	                                <a href="list.html" title="" class="hover-effect">
+	                                	<img src="images/items2/sing.jpg" alt="">
+	                                </a>
+	                            </figure>
+	                            <div class="details">
+	                                <a href="list.html" class="button btn-mini">VIEW MORE</a>
+	                                <h4 class="box-title">Singapore <small>954 places</small></h4>
+	                            </div>
+	                        </article>
+	                    </div>
+						<div class="col-md-3">
+	                    	<article class="box">
+	                            <figure class="wow fadeIn" data-wow-delay="1.2s">
+	                                <a href="list.html" title="" class="hover-effect">
 	                                	<img src="images/items2/dest2.jpg" alt="">
 	                                </a>
 	                            </figure>
@@ -163,19 +181,7 @@
 	                            </div>
 	                        </article>
 	                    </div>
-	                    <div class="col-md-3">
-	                    	<article class="box">
-	                            <figure class="wow fadeIn" data-wow-delay="1.4s">
-	                                <a href="list.html" title="" class="hover-effect">
-	                                	<img src="images/items2/malay.jpg" alt="">
-	                                </a>
-	                            </figure>
-	                            <div class="details">
-	                                <a href="list.html" class="button btn-mini">VIEW MORE</a>
-	                                <h4 class="box-title">Malaysia <small>954 places</small></h4>
-	                            </div>
-	                        </article>
-	                    </div>
+	                    
 	                    <div class="col-md-3">
 	                    	<article class="box">
 	                            <figure class="wow fadeIn" data-wow-delay="1.2s">
@@ -189,20 +195,46 @@
 	                            </div>
 	                        </article>
 	                    </div>
-	                    <div class="col-md-3">
+						<div class="col-md-3">
 	                    	<article class="box">
-	                            <figure class="wow fadeIn" data-wow-delay="1s">
+	                            <figure class="wow fadeIn" data-wow-delay="1.3s">
 	                                <a href="list.html" title="" class="hover-effect">
-	                                	<img src="images/items2/hong.jpg" alt="">
+	                                	<img src="images/items2/japan.jpg" alt="">
 	                                </a>
 	                            </figure>
 	                            <div class="details">
 	                                <a href="list.html" class="button btn-mini">VIEW MORE</a>
-	                                <h4 class="box-title">Hong Kong <small>954 places</small></h4>
+	                                <h4 class="box-title">Japan <small>954 places</small></h4>
 	                            </div>
 	                        </article>
 	                    </div>
-	                    <div class="col-md-3">
+						<div class="col-md-3">
+	                    	<article class="box">
+	                            <figure class="wow fadeIn" data-wow-delay="1.5s">
+	                                <a href="list.html" title="" class="hover-effect">
+	                                	<img src="images/items2/southkorea.jpg" alt="">
+	                                </a>
+	                            </figure>
+	                            <div class="details">
+	                                <a href="list.html" class="button btn-mini">VIEW MORE</a>
+	                                <h4 class="box-title">South Korea <small>954 places</small></h4>
+	                            </div>
+	                        </article>
+	                    </div>
+						<div class="col-md-3">
+	                    	<article class="box">
+	                            <figure class="wow fadeIn" data-wow-delay="1.4s">
+	                                <a href="list.html" title="" class="hover-effect">
+	                                	<img src="images/items2/malay.jpg" alt="">
+	                                </a>
+	                            </figure>
+	                            <div class="details">
+	                                <a href="list.html" class="button btn-mini">VIEW MORE</a>
+	                                <h4 class="box-title">Malaysia <small>954 places</small></h4>
+	                            </div>
+	                        </article>
+	                    </div>
+						<div class="col-md-3">
 	                    	<article class="box">
 	                            <figure class="wow fadeIn" data-wow-delay="1.4s">
 	                                <a href="list.html" title="" class="hover-effect">
@@ -217,40 +249,14 @@
 	                    </div>
 	                    <div class="col-md-3">
 	                    	<article class="box">
-	                            <figure class="wow fadeIn" data-wow-delay="1.3s">
+	                            <figure class="wow fadeIn" data-wow-delay="1s">
 	                                <a href="list.html" title="" class="hover-effect">
-	                                	<img src="images/items2/japan.jpg" alt="">
+	                                	<img src="images/items2/hong.jpg" alt="">
 	                                </a>
 	                            </figure>
 	                            <div class="details">
 	                                <a href="list.html" class="button btn-mini">VIEW MORE</a>
-	                                <h4 class="box-title">Japan <small>954 places</small></h4>
-	                            </div>
-	                        </article>
-	                    </div>
-	                    <div class="col-md-3">
-	                    	<article class="box">
-	                            <figure class="wow fadeIn" data-wow-delay="1.5s">
-	                                <a href="list.html" title="" class="hover-effect">
-	                                	<img src="images/items2/southkorea.jpg" alt="">
-	                                </a>
-	                            </figure>
-	                            <div class="details">
-	                                <a href="list.html" class="button btn-mini">VIEW MORE</a>
-	                                <h4 class="box-title">South Korea <small>954 places</small></h4>
-	                            </div>
-	                        </article>
-	                    </div>
-	                    <div class="col-md-3">
-	                    	<article class="box">
-	                            <figure class="wow fadeIn" data-wow-delay="1.2s">
-	                                <a href="list.html" title="" class="hover-effect">
-	                                	<img src="images/items2/sing.jpg" alt="">
-	                                </a>
-	                            </figure>
-	                            <div class="details">
-	                                <a href="list.html" class="button btn-mini">VIEW MORE</a>
-	                                <h4 class="box-title">Singapore <small>954 places</small></h4>
+	                                <h4 class="box-title">Hong Kong <small>954 places</small></h4>
 	                            </div>
 	                        </article>
 	                    </div>
@@ -276,7 +282,7 @@
 	                            </figure>
 	                            <div class="details">
 	                                <a href="list.html" class="button btn-mini">VIEW MORE</a>
-	                                <h4 class="box-title">Netherland <small>954 places</small></h4>
+	                                <h4 class="box-title">Netherlands <small>954 places</small></h4>
 	                            </div>
 	                        </article>
 	                    </div>

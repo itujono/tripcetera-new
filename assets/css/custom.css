@@ -42,7 +42,6 @@ body.scroll-hide, html.scroll-hide {
 
 
 
-
  /* oppp ada helper class waaak heheh */
 
  .m0 {
@@ -286,6 +285,18 @@ header {
     transform: translate3d(0,0,0);
 }
 
+headerx {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    width: 100%;
+    height:300px;
+    background: url('../../images/bg07.jpg') scroll 0 0 no-repeat;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
 /*
 .header-inner {
     margin: 0 auto;
@@ -469,7 +480,7 @@ nav.navbar.shrink .navbar-toggle {
 
 
 .panel-seachbox {
-    padding: 25px;
+    padding: 1px;
     border-radius: 2px;
     background-color: rgba(239, 239, 239, 0.8);
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.25), 0 17px 50px 0 rgba(0, 0, 0, 0.25);
@@ -1083,8 +1094,8 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 .bookbtn{
 border:2px solid #ebebeb;
 padding:5px 15px 5px 15px;
-background:#fff;
-color:#999;
+background:#d75124;
+color:#fff;
 -webkit-border-radius: 4px;
 -moz-border-radius: 4px;
 border-radius: 4px;
@@ -2119,7 +2130,7 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
 
 .searchable {
     margin-bottom: 40px;
-    width: 75%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -2260,6 +2271,12 @@ header.dark-text .nav > li > a {
     color: #777;
 }
 
+header.dark-text .nav > li.active > a {
+    color: #fff;
+    background:rgba(234,91,35,0.8);
+    border-radius: 10px;   
+}
+
 section.destination {
     padding: 80px 0;
 }
@@ -2341,9 +2358,18 @@ figure img {
 }
 
 .search-holder {
-    padding: 40px 0;
+    padding: 250px 0;
     position: relative;
     z-index: -1;
+}
+
+
+.bgimage {
+  background: url('../../images/backacc.jpg') center center no-repeat;
+  background-size: cover;
+  margin-top:-80px;
+  padding-bottom:0px;
+  height:400px;
 }
 
     .search-holder h4.title {
@@ -2380,8 +2406,8 @@ figure img {
     }
 
     .search-holder .form-group > label {
-        color: #ea5b23;
-        font-weight: 600;
+        color: #000;
+        font-weight: 400;
     }
 
 .search-tab-content .tab-pane.active {
@@ -2526,6 +2552,11 @@ select {
     text-align: center;
 }
 
+.disabled.day
+{
+    color:red;
+}
+
 .input-group-addon {
     background-color: #428bca;
 }
@@ -2603,7 +2634,7 @@ ul.search-tabs li a {
 
 .nav.nav-tabs li {
     float: right;
-    width: 70%;
+    /*width: 70%;*/
     margin-bottom: 5px;
     border: none;
     border-bottom: 1px solid #ddd;
@@ -2650,7 +2681,7 @@ ul.search-tabs li a {
 
 .nav li a figcaption {
     position: absolute;
-    bottom: -20px;
+    bottom: 10px;
     left: 5px;
     padding: 7px 15px;
     background-color: #ff6633;
@@ -2704,9 +2735,9 @@ ul.search-tabs li a {
 .cta-image {
     position: relative;
     margin: 0;
-    background: url(../../images/items2/item7.jpg) no-repeat center center;
+    background: url(../../images/items2/backtrans.jpg) no-repeat center center;
     background-size: cover;
-    min-height: 160px;
+    min-height: 300px;
     width: 100%;
     padding: 0 30px;
 }
@@ -2775,12 +2806,11 @@ ul.search-tabs li a {
 .query-tabs li a:hover figcaption {
     visibility: visible;
     opacity: 1;
-    transform: translateY(-30px);
 }
 
 .query-tabs li a figcaption {
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    visibility: visible;
 }
 
 
@@ -2994,7 +3024,7 @@ border:2px solid #ebebeb;
 }
 .customSelectInner {
 /* You can style the inner box too */
-
+ width:300px;
 }	
 /*.hasCustomSelect {background:#66afe9; color:white;}*/
 
@@ -3180,9 +3210,9 @@ background:url('../../images/back-icon.png') #222 no-repeat  scroll -16px -31px;
 
 .itemlabel3{background:#f2f2f2; width:100%; height:210px;  font-family:"Open Sans"; font-size:13px; line-height:15px; overflow:hidden;}
 .itemlabel2{background:#f2f2f2; width:100%; height:210px;  font-family:"Open Sans"; font-size:13px; line-height:15px; overflow:hidden;}
-.labelright{float:right; height:100%; padding:10px; border-left:1px solid #e8e8e8;}
+.labelright{float:right; height:100%; padding:50px; border-left:1px solid #e8e8e8;}
 .labelleft{padding:10px 0 15px 15px;}
-.labelleft2{padding:10px 0 15px 15px;font-family:"Open Sans"; font-size:13px; line-height:18px;}
+.labelleft2{padding:30px 0px 15px 15px;font-family:"Open Sans"; font-size:14px; line-height:18px;}
 
 
 

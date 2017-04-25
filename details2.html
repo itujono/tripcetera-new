@@ -3,96 +3,73 @@
   <head>
   	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>List - Tripcetera - Your Travel Marketplace</title>
-
+	<title>Details - Tripcetera - Your Travel Marketplace</title>
+	
     <!-- Bootstrap -->
     <link href="dist/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="assets/css/custom.css" rel="stylesheet" media="screen">
+
+
+
 	<link href="examples/carousel/carousel.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-
       <script src="assets/js/html5shiv.js"></script>
-
       <script src="assets/js/respond.min.js"></script>
-
     <![endif]-->
-
+	
     <!-- Fonts -->	
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400,300,300italic' rel='stylesheet' type='text/css'>	
 	<!-- Font-Awesome -->
-
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" media="screen" />
     <!--[if lt IE 7]><link rel="stylesheet" type="text/css" href="assets/css/font-awesome-ie7.css" media="screen" /><![endif]-->
 	
-
     <!-- REVOLUTION BANNER CSS SETTINGS -->
     <link rel="stylesheet" type="text/css" href="css/fullscreen.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
-
-
-    <!-- Picker -->	
+	
+    <!-- Picker UI-->	
 	<link rel="stylesheet" href="assets/css/jquery-ui.css" />	
-
+	
 	<!-- bin/jquery.slider.min.css -->
 	<link rel="stylesheet" href="plugins/jslider/css/jslider.css" type="text/css">
-	<link rel="stylesheet" href="plugins/jslider/css/jslider.round.css" type="text/css">	
-
+	<link rel="stylesheet" href="plugins/jslider/css/jslider.round-blue.css" type="text/css">
 	
-
-    <!-- jQuery -->	
-
+    <!-- jQuery-->	
     <script src="assets/js/jquery.v2.0.3.js"></script>
-
-
+	<script src="assets/js/jquery-ui.js"></script>	
+	
 	<!-- bin/jquery.slider.min.js -->
-
 	<script type="text/javascript" src="plugins/jslider/js/jshashtable-2.1_src.js"></script>
 	<script type="text/javascript" src="plugins/jslider/js/jquery.numberformatter-1.2.3.js"></script>
 	<script type="text/javascript" src="plugins/jslider/js/tmpl.js"></script>
 	<script type="text/javascript" src="plugins/jslider/js/jquery.dependClass-0.1.js"></script>
 	<script type="text/javascript" src="plugins/jslider/js/draggable-0.1.js"></script>
 	<script type="text/javascript" src="plugins/jslider/js/jquery.slider.js"></script>
-
 	<!-- end -->
 
   </head>
-
-  <body id="top" class="thebg" >
+  <body id="top" class="thebg" style="overflow-x: initial;" >
     
-	<!-- Top wrapper -->	
-
+	
+	
 	<div class="navbar-wrapper2 navbar-fixed-top">
-
       <div class="container">
-
 		<div class="navbar mtnav">
 
-
-
 			<div class="container">
-
-			  <!-- Navigation -->				
-
 			  <div class="navbar-header">
-
 				<button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
-
 				  <span class="icon-bar"></span>
-
 				  <span class="icon-bar"></span>
-
 				  <span class="icon-bar"></span>
-
 				</button>
-
-				<a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="Travel Agency Logo" class="logo"/></a>
-
+				<a href="index.html" class="navbar-brand">
+					<img src="images/logo.png" alt="Travel Agency Logo" class="logo"/>
+				</a>
 			  </div>
-
 			  <div class="navbar-collapse collapse">
-
 				<ul class="nav navbar-nav navbar-right" >
 					    		<li><a href="index.html">Home</a></li>
                                 <li><a href="#">Join as a Host</a></li>
@@ -103,218 +80,177 @@
                                 <li><a href="#">Sign up</a></li>
                                 <li><a href="login.html">Log in</a></li>
 					    	</ul>
-
 			  </div>
-
-			  <!-- / Navigation -->	
-
 			</div>
-
 		
-
         </div>
-
       </div>
-
     </div>
-
-	<!-- / Top wrapper -->		
-	
 	
 	
 	
 	<div class="container breadcrub">
-
 	    <div>
-
 			<a class="homebtn left" href="index.html"></a>
-
 			<div class="left">
-
 				<ul class="bcrumbs">
-
 					<li>/</li>
-
-					<li><a href="etcetera.html">Spa & Wellness</a></li>
-
+					<li><a href="etcetera.html">Etcetera</a></li>
 					<li>/</li>
-
-					<li><a href="#" class="active">List</a></li>
-
-								
-
+					<li><a href="list4.html">Search</a></li>
+					<li>/</li>					
+					<li><a href="#" class="active">Details</a></li>					
 				</ul>				
-
 			</div>
-
-			<a class="backbtn right" href="etcetera.html"></a>
-
+			<a class="backbtn right" href="list4.html"></a>
 		</div>
-
 		<div class="clearfix"></div>
-
 		<div class="brlines"></div>
-
 	</div>	
 
 	<!-- CONTENT -->
 	<div class="container">
 		<div class="container pagecontainer offset-0">	
 
-			<!-- FILTERS -->
-			<div class="col-md-3 filters offset-0">
-				<div class="bookfilters hpadding20">
-						<div class="clearfix"></div><br/>
-						
-						<!-- VOUCHER TAB -->
-						<div class="hotelstab2 none">
-							<span class="opensans size14 bold">COUNTRY</span>
-							<input type="text" class="form-control" placeholder="Indonesia">
-							
-							<div class="clearfix pbottom15"></div>
-							
-							<span class="opensans size14 bold">CITY</span>
-							<input type="text" class="form-control" placeholder="All Cities">
-							
-							<div class="clearfix pbottom15"></div>
-							
-							<span class="opensans size14 bold">VOUCHER DATE</span>
-							<input type="text" class="form-control mySelectCalendar" id="datepicker" placeholder="m/d/yy"/>
-							
-							<div class="clearfix pbottom15"></div>
-							
-							<span class="opensans size14 bold">CURRENCIES</span>
-												<select class="form-control">
-												  <option>IDR-Indonesian Rupiah</option>
-												  <option selected>SGD-Singapore Dollar</option>
-												  <option>USD-US Dollar</option>												  
-												</select>
-
-							<div class="clearfix pbottom15"></div>
-							<button type="submit" class="btn-search3">Search</button>
+			<!-- SLIDER -->
+			<div class="col-md-8 details-slider">
+			
+				<div id="c-carousel">
+				<div id="wrapper">
+				<div id="inner">
+					<div id="caroufredsel_wrapper2">
+						<div id="carousel">
+							<img src="images/details-slider/slide1.jpg" alt=""/>
+							<img src="images/details-slider/slide2.jpg" alt=""/>
+							<img src="images/details-slider/slide3.jpg" alt=""/>
+							<img src="images/details-slider/slide4.jpg" alt=""/>
+							<img src="images/details-slider/slide5.jpg" alt=""/>
+							<img src="images/details-slider/slide6.jpg" alt=""/>						
 						</div>
-						<!-- END OF VOUCHER TAB -->
-						
-						
-						
+					</div>
+					<div id="pager-wrapper">
+						<div id="pager">
+							<img src="images/details-slider/slide1.jpg" width="120" height="68" alt=""/>
+							<img src="images/details-slider/slide2.jpg" width="120" height="68" alt=""/>
+							<img src="images/details-slider/slide3.jpg" width="120" height="68" alt=""/>
+							<img src="images/details-slider/slide4.jpg" width="120" height="68" alt=""/>
+							<img src="images/details-slider/slide5.jpg" width="120" height="68" alt=""/>
+							<img src="images/details-slider/slide6.jpg" width="120" height="68" alt=""/>						
+						</div>
+					</div>
 				</div>
-				<!-- END OF BOOK FILTERS -->	
-				
-				
-				
-				
-			</div>
-			<!-- END OF FILTERS -->
-			
-			<!-- LIST CONTENT-->
-			<div class="rightcontent col-md-9 offset-0">
-			
-				<div class="hpadding20">
-					
-				</div>
-				<!-- End of padding -->
-				
-				<br/><br/>
 				<div class="clearfix"></div>
-				
-
-				<div class="itemscontainer offset-1">
+				<button id="prev_btn2" class="prev2"><img src="images/spacer.png" alt=""/></button>
+				<button id="next_btn2" class="next2"><img src="images/spacer.png" alt=""/></button>		
+					
+		</div>
+		</div> <!-- /c-carousel -->
 			
-	
-					<div class="offset-2">
-						<div class="col-md-4 offset-0">
-							<div class="listitem2">
-								<a href="images/items/item7.jpg" data-footer="A custom footer text" data-title="A random title" data-gallery="multiimages" data-toggle="lightbox"><img src="images/items/item7.jpg" alt=""/></a>
-								<a class="fav-icon" href="#"></a>
-								<a class="book-icon" href="details2.html"></a>
-							</div>
-						</div>
-						<div class="col-md-8 offset-0">
-							<div class="itemlabel3">
-								<div class="labelright">
-									
-									<span class="green size18"><b>IDR 237.000</b></span><br/>
-									<span class="size14 red">PROMO</span><br/><br/><br/>
-									<form action="details2.html">
-									 <button class="bookbtn mt1" type="submit">BUY</button>	
-									</form>			
-								</div>
-								<div class="labelleft2">			
-									<h3><b>Reborn Spa</b></h3>
-									<p class="dark">
-									Nagoya Hill Batam</p><br/>																		
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="clearfix"></div>
-					<div class="offset-2"><hr class="featurette-divider3"></div>
-					
-					<div class="offset-2">
-						<div class="col-md-4 offset-0">
-							<div class="listitem2">
-								<a href="images/items/item11.jpg" data-footer="A custom footer text" data-title="A random title" data-gallery="multiimages" data-toggle="lightbox"><img src="images/items/item11.jpg" alt=""/></a>
-								
-								<a class="fav-icon" href="#"></a>
-								<a class="book-icon" href="details2.html"></a>
-							</div>
-						</div>
-						<div class="col-md-8 offset-0">
-							<div class="itemlabel3">
-								<div class="labelright">
-									
-									<span class="green size18"><b>IDR 237.000</b></span><br/>
-									<span class="size14 red">PROMO</span><br/><br/><br/>
-									<form action="details2.html">
-									 <button class="bookbtn mt1" type="submit">BUY</button>	
-									</form>			
-								</div>
-								<div class="labelleft2">			
-									<h3><b>Spa Couple Package Voucher</b></h3>
-									<p class="dark">
-									Jl. Medan, Pem. Siantar, Medan</p><br/>								
-									
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="clearfix"></div>
-					
-
-					<div class="clearfix"></div>
-					<div class="offset-2"><hr class="featurette-divider3"></div>
-					
-
-				</div>	
-				<!-- End of offset1-->		
-
-				<div class="hpadding20">
-				
-					<ul class="pagination right paddingbtm20">
-					  <li class="disabled"><a href="#">&laquo;</a></li>
-					  <li><a href="#">1</a></li>
-					  <li><a href="#">2</a></li>
-					  <li><a href="#">3</a></li>
-					  <li><a href="#">4</a></li>
-					  <li><a href="#">5</a></li>
-					  <li><a href="#">&raquo;</a></li>
-					</ul>
-
-				</div>
-
+			
+			
+			
+			
 			</div>
-			<!-- END OF LIST CONTENT-->
+			<!-- END OF SLIDER -->			
 			
-		
+			<!-- RIGHT INFO -->
+			<div class="col-md-4 detailsright offset-0">
+				<div class="padding20">
+					<h2>Reborn Spa</h2>					
+				</div>
+				
+				<div class="line3"></div>
+				
+				<div class="hpadding20">
+					<h4 class="opensans slim green2">Nagoya Hill - Batam</h4>
+				</div>
+				
+				<div class="line3 margtop20"></div>
+				
+				
+				
+				<div class="col-md-12 hpadding20">
+					REBORN is a family concept health treatment centre, the healing from nature where people can relieve stress and reduce tiredness after doing daily routines. It is a pleasure for us to introduce a REBORN Healthcare Authentic Foot Reflexology & “Tui Na” Therapeutic Massage presents in Batam Island.
+				</div>
+				
+				<div class="clearfix"></div><br/>
+				
+				<div>
+					
+					<!-- <a href="#" class="add2fav margtop5">Add to favourite</a>
+					<!-- <a href="#" class="booknow margtop20 btnmarg">Book now</a> -->
+				</div>
+			</div>
+			<!-- END OF RIGHT INFO -->
 
 		</div>
 		<!-- END OF container-->
 		
+		<div class="container mt25 offset-0">
+
+			<div class="col-md-12 pagecontainer2 offset-0">
+				<div class="" style="background:#0099cc; height:40px; position:absolute; top:0px; width:100%"></div>
+				<div class="tab-content4" >
+					<!-- TAB 2 -->
+					<div id="roomrates" class="tab-pane fade active in">
+					    <div class="hpadding20">
+							<div class="clearfix"></div>
+						</div>
+						<br/>
+						<div class="line2"></div>
+						<div class="padding20">
+							<div class="col-md-4 offset-0">
+								<a href="#"><img src="images/items2/item1.jpg" alt="" class="fwimg"/></a>
+							</div>
+							<div class="col-md-8 offset-0">
+								<div class="col-md-8 mediafix1">
+									<h4 class="opensans dark bold margtop1 lh1">Shiatsu Complete Package Voucher</h4>
+									<br>
+									In shiatsu therapy, pressure with thumbs, hands, elbows, knees or feet is applied to pressure points on the body. This form of massage also focuses on rotating and stretching limbs, joints, and pressure points, or meridians, as they're called in traditional Chinese medicine.
+									
+									
+																
+								</div>
+								<div class="col-md-4 center bordertype4">
+									<span class="opensans green size24">$49.51</span><br/>
+									<br/>
+									<span class="lred bold">3 left</span><br/><br/>
+									<button class="bookbtn mt1"  onclick="javascript:document.location='payment.html'">Buy</button>	
+								</div>										
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="line2"></div>		
+						<div class="padding20">
+							<div class="col-md-4 offset-0">
+								<a href="#"><img src="images/items2/item1x.jpg" alt="" class="fwimg"/></a>
+							</div>
+							<div class="col-md-8 offset-0">
+								<div class="col-md-8 mediafix1">
+									<h4 class="opensans dark bold margtop1 lh1">Thai Spa Complete Package</h4>
+									<br>
+									Traditional Thai massage uses no oils or lotions. The recipient remains clothed during a treatment. There is constant body contact between the giver and receiver, but rather than rubbing on muscles, the body is compressed, pulled, stretched and rocked.
+									
+									
+																
+								</div>
+								<div class="col-md-4 center bordertype4">
+									<span class="opensans green size24">$49.51</span><br/>
+									<br/>
+									<span class="lred bold">3 left</span><br/><br/>
+									<button class="bookbtn mt1"  onclick="javascript:document.location='payment.html'">Buy</button>	
+								</div>										
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="line2"></div>
+						
+					</div>	
+				</div>
+			</div>
+		</div>
 	</div>
 	<!-- END OF CONTENT -->
-	
 	
 	<footer style="background-color: #e7e7e7; color: #666; padding-top: 50px; padding-bottom: 50px;">
 		        <div class="container">
@@ -397,30 +333,48 @@
 
 
 
-    <!-- Javascript -->	
-    <script src="assets/js/js-list.js"></script>	
-
+	
+	
+	
+	
+	
+	<!-- Javascript -->	
+	<script src="assets/js/js-details.js"></script>
+	
+	<!-- Googlemap -->	
+	<script src="assets/js/initialize-google-map.js"></script>
+	
     <!-- Custom Select -->
 	<script type='text/javascript' src='assets/js/jquery.customSelect.js'></script>
 	
-    <!-- JS Ease -->	
-    <script src="assets/js/jquery.easing.js"></script>
-	<script src="assets/js/jquery-ui.js"></script>
-
-    <!-- Custom functions -->	
-
-    <!-- jQuery KenBurn Slider  -->
-    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-
-    <!-- Counter -->	
-    <script src="assets/js/counter.js"></script>		
+    <!-- Custom functions -->
+    <script src="assets/js/functions.js"></script>
 
     <!-- Nicescroll  -->	
-	<script src="assets/js/jquery.nicescroll.min.js"></script>	
-    <script src="assets/js/functions.js"></script>	
+	<script src="assets/js/jquery.nicescroll.min.js"></script>
+	
+    <!-- jQuery KenBurn Slider  -->
+    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	
+    <!-- CarouFredSel -->
+    <script src="assets/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+    <script src="assets/js/helper-plugins/jquery.touchSwipe.min.js"></script>
+	
+	<script type="text/javascript" src="assets/js/helper-plugins/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="assets/js/helper-plugins/jquery.transit.min.js"></script>
+	<script type="text/javascript" src="assets/js/helper-plugins/jquery.ba-throttle-debounce.min.js"></script>
 
-    <!-- Bootstrap -->	
+    <!-- Counter -->	
+    <script src="assets/js/counter.js"></script>	
+	
+    <!-- Carousel-->	
+    <script src="assets/js/initialize-carousel-detailspage.js"></script>		
+	
+    <!-- Js Easing-->	
+    <script src="assets/js/jquery.easing.js"></script>
 
+	
+    <!-- Bootstrap-->	
     <script src="dist/js/bootstrap.min.js"></script><script>  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');  ga('create', 'UA-43203432-1', 'titanicthemes.com');  ga('send', 'pageview');</script>
   </body>
 </html>

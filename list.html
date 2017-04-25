@@ -1,93 +1,46 @@
 <!DOCTYPE html>
 
 <html>
-
   <head>
-
   	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title>Tripcetera - Your Travel Marketplace</title>
-
-	
-
+	<title>List - Tripcetera - Your Travel Marketplace</title>
     <!-- Bootstrap -->
-
     <link href="dist/css/bootstrap.css" rel="stylesheet" media="screen">
-
     <link href="assets/css/custom.css" rel="stylesheet" media="screen">
-
-
-
 	<link href="examples/carousel/carousel.css" rel="stylesheet">
-
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-
     <!--[if lt IE 9]>
-
       <script src="assets/js/html5shiv.js"></script>
-
       <script src="assets/js/respond.min.js"></script>
-
     <![endif]-->
-
-	
-
     <!-- Fonts -->	
-
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400,300,300italic' rel='stylesheet' type='text/css'>	
-
 	<!-- Font-Awesome -->
-
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" media="screen" />
-
-    <!--[if lt IE 7]><link rel="stylesheet" type="text/css" href="assets/css/font-awesome-ie7.css" media="screen" /><![endif]-->
-
-	
+    <!--[if lt IE 7]><link rel="stylesheet" type="text/css" href="assets/css/font-awesome-ie7.css" media="screen" /><![endif]-->	
 
     <!-- REVOLUTION BANNER CSS SETTINGS -->
-
     <link rel="stylesheet" type="text/css" href="css/fullscreen.css" media="screen" />
-
 	<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
-
-
-
     <!-- Picker -->	
-
 	<link rel="stylesheet" href="assets/css/jquery-ui.css" />	
-
-	
-
 	<!-- bin/jquery.slider.min.css -->
-
 	<link rel="stylesheet" href="plugins/jslider/css/jslider.css" type="text/css">
-
 	<link rel="stylesheet" href="plugins/jslider/css/jslider.round.css" type="text/css">	
 
 	
 
     <!-- jQuery -->	
-
     <script src="assets/js/jquery.v2.0.3.js"></script>
 
-
-
 	<!-- bin/jquery.slider.min.js -->
-
 	<script type="text/javascript" src="plugins/jslider/js/jshashtable-2.1_src.js"></script>
-
 	<script type="text/javascript" src="plugins/jslider/js/jquery.numberformatter-1.2.3.js"></script>
-
 	<script type="text/javascript" src="plugins/jslider/js/tmpl.js"></script>
-
 	<script type="text/javascript" src="plugins/jslider/js/jquery.dependClass-0.1.js"></script>
-
 	<script type="text/javascript" src="plugins/jslider/js/draggable-0.1.js"></script>
-
 	<script type="text/javascript" src="plugins/jslider/js/jquery.slider.js"></script>
 
 	<!-- end -->
@@ -101,172 +54,70 @@
 	<!-- Top wrapper -->	
 
 	<div class="navbar-wrapper2 navbar-fixed-top">
-
       <div class="container">
-
 		<div class="navbar mtnav">
-
-
-
 			<div class="container">
-
 			  <!-- Navigation -->				
-
 			  <div class="navbar-header">
-
 				<button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
-
 				  <span class="icon-bar"></span>
-
 				  <span class="icon-bar"></span>
-
 				  <span class="icon-bar"></span>
-
 				</button>
-
-				<a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="Travel Agency Logo" class="logo"/></a>
-
+				<a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="Tripcetera" class="logo"/></a>
 			  </div>
-
 			  <div class="navbar-collapse collapse">
-
 				<ul class="nav navbar-nav navbar-right" >
 					    		<li><a href="index.html">Home</a></li>
-                                <li><a href="#">Join as a Host</a></li>
-                                
-                                <li><a href="accomodation.html">Accomodation</a></li>
+                                <li><a href="#">Join as a Host</a></li>                                
+                                <li class="active"><a href="accomodation.html">Accomodation</a></li>
 								<li><a href="transportation.html">Transportation</a></li>
 								<li><a href="etcetera.html">Et Cetera</a></li>
                                 <li><a href="#">Sign up</a></li>
-                                <li><a href="#">Log in</a></li>
+                                <li><a href="login.html">Log in</a></li>
 					    	</ul>
-
 			  </div>
-
 			  <!-- / Navigation -->	
-
 			</div>
-
-		
-
         </div>
-
       </div>
-
     </div>
-
 	<!-- / Top wrapper -->		
-
-	
-
-	
-
-	
-
 	<div class="container breadcrub">
-
-	    <div>
-
-			<a class="homebtn left" href="index.html"></a>
-
+	    <div>			
 			<div class="left">
-
-				<ul class="bcrumbs">
-
-					<li>/</li>
-
-					<li><a href="index.html">Hotels</a></li>
-
-					<li>/</li>
-
-					<li><a href="#" class="active">Search</a></li>
-
-								
-
-				</ul>				
-
+				<ul class="bcrumbs">					
+					<li><button class="bookbtn" onclick="javascript:document.location='#'">Hotels</button></li>	
+					<li><button class="bookbtn" onclick="javascript:document.location='#'">Hosted Properties</button></li>	
+				</ul>	
 			</div>
-
-			<a class="backbtn right" href="#"></a>
-
+			<a class="backbtn right" href="accomodation.html"></a>
 		</div>
-
 		<div class="clearfix"></div>
-
 		<div class="brlines"></div>
-
 	</div>	
-
-
-
 	<!-- CONTENT -->
-
 	<div class="container">
-
 		<div class="container pagecontainer offset-0">	
-
-
-
 			<!-- FILTERS -->
-
 			<div class="col-md-3 filters offset-0">
-
-			
-
-				
-
 				<!-- TOP TIP -->
-
 				<div class="filtertip">
-
 					<div class="padding20">
-
 						<p class="size13"><span class="size18 bold counthotel">53</span> Hotels starting at</p>
-
 						<p class="size30 bold">$<span class="countprice"></span></p>
-
 						<p class="size13">Narrow results or <a href="#">view all</a></p>
-
 					</div>
-
 					<div class="tip-arrow"></div>
-
 				</div>
-
-				
-
-	
-
 				<div class="bookfilters hpadding20">
-
-					
-
-						
-
-						
-
-						
-
-						
-
 						<div class="clearfix"></div><br/>
-
-						
-
 						<!-- HOTELS TAB -->
 
 						<div class="hotelstab2 none">
-
 							<span class="opensans size13">Where do you want to go?</span>
-
-							<input type="text" class="form-control" placeholder="Jakarta">
-
-							
-
+							<input type="text" class="form-control" placeholder="Jakarta">	
 							<div class="clearfix pbottom15"></div>
-
-							
-
 							<div class="w50percent">
 
 								<div class="wh90percent textleft">
@@ -2580,91 +2431,47 @@
 				<!-- Acomodations -->		
 
 				<button type="button" class="collapsebtn" data-toggle="collapse" data-target="#collapse3">
-
-				  Acomodation type <span class="collapsearrow"></span>
-
-				</button>				
-
-				
-
+				  Acommodation type <span class="collapsearrow"></span>
+				</button>							
 				<div id="collapse3" class="collapse in">
-
 					<div class="hpadding20">
-
 						<div class="radio">
-
 						  <label>
-
 							<input type="radio" name="optionsRadios2" id="Acomodation1" value="option1" checked>
-
 							All
-
 						  </label>
-
 						</div>
-
 						<div class="radio">
-
 						  <label>
-
 							<input type="radio" name="optionsRadios2" id="Acomodation2" value="option2">
-
-							Hotel
-
-						  </label>
-
-						</div>
-
-						<div class="radio">
-
-						  <label>
-
-							<input type="radio" name="optionsRadios2" id="Acomodation3" value="option3">
-
-							Bed & Breakfast
-
-						  </label>
-
-						</div>
-
-						<div class="radio">
-
-						  <label>
-
-							<input type="radio" name="optionsRadios2" id="Acomodation4" value="option4">
-
 							Apartment
-
 						  </label>
-
 						</div>
-
 						<div class="radio">
-
 						  <label>
-
+							<input type="radio" name="optionsRadios2" id="Acomodation3" value="option3">
+							Villa
+						  </label>
+						</div>
+						<div class="radio">
+						  <label>
+							<input type="radio" name="optionsRadios2" id="Acomodation4" value="option4">
+							Hostel
+						  </label>
+						</div>
+						<div class="radio">
+						  <label>
 							<input type="radio" name="optionsRadios2" id="Acomodation5" value="option5">
-
-							Condo
-
+							Hotel
 						  </label>
-
 						</div>
-
 						<div class="radio">
-
 						  <label>
-
 							<input type="radio" name="optionsRadios2" id="Acomodation6" value="option6">
-
-							All-Inclusive Resort 
-
+							Resort 
 						  </label>
-
 						</div>
-
 					</div>	
-
 					<div class="clearfix"></div>					
 
 				</div>
@@ -2846,107 +2653,54 @@
 			<div class="rightcontent col-md-9 offset-0">
 
 			
-
+				 <!--
 				<div class="hpadding20">
-
-					<!-- Top filters -->
-
+					<!-- Top filters --
 					<div class="topsortby">
-
-						<div class="col-md-4 offset-0">
-
-								
-
+						<div class="col-md-4 offset-0">			
 								<div class="left mt7"><b>Sort by:</b></div>
-
-								
-
 								<div class="right wh70percent">
-
 									<select class="form-control mySelectBoxClass ">
-
 									  <option selected>Guest rating</option>
-
 									  <option>5 stars</option>
-
 									  <option>4 stars</option>
-
 									  <option>3 stars</option>
-
 									  <option>2 stars</option>
-
 									  <option>1 stars</option>
-
 									</select>
-
 								</div>
-
-
-
 						</div>			
-
 						<div class="col-md-4">
-
 							<div class="w50percent">
-
 								<div class="wh90percent">
-
 									<select class="form-control mySelectBoxClass ">
-
 									  <option selected>Name</option>
-
 									  <option>A to Z</option>
-
 									  <option>Z to A</option>
-
 									</select>
-
 								</div>
-
 							</div>
-
 							<div class="w50percentlast">
-
 								<div class="wh90percent">
-
 									<select class="form-control mySelectBoxClass ">
-
 									  <option selected>Price</option>
-
 									  <option>Ascending</option>
-
 									  <option>Descending</option>
-
 									</select>
-
 								</div>
-
-							</div>					
-
+							</div>		
 						</div>
-
 						<div class="col-md-4 offset-0">
-
 							<button class="popularbtn left">Most Popular</button>
-
 							<div class="right">
-
 								<button class="gridbtn active">&nbsp;</button>
-
 								<button class="listbtn" onClick="window.open('list4.html','_self');">&nbsp;</button>
-
 								<button class="grid2btn" onClick="window.open('list3.html','_self');">&nbsp;</button>
-
 							</div>
-
 						</div>
-
 					</div>
-
-					<!-- End of topfilters-->
-
+					<!-- End of topfilters --
 				</div>
-
 				<!-- End of padding -->
 
 				
@@ -3366,7 +3120,83 @@
 	<!-- END OF CONTENT -->
 
 	
+<footer style="background-color: #e7e7e7; color: #666; padding-top: 50px; padding-bottom: 50px;">
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-md-3">
+		                    <h4><strong>Company</strong></h4>
+		                    <div class="deep-link">
+		                        <a href="#" id="linkAbout" href="Info/AboutUs">About Tripcetera</a><br>
+		                        <a href="#" id="linkTerms" href="Info/TermsConditions">Terms &amp; Conditions</a><br>
+		                        <a href="#" id="linkPrivacy" href="Info/PrivacyPolicies">Privacy Policy</a><br>
+		                        <a href="#" id="linkFAQ">Help &amp; FAQ</a><br>
+		                    </div>
+		                </div>
+		                <div class="col-md-3">
+		                    <h4><strong>Hosts</strong></h4>
+		                    <div class="deep-link">
+		                        <a href="#" id="linkAccomodation">Accommodation</a><br>
+		                        <a href="#" id="linkTransportation">Transportation</a><br>
+		                        <a href="#" id="linkOther">Others</a><br>
+		                    </div>
+		                </div>
+		                <div class="col-md-3">
+		                    <h4><strong>Corporate Partners</strong></h4>
+		                    <div class="deep-link">
+		                        <a id="linkPropertyPartner" href="http://partner.tripcetera.com" target="_blank">Property Partners</a><br>
+		                        <a id="linkTransportPartner" href="http://partner.tripcetera.com" target="_blank">Transportation Partners</a><br>
+		                        <a id="linkOtherPartner" href="http://partner.tripcetera.com" target="_blank">Others</a><br>
+		                    </div>
+		                </div>
+		                <div class="col-md-3">
+		                    <h4><strong>For you</strong></h4>
+		                    <div class="deep-link">
+		                        <a id="linkCareers" href="#">Careers</a><br>
+		                        <a id="linkContactUs" href="#">Contact Us</a><br>
+		                        <a id="linkTravelGuru" href="#">Freelance Travel Gurus &amp; Guides</a><br>
+		                    </div>
+		                </div>
+		            </div> <!-- kelar Row footer -->
+		            <div class="row">
+		                <div class="col-md-12 text-center social-section">
+		                    <h4><strong>Get in touch with us</strong></h4>
+		                    <div class="social-link">
+		                        <a href="https://www.facebook.com/tripcetera" target="_blank" class="wow fadeInUp" data-wow-delay="1.5s">
+		                            <img id="Image1" src="images/facebook.png">
+		                        </a>
+		                        <a href="https://twitter.com/tripcetera" target="_blank" class="wow fadeInUp" data-wow-delay="1.2s">
+		                            <img id="Image2" src="images/twitter.png">
+		                        </a>
+		                        <a href="https://www.instagram.com/tripcetera/" target="_blank" class="wow fadeInUp" data-wow-delay="1.7s">
+		                            <img id="Image3" src="images/instagram.png">
+		                        </a>
+		                    </div>
+		                </div>
+		            </div>
+		        </div> <!-- kelar Container Footer -->
+		    </footer>
 
+		    <footer class="footer-pattern">
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-md-6">
+		                    <p>Copyright ©2017 &nbsp;<a class="linkFooter" href="http://www.tripcetera.com">Tripcetera.com™</a>&nbsp;All rights reserved</p>
+		                </div>
+		                <div class="col-md-2 center"></div>
+		                <div class="col-md-2 center"></div>
+		                <div class="col-md-2 center">
+		                    <p>
+		                        Powered by
+		                        <br>
+		                        <a href="http://www.batamfast.com" target="_blank">
+		                            <img id="imgBatafast" src="images/bf.png" alt="Batamfast.com" style="width:130px;">
+		                        </a>
+		                    </p>
+		                </div>
+		            </div>
+		        </div>
+		    </footer>
+	    </main>
 
 
 

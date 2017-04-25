@@ -3,7 +3,7 @@
   <head>
   	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Tripcetera - Your Travel Marketplace</title>
+	<title>Details - Tripcetera - Your Travel Marketplace</title>
 	
     <!-- Bootstrap -->
     <link href="dist/css/bootstrap.css" rel="stylesheet" media="screen">
@@ -74,11 +74,11 @@
 					    		<li><a href="index.html">Home</a></li>
                                 <li><a href="#">Join as a Host</a></li>
                                 
-                                <li><a href="accomodation.html">Accomodation</a></li>
+                                <li class="active"><a href="accomodation.html">Accomodation</a></li>
 								<li><a href="transportation.html">Transportation</a></li>
 								<li><a href="etcetera.html">Et Cetera</a></li>
                                 <li><a href="#">Sign up</a></li>
-                                <li><a href="#">Log in</a></li>
+                                <li><a href="login.html">Log in</a></li>
 					    	</ul>
 			  </div>
 			</div>
@@ -99,10 +99,10 @@
 					<li>/</li>
 					<li><a href="list.html">Search</a></li>
 					<li>/</li>					
-					<li><a href="#" class="active">Detail</a></li>					
+					<li><a href="#" class="active">Details</a></li>					
 				</ul>				
 			</div>
-			<a class="backbtn right" href="#"></a>
+			<a class="backbtn right" href="list.html"></a>
 		</div>
 		<div class="clearfix"></div>
 		<div class="brlines"></div>
@@ -202,12 +202,11 @@
 				<div class="" style="background:#0099cc; height:40px; position:absolute; top:0px; width:100%"></div>
 		
 				<ul class="nav nav-tabs" id="myTab">
-					<li onclick="mySelectUpdate()" class=""><a data-toggle="tab" href="#summary"><span class="summary"></span><span class="hidetext">Summary</span>&nbsp;</a></li>
-					<li onclick="mySelectUpdate()" class="active"><a data-toggle="tab" href="#roomrates"><span class="rates"></span><span class="hidetext">Room rates</span>&nbsp;</a></li>
+					<li onclick="mySelectUpdate()" class=""><a data-toggle="tab" href="#summary"><span class="summary"></span><span class="hidetext">Summary</span>&nbsp;</a></li>					
 					<li onclick="mySelectUpdate()" class=""><a data-toggle="tab" href="#preferences"><span class="preferences"></span><span class="hidetext">Preferences</span>&nbsp;</a></li>
 					<li onclick="loadScript()" class=""><a data-toggle="tab" href="#maps"><span class="maps"></span><span class="hidetext">Maps</span>&nbsp;</a></li>
-					<li onclick="mySelectUpdate(); trigerJslider(); trigerJslider2(); trigerJslider3(); trigerJslider4(); trigerJslider5(); trigerJslider6();" class=""><a data-toggle="tab" href="#reviews"><span class="reviews"></span><span class="hidetext">Reviews</span>&nbsp;</a></li>
-					<li onclick="mySelectUpdate()" class=""><a data-toggle="tab" href="#thingstodo"><span class="thingstodo"></span><span class="hidetext">Things to do</span>&nbsp;</a></li>
+					<li onclick="mySelectUpdate()" class="active"><a data-toggle="tab" href="#roomrates"><span class="rates"></span><span class="hidetext">Room rates</span>&nbsp;</a></li>
+					
 
 				</ul>			
 				<div class="tab-content4" >
@@ -511,7 +510,7 @@
 									<span class="opensans green size24">$49.51</span><br/>
 									<span class="opensans lightgrey size12">avg/night</span><br/><br/>
 									<span class="lred bold">3 left</span><br/><br/>
-									<button class="bookbtn mt1">Book</button>	
+									<button class="bookbtn mt1"  onclick="javascript:document.location='payment.html'">Book</button>	
 								</div>										
 							</div>
 							<div class="clearfix"></div>
@@ -545,7 +544,7 @@
 									<span class="opensans green size24">$105.78</span><br/>
 									<span class="opensans lightgrey size12">avg/night</span><br/><br/>
 									<span class="">9 available</span><br/><br/>
-									<button class="bookbtn mt1">Book</button>	
+									<button class="bookbtn mt1"  onclick="javascript:document.location='payment.html'">Book</button>	
 								</div>										
 							</div>
 							<div class="clearfix"></div>
@@ -613,7 +612,7 @@
 									<span class="opensans green size24">$211.57</span><br/>
 									<span class="opensans lightgrey size12">avg/night</span><br/><br/>
 									<span class="">12 available</span><br/><br/>
-									<button class="bookbtn mt1">Book</button>	
+									<button class="bookbtn mt1"  onclick="javascript:document.location='payment.html'">Book</button>	
 								</div>										
 							</div>
 							<div class="clearfix"></div>
