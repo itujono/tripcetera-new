@@ -156,7 +156,7 @@
     }
      
     .search-holder {
-       padding:100px 0;
+       padding: 50px 0;
     }
 	
 	.navigation-block .col-xs-6 {
@@ -198,5 +198,26 @@
 	    margin-top: 8px;
 	    background-color: #fff;
 	    padding-left: 10px;
+	}
+
+	.search-box {
+		width: 90%;
+	}
+
+	.product-tab {
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	.product-tab li {
+		width: 100%;
+	}
+
+	.product-tab li:first-child {
+		margin-left: 5px;
+	}
+
+	.product-tab li.active:before {
+		left: 150px;
 	}
 }

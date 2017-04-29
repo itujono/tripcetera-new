@@ -12,7 +12,9 @@
 	    <link href="assets/css/themify-icons.css" rel="stylesheet" media="screen">
 	    <link href="assets/css/animate.css" rel="stylesheet" media="screen">
 	    <link href="assets/css/push-navigation.css" rel="stylesheet" media="screen">
+	    <!-- <link href="assets/css/jquery.editable-select.min.css" rel="stylesheet" media="screen"> -->
 	    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="screen">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" media="screen">
 	    <link href="assets/css/responsive.css" rel="stylesheet" media="screen">
 	    <link href="assets/css/sequence-theme.mono.css" rel="stylesheet" media="screen">
   	</head>
@@ -1527,7 +1529,7 @@
 	  								</div>
 	  							</a>
 	  						</li>
-	  						<li>
+	  						<li class="">
 	  							<a href="#train-search" data-toggle="tab">
 	  								<div class="product-inner">
 	  									<div><i class="fa fa-train"></i></div>
@@ -1535,7 +1537,7 @@
 	  								</div>
 	  							</a>
 	  						</li>
-	  						<li>
+	  						<li class="">
 	  							<a href="#ferry-search" data-toggle="tab">
 	  								<div class="product-inner">
 	  									<div><i class="fa fa-ship"></i></div>
@@ -1543,7 +1545,7 @@
 	  								</div>
 	  							</a>
 	  						</li>
-	  						<li>
+	  						<li class="">
 	  							<a href="#car-search" data-toggle="tab">
 	  								<div class="product-inner">
 	  									<div><i class="fa fa-car"></i></div>
@@ -1552,23 +1554,32 @@
 	  							</a>
 	  						</li>
 	  					</ul>
-	  				</div>
+	  				</div> <!-- kelar Mode-Tab -->
+
 	  				<div class="search-wrap">
 	  					<div class="tab-content">
 	  						<div class="tab-pane active" id="bus-search">
 	  							<div class="country-flag">
 	  								<ul class="flags">
 	  									<li>
-	  										<img src="#" alt="Indonesia">
+	  										<a href="#" data-toggle="tooltip" data-placement="top" title="Indonesia">
+	  											<img src="#" alt="Indonesia">
+	  										</a>
 	  									</li>
 	  									<li>
-	  										<img src="#" alt="Singapore">
+	  										<a href="#" data-toggle="tooltip" data-placement="top" title="Singapore">
+	  											<img src="#" alt="Singapore">
+	  										</a>
 	  									</li>
 	  									<li>
-	  										<img src="#" alt="Malaysia">
+	  										<a href="#" data-toggle="tooltip" data-placement="top" title="Malaysia">
+	  											<img src="#" alt="Malaysia">
+	  										</a>
 	  									</li>
 	  									<li>
-	  										<img src="#" alt="Thailand">
+	  										<a href="#" data-toggle="tooltip" data-placement="top" title="Thailand">
+	  											<img src="#" alt="Thailand">
+	  										</a>
 	  									</li>
 	  								</ul>
 	  							</div>
@@ -1780,6 +1791,7 @@
 	  								</form>
 	  							</div> <!-- kelar Form-Pane -->
 	  						</div>
+
 	  						<div class="tab-pane" id="ferry-search">
 	  							<div class="country-flag">
 	  								<ul class="flags">
@@ -1892,6 +1904,7 @@
 	  								</form>
 	  							</div> <!-- kelar Form-Pane -->
 	  						</div>
+
 	  						<div class="tab-pane" id="car-search">
 	  							<div class="country-flag">
 	  								<ul class="flags">
@@ -2005,8 +2018,22 @@
 	  							</div> <!-- kelar Form-Pane -->
 	  						</div>
 	  					</div>
-	  				</div>
-	  			</div>
+	  				</div> <!-- kelar Search-Wrap -->
+
+	  			</div> <!-- kelar Search-Box -->
+
+
+<!-- 			<div class="cta-msg">
+	  				<ul>
+	  					<li>
+	  						<span class="icon-cta">
+	  							<i class="fa fa-check"></i>
+	  						</span>
+	  						Sama dengan harga loket
+	  					</li>
+	  				</ul>
+	  			</div> -->
+
 	  		</section>
 
 	  		
@@ -2129,7 +2156,7 @@
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	    <script src="assets/js/push.navigation.js"></script>
 	    <script src="assets/js/functions.js"></script>
-	    <script src="assets/js/jquery-ui.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	    <script src="assets/js/jquery.preload.js"></script>
 	    <script src="assets/js/jquery.easing.js"></script>
 	    <script src="assets/js/wow.min.js"></script>
@@ -2141,18 +2168,75 @@
 	    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
 	    <script src="assets/js/sequence.min.js"></script>
 	    <script src="assets/js/sequence-theme.mono.js"></script>
+	    <!-- <script src="assets/js/jquery.editable-select.min.js"></script> -->
         <script>
             new WOW().init();
         </script>
 
 
         <script type="text/javascript">
-            $('#date1, #car-date1, #car-date2, #fleet-date1, #fleet-date2').datepicker({
+            $('#dpDepartureDate_Bus, #dpReturnDate_Bus').datepicker({
 			    format: 'mm/dd/yyyy',
 			    startDate: '-1d',
 			    todayBtn: true,
 			    autoclose: true
 			});
+        </script>
+
+        <script type="text/javascript">
+        	$(document).ready(function () {
+	            $('[data-toggle="tooltip"]').tooltip();
+	            //$('.datepicker').datepicker();
+	        });
+        </script>
+
+        <script type="text/javascript">
+        	$(document).ready(function () {
+			    $(".swap a").click(function(){
+			        var axix = document.getElementById("inputDari").value;
+			        var byiy = document.getElementById("inputKe").value;
+			        document.getElementById('inputKe').value = axix;
+			        document.getElementById('inputDari').value = byiy;
+			     });
+			});
+        </script>
+<!-- 
+        <script type="text/javascript">
+			$('.editable-select').editableSelect({
+				effects: 'slide'
+			}); 
+        </script> -->
+
+        <script type="text/javascript">
+		  $( function() {
+		    var availableTags = [
+		      "ActionScript",
+		      "AppleScript",
+		      "Asp",
+		      "BASIC",
+		      "C",
+		      "C++",
+		      "Clojure",
+		      "COBOL",
+		      "ColdFusion",
+		      "Erlang",
+		      "Fortran",
+		      "Groovy",
+		      "Haskell",
+		      "Java",
+		      "JavaScript",
+		      "Lisp",
+		      "Perl",
+		      "PHP",
+		      "Python",
+		      "Ruby",
+		      "Scala",
+		      "Scheme"
+		    ];
+		    $( "#inputDari" ).autocomplete({
+		      source: availableTags
+		    });
+		  });
         </script>
 
         <script>
