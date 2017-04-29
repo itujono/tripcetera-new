@@ -57,6 +57,10 @@ body.scroll-hide, html.scroll-hide {
     margin-top: 40px;
 }
 
+.mb30 {
+    margin-bottom: 30px;
+}
+
 .pl0 {
     padding-left: 0 !important;
 }
@@ -2536,7 +2540,7 @@ figure img {
     }
 
     .search-holder .form-group > label {
-        color: #000;
+        color: #fff;
         font-weight: 400;
     }
 
@@ -2706,17 +2710,178 @@ select {
 
 /* maaak masuk ke Transportation waaak heheh */
 
+.search-holder {
+    background: url(../../images/bg07.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 250px 0;
+    padding-top: 150px;
+    position: relative;
+    z-index: -1;
+}
+
 .search-box-wrapper {
     background: transparent;
     margin-top: 100px;
 }
 
 .search-box {
-    margin-top: -80px;
-    position: relative;
-    z-index: 99;
-    background-color: transparent;
+    display: block;
+    width: 75%;
+    margin: 0 auto;
 }
+
+
+.product-tab {
+    display: flex;
+    padding: 0;
+}
+
+.product-tab li {
+    margin: 5px;
+    list-style-type: none;
+    position: relative;
+    background-color: #aaa;
+    transition: all .3s ease;
+}
+
+.product-tab li:hover {
+    background-color: #ffb300;
+}
+
+    .product-tab li.active {
+        background: rgba(255,179,0,1);
+        background-color: #ffb300;
+        position: relative;
+    }
+
+    .product-tab li.active:before {
+        width: 0;
+        height: 0;
+        border-left: 18px solid transparent;
+        border-right: 18px solid transparent;
+        border-top: 20px solid #ffb300;
+        position: absolute;
+        content: "";
+        bottom: -12px;
+        left: 50px;
+    }
+
+    .product-tab li:first-child {
+        margin-left: 0;
+    }
+
+    .product-tab li a {
+        color: #fff;
+    }
+
+        .product-tab li > a > .product-inner {
+            text-align: center;
+            padding: 20px 40px;
+            border-radius: 0;
+        }
+
+            .product-tab .product-inner > div:first-child {
+                margin-bottom: 15px;
+            }
+
+                .product-tab .product-inner > div > i {
+                    font-size: 30px;
+                }
+
+ul.flags {
+    padding: 0;
+    float: right;
+}
+
+    ul.flags > li {
+        display: inline-block;
+        margin-right: 10px;
+        list-style-type: none;
+    }
+
+
+.checkbox-inline, .search-holder form label.radio-inline {
+    margin-right: 10px;
+}
+
+.checkbox-inline, .search-holder form label.radio-inline {
+    padding-top: 0;
+    margin-bottom: 15px;
+    text-transform: none;
+}
+
+.checkbox-inline, .search-holder form label.radio-inline {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.checkbox input[type=checkbox],
+.checkbox-inline input[type=checkbox],
+.radio input[type=radio],
+.radio-inline input[type=radio] {
+    position: absolute;
+    margin-top: 4px\9;
+    margin-left: -20px;
+}
+
+input[type=checkbox], input[type=radio] {
+    margin: 4px 0 0;
+    margin-top: 1px\9;
+    line-height: normal;
+}
+
+input[type=checkbox], input[type=radio] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+
+.search-wrap {
+    width: 100%;
+    display: block;
+    padding: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.form-pane .swap {
+    float: left;
+    padding: 32px 10px 0 12px;
+}
+
+    .form-pane .swap a {
+        color: #ffb300;
+    }
+
+.btn-orange {
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 7px 12px;
+    border: 1px solid #ffb300;
+    background-color: transparent;
+    color: #fff;
+    width: 100%;
+    transition: all .3s cubic-bezier(0.84, 0.01, 0, 0.97);
+    -moz-transition: all .3s cubic-bezier(0.84, 0.01, 0, 0.97);
+    -webkit-transition: all .3s cubic-bezier(0.84, 0.01, 0, 0.97);
+}
+
+.btn-orange:hover {
+    color: #fff;
+    background-color: #ffb300;
+}
+
+
+
 
 ul.search-tabs {
     margin: 0;
@@ -2857,7 +3022,7 @@ ul.search-tabs li a {
 
 #transportation .tab-content {
     box-shadow: none;
-    background: #ffffff;
+    background: transparent;
     padding: 0;
     padding-top: 0;
 }
@@ -2990,9 +3155,9 @@ section.brand-carousel {
     text-align: center;
 }
 
-.promo-box .image-container img {
-    width: 100%;
-}
+    .promo-box .image-container img {
+        width: 100%;
+    }
 
 .promo-box .table-wrapper {
     display: table;
@@ -3008,17 +3173,17 @@ section.brand-carousel {
     float: none !important;
 }
 
-.table-wrapper .table-cell h2 {
-    font-size: 40px;
-    color: #eee;
-    font-weight: 800;
-}
+    .table-wrapper .table-cell h2 {
+        font-size: 40px;
+        color: #eee;
+        font-weight: 800;
+    }
 
-.table-wrapper .table-cell h2 em {
-    font-style: normal;
-    font-weight: 300;
-    color: #ff6633
-}
+        .table-wrapper .table-cell h2 em {
+            font-style: normal;
+            font-weight: 300;
+            color: #ff6633
+        }
 
 .table-wrapper .cta-section {
     display: table-cell;
@@ -3036,6 +3201,8 @@ section.brand-carousel {
 
 
 /*FOOTER BG*/
+
+
 .footerbg{width:100%; background:#f2f2f2;padding:60px 0; overflow:hidden;}
 .footerbg2{width:100%; background:#f2f2f2;padding:30px 0; overflow:hidden;}
 .footerbg2 a{color:#999;}

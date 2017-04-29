@@ -12,7 +12,7 @@
 	    <link href="assets/css/themify-icons.css" rel="stylesheet" media="screen">
 	    <link href="assets/css/animate.css" rel="stylesheet" media="screen">
 	    <link href="assets/css/push-navigation.css" rel="stylesheet" media="screen">
-	    <link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+	    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="screen">
 	    <link href="assets/css/responsive.css" rel="stylesheet" media="screen">
 	    <link href="assets/css/sequence-theme.mono.css" rel="stylesheet" media="screen">
   	</head>
@@ -1516,7 +1516,497 @@
 	  		
 
 	  		<section class="search-holder">
-	  			
+	  			<div class="search-box">
+	  				<div class="mode-tab">
+	  					<ul class="product-tab">
+	  						<li class="active">
+	  							<a href="#bus-search" data-toggle="tab">
+	  								<div class="product-inner">
+	  									<div><i class="fa fa-bus"></i></div>
+	  									<div>Tiket Bus</div>
+	  								</div>
+	  							</a>
+	  						</li>
+	  						<li>
+	  							<a href="#train-search" data-toggle="tab">
+	  								<div class="product-inner">
+	  									<div><i class="fa fa-train"></i></div>
+	  									<div>Tiket Kereta</div>
+	  								</div>
+	  							</a>
+	  						</li>
+	  						<li>
+	  							<a href="#ferry-search" data-toggle="tab">
+	  								<div class="product-inner">
+	  									<div><i class="fa fa-ship"></i></div>
+	  									<div>Tiket Ferry</div>
+	  								</div>
+	  							</a>
+	  						</li>
+	  						<li>
+	  							<a href="#car-search" data-toggle="tab">
+	  								<div class="product-inner">
+	  									<div><i class="fa fa-car"></i></div>
+	  									<div>Sewa Mobil</div>
+	  								</div>
+	  							</a>
+	  						</li>
+	  					</ul>
+	  				</div>
+	  				<div class="search-wrap">
+	  					<div class="tab-content">
+	  						<div class="tab-pane active" id="bus-search">
+	  							<div class="country-flag">
+	  								<ul class="flags">
+	  									<li>
+	  										<img src="#" alt="Indonesia">
+	  									</li>
+	  									<li>
+	  										<img src="#" alt="Singapore">
+	  									</li>
+	  									<li>
+	  										<img src="#" alt="Malaysia">
+	  									</li>
+	  									<li>
+	  										<img src="#" alt="Thailand">
+	  									</li>
+	  								</ul>
+	  							</div>
+	  							<div class="form-pane">
+	  								<form>
+	  									<div class="row mb30">
+									        <div class="col-lg-12 col-sm-6">
+									            <label class="radio-inline">
+									                <input checked="" data-product="Bus" data-val="true" data-val-number="The field TripType must be a number." data-val-required="The TripType field is required." id="TripType" name="TripType" type="radio" value="1">
+									                Sekali Jalan
+									            </label>
+									            <label class="radio-inline">
+									                <input checked="checked" data-product="Bus" id="TripType" name="TripType" type="radio" value="2">
+									                Pulang Pergi
+									            </label>
+									        </div>
+									    </div>
+									    <div class="row pr">
+											<div class="col-lg-3 col-md-3 col-sm-3">
+												<div class="form-group">
+												    <label for="inputDari">Dari </label>
+												    <input type="text" class="form-control" id="inputDari" placeholder="Jakarta">
+												</div>
+											</div>
+											<div class="Bus swap">
+												<div class="form-group">
+													<a><i class="fa fa-exchange"></i></a>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-3 col-sm-3">
+												<div class="form-group">
+												    <label for="inputKe">Ke </label>
+												    <input type="text" class="form-control" id="inputKe" placeholder="Bandung">
+												</div>
+											</div>
+											<div class="col-lg-2 col-md-2 col-sm-2">
+												<div class="form-group">
+													<label class="control-label">Tanggal Berangkat</label>
+													<div class="iconic-input">
+														 <input class="form-control datepicker" data-val="true" data-val-date="The field DepartureDate must be a date." id="dpDepartureDate_Bus" name="DepartureDate" type="text" value="2017-04-30">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-2 col-md-2 col-sm-2">
+												<div class="form-group" id="dvReturnDate_Bus">
+													<label class="control-label" id="lblReturnDate">Tanggal Kembali</label>
+													<div class="iconic-input">
+														 <input class="form-control datepicker" data-val="true" data-val-date="The field ReturnDate must be a date." id="dpReturnDate_Bus" name="ReturnDate" type="text" value="2017-05-01">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-1 col-md-2 col-sm-2">
+												<div class="form-group">
+													<label class="control-label">Penumpang</label> <select class="form-control" data-val="true" data-val-number="The field Pax must be a number." id="ddlPax_Bus" name="Pax">
+														<option selected="selected">
+															1
+														</option>
+														<option>
+															2
+														</option>
+														<option>
+															3
+														</option>
+														<option>
+															4
+														</option>
+														<option>
+															5
+														</option>
+														<option>
+															6
+														</option>
+														<option>
+															7
+														</option>
+														<option>
+															8
+														</option>
+														<option>
+															9
+														</option>
+														<option>
+															10
+														</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-md-2 col-sm-2">
+												<div class="form-group">
+													<div class="search-btn">
+														<button class="btn btn-orange" type="submit" value="Submit">Cari Bus</button>
+													</div>
+												</div>
+											</div>
+										</div>
+	  								</form>
+	  							</div> <!-- kelar Form-Pane -->
+	  						</div> <!-- kelar Tab-Pane -->
+
+	  						<div class="tab-pane" id="train-search">
+	  							<div class="country-flag">
+	  								<ul class="flags">
+	  									<li>
+	  										<img src="#" alt="Indonesia">
+	  									</li>
+	  									<li>
+	  										<img src="#" alt="Indonesia">
+	  									</li>
+	  									<li>
+	  										<img src="#" alt="Indonesia">
+	  									</li>
+	  									<li>
+	  										<img src="#" alt="Indonesia">
+	  									</li>
+	  								</ul>
+	  							</div>
+	  							<div class="form-pane">
+	  								<form>
+	  									<div class="row mb30">
+									        <div class="col-lg-12 col-sm-6">
+									            <label class="radio-inline">
+									                <input checked="" data-product="Bus" data-val="true" data-val-number="The field TripType must be a number." data-val-required="The TripType field is required." id="TripType" name="TripType" type="radio" value="1">
+									                Sekali Jalan
+									            </label>
+									            <label class="radio-inline">
+									                <input checked="checked" data-product="Bus" id="TripType" name="TripType" type="radio" value="2">
+									                Pulang Pergi
+									            </label>
+									        </div>
+									    </div>
+									    <div class="row pr">
+											<div class="col-lg-3 col-md-3 col-sm-3">
+												<div class="form-group">
+												    <label for="inputDari">Dari </label>
+												    <input type="text" class="form-control" id="inputDari" placeholder="Jakarta">
+												</div>
+											</div>
+											<div class="Bus swap">
+												<div class="form-group">
+													<a><i class="fa fa-exchange"></i></a>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-3 col-sm-3">
+												<div class="form-group">
+												    <label for="inputKe">Ke </label>
+												    <input type="text" class="form-control" id="inputKe" placeholder="Bandung">
+												</div>
+											</div>
+											<div class="col-lg-2 col-md-2 col-sm-2">
+												<div class="form-group">
+													<label class="control-label">Tanggal Berangkat</label>
+													<div class="iconic-input">
+														 <input class="form-control datepicker" data-val="true" data-val-date="The field DepartureDate must be a date." id="dpDepartureDate_Bus" name="DepartureDate" type="text" value="2017-04-30">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-2 col-md-2 col-sm-2">
+												<div class="form-group" id="dvReturnDate_Bus">
+													<label class="control-label" id="lblReturnDate">Tanggal Kembali</label>
+													<div class="iconic-input">
+														 <input class="form-control datepicker" data-val="true" data-val-date="The field ReturnDate must be a date." id="dpReturnDate_Bus" name="ReturnDate" type="text" value="2017-05-01">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-1 col-md-2 col-sm-2">
+												<div class="form-group">
+													<label class="control-label">Penumpang</label> <select class="form-control" data-val="true" data-val-number="The field Pax must be a number." id="ddlPax_Bus" name="Pax">
+														<option selected="selected">
+															1
+														</option>
+														<option>
+															2
+														</option>
+														<option>
+															3
+														</option>
+														<option>
+															4
+														</option>
+														<option>
+															5
+														</option>
+														<option>
+															6
+														</option>
+														<option>
+															7
+														</option>
+														<option>
+															8
+														</option>
+														<option>
+															9
+														</option>
+														<option>
+															10
+														</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-md-2 col-sm-2">
+												<div class="form-group">
+													<div class="search-btn">
+														<button class="btn btn-orange" type="submit" value="Submit">Cari Kereta</button>
+													</div>
+												</div>
+											</div>
+										</div>
+	  								</form>
+	  							</div> <!-- kelar Form-Pane -->
+	  						</div>
+	  						<div class="tab-pane" id="ferry-search">
+	  							<div class="country-flag">
+	  								<ul class="flags">
+	  									<li>
+	  										<img src="#" alt="Indonesia">
+	  									</li>
+	  									<li>
+	  										<img src="#" alt="Indonesia">
+	  									</li>
+	  									<li>
+	  										<img src="#" alt="Indonesia">
+	  									</li>
+	  									<li>
+	  										<img src="#" alt="Indonesia">
+	  									</li>
+	  								</ul>
+	  							</div>
+	  							<div class="form-pane">
+	  								<form>
+	  									<div class="row mb30">
+									        <div class="col-lg-12 col-sm-6">
+									            <label class="radio-inline">
+									                <input checked="" data-product="Bus" data-val="true" data-val-number="The field TripType must be a number." data-val-required="The TripType field is required." id="TripType" name="TripType" type="radio" value="1">
+									                Sekali Jalan
+									            </label>
+									            <label class="radio-inline">
+									                <input checked="checked" data-product="Bus" id="TripType" name="TripType" type="radio" value="2">
+									                Pulang Pergi
+									            </label>
+									        </div>
+									    </div>
+									    <div class="row pr">
+											<div class="col-lg-3 col-md-3 col-sm-3">
+												<div class="form-group">
+												    <label for="inputDari">Dari </label>
+												    <input type="text" class="form-control" id="inputDari" placeholder="Jakarta">
+												</div>
+											</div>
+											<div class="Bus swap">
+												<div class="form-group">
+													<a><i class="fa fa-exchange"></i></a>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-3 col-sm-3">
+												<div class="form-group">
+												    <label for="inputKe">Ke </label>
+												    <input type="text" class="form-control" id="inputKe" placeholder="Bandung">
+												</div>
+											</div>
+											<div class="col-lg-2 col-md-2 col-sm-2">
+												<div class="form-group">
+													<label class="control-label">Tanggal Berangkat</label>
+													<div class="iconic-input">
+														 <input class="form-control datepicker" data-val="true" data-val-date="The field DepartureDate must be a date." id="dpDepartureDate_Bus" name="DepartureDate" type="text" value="2017-04-30">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-2 col-md-2 col-sm-2">
+												<div class="form-group" id="dvReturnDate_Bus">
+													<label class="control-label" id="lblReturnDate">Tanggal Kembali</label>
+													<div class="iconic-input">
+														 <input class="form-control datepicker" data-val="true" data-val-date="The field ReturnDate must be a date." id="dpReturnDate_Bus" name="ReturnDate" type="text" value="2017-05-01">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-1 col-md-2 col-sm-2">
+												<div class="form-group">
+													<label class="control-label">Penumpang</label> <select class="form-control" data-val="true" data-val-number="The field Pax must be a number." id="ddlPax_Bus" name="Pax">
+														<option selected="selected">
+															1
+														</option>
+														<option>
+															2
+														</option>
+														<option>
+															3
+														</option>
+														<option>
+															4
+														</option>
+														<option>
+															5
+														</option>
+														<option>
+															6
+														</option>
+														<option>
+															7
+														</option>
+														<option>
+															8
+														</option>
+														<option>
+															9
+														</option>
+														<option>
+															10
+														</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-md-2 col-sm-2">
+												<div class="form-group">
+													<div class="search-btn">
+														<button class="btn btn-orange" type="submit" value="Submit">Cari Ferry</button>
+													</div>
+												</div>
+											</div>
+										</div>
+	  								</form>
+	  							</div> <!-- kelar Form-Pane -->
+	  						</div>
+	  						<div class="tab-pane" id="car-search">
+	  							<div class="country-flag">
+	  								<ul class="flags">
+	  									<li>
+	  										<img src="#" alt="Indonesia">
+	  									</li>
+	  									<li>
+	  										<img src="#" alt="Indonesia">
+	  									</li>
+	  									<li>
+	  										<img src="#" alt="Indonesia">
+	  									</li>
+	  									<li>
+	  										<img src="#" alt="Indonesia">
+	  									</li>
+	  								</ul>
+	  							</div>
+	  							<div class="form-pane">
+	  								<form>
+	  									<div class="row mb30">
+									        <div class="col-lg-12 col-sm-6">
+									            <label class="radio-inline">
+									                <input checked="" data-product="Bus" data-val="true" data-val-number="The field TripType must be a number." data-val-required="The TripType field is required." id="TripType" name="TripType" type="radio" value="1">
+									                Sekali Jalan
+									            </label>
+									            <label class="radio-inline">
+									                <input checked="checked" data-product="Bus" id="TripType" name="TripType" type="radio" value="2">
+									                Pulang Pergi
+									            </label>
+									        </div>
+									    </div>
+									    <div class="row pr">
+											<div class="col-lg-3 col-md-3 col-sm-3">
+												<div class="form-group">
+												    <label for="inputDari">Dari </label>
+												    <input type="text" class="form-control" id="inputDari" placeholder="Jakarta">
+												</div>
+											</div>
+											<div class="Bus swap">
+												<div class="form-group">
+													<a><i class="fa fa-exchange"></i></a>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-3 col-sm-3">
+												<div class="form-group">
+												    <label for="inputKe">Ke </label>
+												    <input type="text" class="form-control" id="inputKe" placeholder="Bandung">
+												</div>
+											</div>
+											<div class="col-lg-2 col-md-2 col-sm-2">
+												<div class="form-group">
+													<label class="control-label">Tanggal Berangkat</label>
+													<div class="iconic-input">
+														 <input class="form-control datepicker" data-val="true" data-val-date="The field DepartureDate must be a date." id="dpDepartureDate_Bus" name="DepartureDate" type="text" value="2017-04-30">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-2 col-md-2 col-sm-2">
+												<div class="form-group" id="dvReturnDate_Bus">
+													<label class="control-label" id="lblReturnDate">Tanggal Kembali</label>
+													<div class="iconic-input">
+														 <input class="form-control datepicker" data-val="true" data-val-date="The field ReturnDate must be a date." id="dpReturnDate_Bus" name="ReturnDate" type="text" value="2017-05-01">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-1 col-md-2 col-sm-2">
+												<div class="form-group">
+													<label class="control-label">Penumpang</label> <select class="form-control" data-val="true" data-val-number="The field Pax must be a number." id="ddlPax_Bus" name="Pax">
+														<option selected="selected">
+															1
+														</option>
+														<option>
+															2
+														</option>
+														<option>
+															3
+														</option>
+														<option>
+															4
+														</option>
+														<option>
+															5
+														</option>
+														<option>
+															6
+														</option>
+														<option>
+															7
+														</option>
+														<option>
+															8
+														</option>
+														<option>
+															9
+														</option>
+														<option>
+															10
+														</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-md-2 col-sm-2">
+												<div class="form-group">
+													<div class="search-btn">
+														<button class="btn btn-orange" type="submit" value="Submit">Cari Mobil</button>
+													</div>
+												</div>
+											</div>
+										</div>
+	  								</form>
+	  							</div> <!-- kelar Form-Pane -->
+	  						</div>
+	  					</div>
+	  				</div>
+	  			</div>
 	  		</section>
 
 	  		
