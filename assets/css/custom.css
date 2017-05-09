@@ -2716,7 +2716,7 @@ select {
 /* maaak masuk ke Transportation waaak heheh */
 
 .search-holder {
-    background: url(../../images/slider/1.jpg) no-repeat;
+    background: url(../../images/slider/paris.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     padding: 250px 0;
@@ -2747,7 +2747,7 @@ select {
     margin: 5px;
     list-style-type: none;
     position: relative;
-    background-color: #aaa;
+    background-color: rgba(255,255,255,0.1);
     transition: all .3s ease;
 }
 
