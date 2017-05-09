@@ -1805,7 +1805,7 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
     position:inherit;
 }
 
-.hero-header-1 .slide-1, .hero-header-1 .slide-2, .hero-header-1 .slide-3, .hero-header-2 .slide-1, .hero-header-2 .slide-2, .hero-header-2 .slide-3, .hero-header-2 .slide-4 {
+.hero-header-1 .slide-1, .hero-header-1 .slide-2, .hero-header-1 .slide-3, .hero-header-1 .slide-4, .hero-header-2 .slide-1, .hero-header-2 .slide-2, .hero-header-2 .slide-3, .hero-header-2 .slide-4 {
     padding: 60px 0;
     min-height: 700px;
     background-repeat: no-repeat;
@@ -1829,6 +1829,11 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
 
 .hero-header-1 .slide-3  {
     background: url(../../images/slider/3.jpg) no-repeat #222;
+    background-size: cover;
+}
+
+.hero-header-1 .slide-4  {
+    background: url(../../images/slider/4.jpg) no-repeat #222;
     background-size: cover;
 }
 
@@ -2711,7 +2716,7 @@ select {
 /* maaak masuk ke Transportation waaak heheh */
 
 .search-holder {
-    background: url(../../images/bg07.jpg) no-repeat;
+    background: url(../../images/slider/1.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     padding: 250px 0;
