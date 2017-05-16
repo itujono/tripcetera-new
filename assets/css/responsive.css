@@ -220,4 +220,21 @@
 	.product-tab li.active:before {
 		left: 150px;
 	}
+
+	.form-pane .swap {
+	    float: left;
+	    padding: 10px 10px 0 12px;
+	}
+
+		.form-pane .swap a {
+		    font-size: 24px;
+		}
+
+	.search-holder form label {
+		font-size: 20px;
+	}
+
+	.product-tab .product-inner > div:last-child {
+	    font-size: 24px;
+	}
 }
