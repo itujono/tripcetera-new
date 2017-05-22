@@ -35,7 +35,9 @@ body.scroll-hide, html.scroll-hide {
 	overflow-y: hidden!important
 }
 
-
+a {
+    font-family: "Hind Madurai", sans-serif;
+}
 
 
 
