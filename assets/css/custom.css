@@ -36,7 +36,14 @@ body.scroll-hide, html.scroll-hide {
 }
 
 a {
+<<<<<<< 8a67e8b569faa9a4d4d53d1e27e561e1cbc1ba2a
     font-family: "Hind Madurai", sans-serif;
+=======
+    color: #666;
+    text-decoration: none;
+    font-family: "Lato";
+    font-weight: normal;
+>>>>>>> 70486bb7a75b30d11293f987e5d2c461a3c87d7a
 }
 
 
@@ -2751,6 +2758,7 @@ select {
     position: relative;
     background-color: rgba(255,255,255,0.1);
     transition: all .3s ease;
+    border: 1px solid #FFF;
 }
 
 .product-tab li:hover {

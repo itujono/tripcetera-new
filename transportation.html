@@ -16,7 +16,7 @@
 	    <link href="assets/css/responsive.css" rel="stylesheet" media="screen">
   	</head>
 
-  	<body id="transportation">
+  	<body id="top">
   
 	  	<main>
 	  		<header>
@@ -1518,11 +1518,27 @@
 	  			<div class="search-box">
 	  				<div class="mode-tab">
 	  					<ul class="product-tab">
-	  						<li class="active">
+							<li class="active">
+	  							<a href="#car-search" data-toggle="tab">
+	  								<div class="product-inner">
+	  									<div><i class="fa fa-car"></i></div>
+	  									<div>Car Rental</div>
+	  								</div>
+	  							</a>
+	  						</li>
+							<li class="">
+	  							<a href="#ferry-search" data-toggle="tab">
+	  								<div class="product-inner">
+	  									<div><i class="fa fa-ship"></i></div>
+	  									<div>Ferry Ticket</div>
+	  								</div>
+	  							</a>
+	  						</li>
+	  						<li class="">
 	  							<a href="#bus-search" data-toggle="tab">
 	  								<div class="product-inner">
 	  									<div><i class="fa fa-bus"></i></div>
-	  									<div>Tiket Bus</div>
+	  									<div>Bus Ticket</div>
 	  								</div>
 	  							</a>
 	  						</li>
@@ -1530,32 +1546,18 @@
 	  							<a href="#train-search" data-toggle="tab">
 	  								<div class="product-inner">
 	  									<div><i class="fa fa-train"></i></div>
-	  									<div>Tiket Kereta</div>
+	  									<div>Train Ticket</div>
 	  								</div>
 	  							</a>
 	  						</li>
-	  						<li class="">
-	  							<a href="#ferry-search" data-toggle="tab">
-	  								<div class="product-inner">
-	  									<div><i class="fa fa-ship"></i></div>
-	  									<div>Tiket Ferry</div>
-	  								</div>
-	  							</a>
-	  						</li>
-	  						<li class="">
-	  							<a href="#car-search" data-toggle="tab">
-	  								<div class="product-inner">
-	  									<div><i class="fa fa-car"></i></div>
-	  									<div>Sewa Mobil</div>
-	  								</div>
-	  							</a>
-	  						</li>
+	  						
+	  						
 	  					</ul>
 	  				</div> <!-- kelar Mode-Tab -->
 
 	  				<div class="search-wrap">
 	  					<div class="tab-content">
-	  						<div class="tab-pane active" id="bus-search">
+	  						<div class="tab-pane" id="bus-search">
 	  							<div class="country-flag">
 								<!--
 	  								<ul class="flags">
@@ -1588,18 +1590,18 @@
 									        <div class="col-lg-12 col-sm-6">
 									            <label class="radio-inline">
 									                <input checked="" data-product="Bus" data-val="true" data-val-number="The field TripType must be a number." data-val-required="The TripType field is required." id="TripType" name="TripType" type="radio" value="1">
-									                Sekali Jalan
+									                One Way
 									            </label>
 									            <label class="radio-inline">
 									                <input checked="checked" data-product="Bus" id="TripType" name="TripType" type="radio" value="2">
-									                Pulang Pergi
+									                Round Trip
 									            </label>
 									        </div>
 									    </div>
 									    <div class="row pr">
 											<div class="col-lg-3 col-md-3 col-sm-3">
 												<div class="form-group">
-												    <label for="inputDari">Dari </label>
+												    <label for="inputDari">From </label>
 												    <input type="text" class="form-control" id="inputDari" placeholder="Jakarta">
 												</div>
 											</div>
@@ -1610,13 +1612,13 @@
 											</div>
 											<div class="col-lg-3 col-md-3 col-sm-3">
 												<div class="form-group">
-												    <label for="inputKe">Ke </label>
+												    <label for="inputKe">To </label>
 												    <input type="text" class="form-control" id="inputKe" placeholder="Bandung">
 												</div>
 											</div>
 											<div class="col-lg-2 col-md-2 col-sm-2">
 												<div class="form-group">
-													<label class="control-label">Tanggal Berangkat</label>
+													<label class="control-label">Departure Date</label>
 													<div class="iconic-input">
 														 <input class="form-control datepicker" data-val="true" data-val-date="The field DepartureDate must be a date." id="dpDepartureDate_Bus" name="DepartureDate" type="text" value="2017-04-30">
 													</div>
@@ -1624,7 +1626,7 @@
 											</div>
 											<div class="col-lg-2 col-md-2 col-sm-2">
 												<div class="form-group" id="dvReturnDate_Bus">
-													<label class="control-label" id="lblReturnDate">Tanggal Kembali</label>
+													<label class="control-label" id="lblReturnDate">Return Date</label>
 													<div class="iconic-input">
 														 <input class="form-control datepicker" data-val="true" data-val-date="The field ReturnDate must be a date." id="dpReturnDate_Bus" name="ReturnDate" type="text" value="2017-05-01">
 													</div>
@@ -1632,7 +1634,7 @@
 											</div>
 											<div class="col-lg-1 col-md-2 col-sm-2">
 												<div class="form-group">
-													<label class="control-label">Penumpang</label> <select class="form-control" data-val="true" data-val-number="The field Pax must be a number." id="ddlPax_Bus" name="Pax">
+													<label class="control-label">Person </label> <select class="form-control" data-val="true" data-val-number="The field Pax must be a number." id="ddlPax_Bus" name="Pax">
 														<option selected="selected">
 															1
 														</option>
@@ -1669,7 +1671,7 @@
 											<div class="col-md-2 col-sm-2">
 												<div class="form-group">
 													<div class="search-btn">
-														<button class="btn btn-orange" type="submit" value="Submit">Cari Bus</button>
+														<button class="btn btn-orange" type="submit" value="Submit">Search for Bus</button>
 													</div>
 												</div>
 											</div>
@@ -1703,18 +1705,18 @@
 									        <div class="col-lg-12 col-sm-6">
 									            <label class="radio-inline">
 									                <input checked="" data-product="Bus" data-val="true" data-val-number="The field TripType must be a number." data-val-required="The TripType field is required." id="TripType" name="TripType" type="radio" value="1">
-									                Sekali Jalan
+									                One Way
 									            </label>
 									            <label class="radio-inline">
 									                <input checked="checked" data-product="Bus" id="TripType" name="TripType" type="radio" value="2">
-									                Pulang Pergi
+									                Round Trip
 									            </label>
 									        </div>
 									    </div>
 									    <div class="row pr">
 											<div class="col-lg-3 col-md-3 col-sm-3">
 												<div class="form-group">
-												    <label for="inputDari">Dari </label>
+												    <label for="inputDari">From </label>
 												    <input type="text" class="form-control" id="inputDari" placeholder="Jakarta">
 												</div>
 											</div>
@@ -1725,13 +1727,13 @@
 											</div>
 											<div class="col-lg-3 col-md-3 col-sm-3">
 												<div class="form-group">
-												    <label for="inputKe">Ke </label>
+												    <label for="inputKe">To </label>
 												    <input type="text" class="form-control" id="inputKe" placeholder="Bandung">
 												</div>
 											</div>
 											<div class="col-lg-2 col-md-2 col-sm-2">
 												<div class="form-group">
-													<label class="control-label">Tanggal Berangkat</label>
+													<label class="control-label">Departure Date</label>
 													<div class="iconic-input">
 														 <input class="form-control datepicker" data-val="true" data-val-date="The field DepartureDate must be a date." id="dpDepartureDate_Bus" name="DepartureDate" type="text" value="2017-04-30">
 													</div>
@@ -1739,7 +1741,7 @@
 											</div>
 											<div class="col-lg-2 col-md-2 col-sm-2">
 												<div class="form-group" id="dvReturnDate_Bus">
-													<label class="control-label" id="lblReturnDate">Tanggal Kembali</label>
+													<label class="control-label" id="lblReturnDate">Return Date</label>
 													<div class="iconic-input">
 														 <input class="form-control datepicker" data-val="true" data-val-date="The field ReturnDate must be a date." id="dpReturnDate_Bus" name="ReturnDate" type="text" value="2017-05-01">
 													</div>
@@ -1747,7 +1749,7 @@
 											</div>
 											<div class="col-lg-1 col-md-2 col-sm-2">
 												<div class="form-group">
-													<label class="control-label">Penumpang</label> <select class="form-control" data-val="true" data-val-number="The field Pax must be a number." id="ddlPax_Bus" name="Pax">
+													<label class="control-label">Person</label> <select class="form-control" data-val="true" data-val-number="The field Pax must be a number." id="ddlPax_Bus" name="Pax">
 														<option selected="selected">
 															1
 														</option>
@@ -1784,7 +1786,7 @@
 											<div class="col-md-2 col-sm-2">
 												<div class="form-group">
 													<div class="search-btn">
-														<button class="btn btn-orange" type="submit" value="Submit">Cari Kereta</button>
+														<button class="btn btn-orange" type="submit" value="Submit">Search for Train</button>
 													</div>
 												</div>
 											</div>
@@ -1818,18 +1820,18 @@
 									        <div class="col-lg-12 col-sm-6">
 									            <label class="radio-inline">
 									                <input checked="" data-product="Bus" data-val="true" data-val-number="The field TripType must be a number." data-val-required="The TripType field is required." id="TripType" name="TripType" type="radio" value="1">
-									                Sekali Jalan
+									                One Way
 									            </label>
 									            <label class="radio-inline">
 									                <input checked="checked" data-product="Bus" id="TripType" name="TripType" type="radio" value="2">
-									                Pulang Pergi
+									                Round Trip
 									            </label>
 									        </div>
 									    </div>
 									    <div class="row pr">
 											<div class="col-lg-3 col-md-3 col-sm-3">
 												<div class="form-group">
-												    <label for="inputDari">Dari </label>
+												    <label for="inputDari">From </label>
 												    <input type="text" class="form-control" id="inputDari" placeholder="Jakarta">
 												</div>
 											</div>
@@ -1840,13 +1842,13 @@
 											</div>
 											<div class="col-lg-3 col-md-3 col-sm-3">
 												<div class="form-group">
-												    <label for="inputKe">Ke </label>
+												    <label for="inputKe">To </label>
 												    <input type="text" class="form-control" id="inputKe" placeholder="Bandung">
 												</div>
 											</div>
 											<div class="col-lg-2 col-md-2 col-sm-2">
 												<div class="form-group">
-													<label class="control-label">Tanggal Berangkat</label>
+													<label class="control-label">Departure Date</label>
 													<div class="iconic-input">
 														 <input class="form-control datepicker" data-val="true" data-val-date="The field DepartureDate must be a date." id="dpDepartureDate_Bus" name="DepartureDate" type="text" value="2017-04-30">
 													</div>
@@ -1854,7 +1856,7 @@
 											</div>
 											<div class="col-lg-2 col-md-2 col-sm-2">
 												<div class="form-group" id="dvReturnDate_Bus">
-													<label class="control-label" id="lblReturnDate">Tanggal Kembali</label>
+													<label class="control-label" id="lblReturnDate">Return Date</label>
 													<div class="iconic-input">
 														 <input class="form-control datepicker" data-val="true" data-val-date="The field ReturnDate must be a date." id="dpReturnDate_Bus" name="ReturnDate" type="text" value="2017-05-01">
 													</div>
@@ -1862,7 +1864,7 @@
 											</div>
 											<div class="col-lg-1 col-md-2 col-sm-2">
 												<div class="form-group">
-													<label class="control-label">Penumpang</label> <select class="form-control" data-val="true" data-val-number="The field Pax must be a number." id="ddlPax_Bus" name="Pax">
+													<label class="control-label">Person</label> <select class="form-control" data-val="true" data-val-number="The field Pax must be a number." id="ddlPax_Bus" name="Pax">
 														<option selected="selected">
 															1
 														</option>
@@ -1899,7 +1901,7 @@
 											<div class="col-md-2 col-sm-2">
 												<div class="form-group">
 													<div class="search-btn">
-														<button class="btn btn-orange" type="submit" value="Submit">Cari Ferry</button>
+														<button class="btn btn-orange" type="submit" value="Submit">Search for Ferry</button>
 													</div>
 												</div>
 											</div>
@@ -1908,7 +1910,7 @@
 	  							</div> <!-- kelar Form-Pane -->
 	  						</div>
 
-	  						<div class="tab-pane" id="car-search">
+	  						<div class="tab-pane active" id="car-search">
 	  							<div class="country-flag">
 								<!--
 	  								<ul class="flags">
@@ -1933,88 +1935,151 @@
 									        <div class="col-lg-12 col-sm-6">
 									            <label class="radio-inline">
 									                <input checked="" data-product="Bus" data-val="true" data-val-number="The field TripType must be a number." data-val-required="The TripType field is required." id="TripType" name="TripType" type="radio" value="1">
-									                Sekali Jalan
+									                &nbsp;
 									            </label>
 									            <label class="radio-inline">
 									                <input checked="checked" data-product="Bus" id="TripType" name="TripType" type="radio" value="2">
-									                Pulang Pergi
+									                &nbsp;
 									            </label>
 									        </div>
 									    </div>
 									    <div class="row pr">
 											<div class="col-lg-3 col-md-3 col-sm-3">
 												<div class="form-group">
-												    <label for="inputDari">Dari </label>
+												    <label for="inputDari">Pickup Location </label>
 												    <input type="text" class="form-control" id="inputDari" placeholder="Jakarta">
 												</div>
 											</div>
-											<div class="Bus swap">
-												<div class="form-group">
-													<a><i class="fa fa-exchange"></i></a>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-3 col-sm-3">
-												<div class="form-group">
-												    <label for="inputKe">Ke </label>
-												    <input type="text" class="form-control" id="inputKe" placeholder="Bandung">
-												</div>
-											</div>
+											
+											
 											<div class="col-lg-2 col-md-2 col-sm-2">
 												<div class="form-group">
-													<label class="control-label">Tanggal Berangkat</label>
+													<label class="control-label">Pickup Date</label>
 													<div class="iconic-input">
 														 <input class="form-control datepicker" data-val="true" data-val-date="The field DepartureDate must be a date." id="dpDepartureDate_Bus" name="DepartureDate" type="text" value="2017-04-30">
 													</div>
 												</div>
 											</div>
+											
+											<div class="col-lg-2 col-md-2 col-sm-2">
+												<div class="form-group">
+													<label class="control-label">Pickup Time</label> <select class="form-control" data-val="true" data-val-number="The field Pax must be a number." id="ddlPax_Car" name="PickTime">
+														<option value="00:30">00:30</option>
+<option value="01:00">01:00</option>
+<option value="01:30">01:30</option>
+<option value="02:00">02:00</option>
+<option value="02:30">02:30</option>
+<option value="03:00">03:00</option>
+<option value="03:30">03:30</option>
+<option value="04:00">04:00</option>
+<option value="04:30">04:30</option>
+<option value="05:00">05:00</option>
+<option value="05:30">05:30</option>
+<option value="06:00">06:00</option>
+<option value="06:30">06:30</option>
+<option value="07:00">07:00</option>
+<option value="07:30">07:30</option>
+<option value="08:00">08:00</option>
+<option value="08:30">08:30</option>
+<option value="09:00">09:00</option>
+<option value="09:30">09:30</option>
+<option value="10:00">10:00</option>
+<option value="10:30">10:30</option>
+<option value="11:00">11:00</option>
+<option value="11:30">11:30</option>
+<option value="12:00">12:00</option>
+<option value="12:30">12:30</option>
+<option value="13:00">13:00</option>
+<option value="13:30">13:30</option>
+<option value="14:00">14:00</option>
+<option value="14:30">14:30</option>
+<option value="15:00">15:00</option>
+<option value="15:30">15:30</option>
+<option value="16:00">16:00</option>
+<option value="16:30">16:30</option>
+<option value="17:00">17:00</option>
+<option value="17:30">17:30</option>
+<option value="18:00">18:00</option>
+<option value="18:30">18:30</option>
+<option value="19:00">19:00</option>
+<option value="19:30">19:30</option>
+<option value="20:00">20:00</option>
+<option value="20:30">20:30</option>
+<option value="21:00">21:00</option>
+<option value="21:30">21:30</option>
+<option value="22:00">22:00</option>
+<option value="22:30">22:30</option>
+<option value="23:00">23:00</option>
+<option value="23:30">23:30</option>
+													</select>
+												</div>
+											</div>
+											
 											<div class="col-lg-2 col-md-2 col-sm-2">
 												<div class="form-group" id="dvReturnDate_Bus">
-													<label class="control-label" id="lblReturnDate">Tanggal Kembali</label>
+													<label class="control-label" id="lblReturnDate">Return Date</label>
 													<div class="iconic-input">
 														 <input class="form-control datepicker" data-val="true" data-val-date="The field ReturnDate must be a date." id="dpReturnDate_Bus" name="ReturnDate" type="text" value="2017-05-01">
 													</div>
 												</div>
 											</div>
-											<div class="col-lg-1 col-md-2 col-sm-2">
+											<div class="col-lg-2 col-md-2 col-sm-2">
 												<div class="form-group">
-													<label class="control-label">Penumpang</label> <select class="form-control" data-val="true" data-val-number="The field Pax must be a number." id="ddlPax_Bus" name="Pax">
-														<option selected="selected">
-															1
-														</option>
-														<option>
-															2
-														</option>
-														<option>
-															3
-														</option>
-														<option>
-															4
-														</option>
-														<option>
-															5
-														</option>
-														<option>
-															6
-														</option>
-														<option>
-															7
-														</option>
-														<option>
-															8
-														</option>
-														<option>
-															9
-														</option>
-														<option>
-															10
-														</option>
+													<label class="control-label">Return Time</label> <select class="form-control" data-val="true" data-val-number="The field Pax must be a number." id="ddlPax_Car" name="ReturnTime">
+														<option value="00:30">00:30</option>
+<option value="01:00">01:00</option>
+<option value="01:30">01:30</option>
+<option value="02:00">02:00</option>
+<option value="02:30">02:30</option>
+<option value="03:00">03:00</option>
+<option value="03:30">03:30</option>
+<option value="04:00">04:00</option>
+<option value="04:30">04:30</option>
+<option value="05:00">05:00</option>
+<option value="05:30">05:30</option>
+<option value="06:00">06:00</option>
+<option value="06:30">06:30</option>
+<option value="07:00">07:00</option>
+<option value="07:30">07:30</option>
+<option value="08:00">08:00</option>
+<option value="08:30">08:30</option>
+<option value="09:00">09:00</option>
+<option value="09:30">09:30</option>
+<option value="10:00">10:00</option>
+<option value="10:30">10:30</option>
+<option value="11:00">11:00</option>
+<option value="11:30">11:30</option>
+<option value="12:00">12:00</option>
+<option value="12:30">12:30</option>
+<option value="13:00">13:00</option>
+<option value="13:30">13:30</option>
+<option value="14:00">14:00</option>
+<option value="14:30">14:30</option>
+<option value="15:00">15:00</option>
+<option value="15:30">15:30</option>
+<option value="16:00">16:00</option>
+<option value="16:30">16:30</option>
+<option value="17:00">17:00</option>
+<option value="17:30">17:30</option>
+<option value="18:00">18:00</option>
+<option value="18:30">18:30</option>
+<option value="19:00">19:00</option>
+<option value="19:30">19:30</option>
+<option value="20:00">20:00</option>
+<option value="20:30">20:30</option>
+<option value="21:00">21:00</option>
+<option value="21:30">21:30</option>
+<option value="22:00">22:00</option>
+<option value="22:30">22:30</option>
+<option value="23:00">23:00</option>
+<option value="23:30">23:30</option>
 													</select>
 												</div>
 											</div>
 											<div class="col-md-2 col-sm-2">
 												<div class="form-group">
 													<div class="search-btn">
-														<button class="btn btn-orange" type="submit" value="Submit">Cari Mobil</button>
+														<button class="btn btn-orange" type="submit" value="Submit">Search for Car</button>
 													</div>
 												</div>
 											</div>
@@ -2043,60 +2108,52 @@
 
 	  		
 			<footer style="background-color: #e7e7e7; color: #666; padding-top: 50px; padding-bottom: 50px;">
-		        <div class="container">
-		            <div class="row">
-		                <div class="col-md-3">
-		                    <h4><strong>Company</strong></h4>
-		                    <div class="deep-link">
-		                        <a href="#" id="linkAbout" href="Info/AboutUs">About Tripcetera</a><br>
-		                        <a href="#" id="linkTerms" href="Info/TermsConditions">Terms &amp; Conditions</a><br>
-		                        <a href="#" id="linkPrivacy" href="Info/PrivacyPolicies">Privacy Policy</a><br>
-		                        <a href="#" id="linkFAQ">Help &amp; FAQ</a><br>
-		                    </div>
-		                </div>
-		                <div class="col-md-3">
-		                    <h4><strong>Hosts</strong></h4>
-		                    <div class="deep-link">
-		                        <a href="#" id="linkAccomodation">Accommodation</a><br>
-		                        <a href="#" id="linkTransportation">Transportation</a><br>
-		                        <a href="#" id="linkOther">Others</a><br>
-		                    </div>
-		                </div>
-		                <div class="col-md-3">
-		                    <h4><strong>Corporate Partners</strong></h4>
-		                    <div class="deep-link">
-		                        <a id="linkPropertyPartner" href="http://partner.tripcetera.com" target="_blank">Property Partners</a><br>
-		                        <a id="linkTransportPartner" href="http://partner.tripcetera.com" target="_blank">Transportation Partners</a><br>
-		                        <a id="linkOtherPartner" href="http://partner.tripcetera.com" target="_blank">Others</a><br>
-		                    </div>
-		                </div>
-		                <div class="col-md-3">
-		                    <h4><strong>For you</strong></h4>
-		                    <div class="deep-link">
-		                        <a id="linkCareers" href="#">Careers</a><br>
-		                        <a id="linkContactUs" href="#">Contact Us</a><br>
-		                        <a id="linkTravelGuru" href="#">Freelance Travel Gurus &amp; Guides</a><br>
-		                    </div>
-		                </div>
-		            </div> <!-- kelar Row footer -->
-		            <div class="row">
-		                <div class="col-md-12 text-center social-section">
-		                    <h4><strong>Get in touch with us</strong></h4>
-		                    <div class="social-link">
-		                        <a href="https://www.facebook.com/tripcetera" target="_blank" class="wow fadeInUp" data-wow-delay="1.5s">
-		                            <img id="Image1" src="images/facebook.png">
-		                        </a>
-		                        <a href="https://twitter.com/tripcetera" target="_blank" class="wow fadeInUp" data-wow-delay="1.2s">
-		                            <img id="Image2" src="images/twitter.png">
-		                        </a>
-		                        <a href="https://www.instagram.com/tripcetera/" target="_blank" class="wow fadeInUp" data-wow-delay="1.7s">
-		                            <img id="Image3" src="images/instagram.png">
-		                        </a>
-		                    </div>
-		                </div>
-		            </div>
-		        </div> <!-- kelar Container Footer -->
-		    </footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<h4><strong>Company</strong></h4>
+						<div class="deep-link">
+							<a href="Info/AboutUs" id="linkAbout">About Tripcetera</a><br>
+							<a href="Info/TermsConditions" id="linkTerms">Terms &amp; Conditions</a><br>
+							<a href="Info/PrivacyPolicies" id="linkPrivacy">Privacy Policy</a><br>
+							<a href="#" id="linkFAQ">Help &amp; FAQ</a><br>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<h4><strong>Hosts</strong></h4>
+						<div class="deep-link">
+							<a href="#" id="linkAccomodation">Accommodation</a><br>
+							<a href="#" id="linkTransportation">Transportation</a><br>
+							<a href="#" id="linkOther">Others</a><br>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<h4><strong>Corporate Partners</strong></h4>
+						<div class="deep-link">
+							<a href="http://partner.tripcetera.com" id="linkPropertyPartner" target="_blank">Property Partners</a><br>
+							<a href="http://partner.tripcetera.com" id="linkTransportPartner" target="_blank">Transportation Partners</a><br>
+							<a href="http://partner.tripcetera.com" id="linkOtherPartner" target="_blank">Others</a><br>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<h4><strong>For you</strong></h4>
+						<div class="deep-link">
+							<a href="#" id="linkCareers">Careers</a><br>
+							<a href="#" id="linkContactUs">Contact Us</a><br>
+							<a href="#" id="linkTravelGuru">Freelance Travel Gurus &amp; Guides</a><br>
+						</div>
+					</div>
+				</div><!-- kelar Row footer -->
+				<div class="row">
+					<div class="col-md-12 text-center social-section">
+						<h4><strong>Get in touch with us</strong></h4>
+						<div class="social-link">
+							<a class="wow fadeInUp" data-wow-delay="1.5s" href="https://www.facebook.com/tripcetera" target="_blank"><img id="Image1" src="images/facebook.png"></a> <a class="wow fadeInUp" data-wow-delay="1.2s" href="https://twitter.com/tripcetera" target="_blank"><img id="Image2" src="images/twitter.png"></a> <a class="wow fadeInUp" data-wow-delay="1.7s" href="https://www.instagram.com/tripcetera/" target="_blank"><img id="Image3" src="images/instagram.png"></a>
+						</div>
+					</div>
+				</div>
+			</div><!-- kelar Container Footer -->
+		</footer>
 
 		    <footer class="footer-pattern">
 		        <div class="container">
