@@ -1794,10 +1794,16 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
     overflow:hidden;
 }
 
-.hero-header-1, .hero-header-2 {
+.hero-header-1 {
     position: relative;
     width: 100%;
     margin-top: -87px;
+    z-index: 10;
+}
+
+.hero-header-2 {
+    position: relative;
+    width: 100%;
     z-index: 10;
 }
 
@@ -2343,7 +2349,6 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
 .sliderx {
   max-width: 100%;
   height: 500px;
-  margin: 20px auto;
   position: relative;
 }
 .slidex1,.slidex2,.slidex3,.slidex4,.slidex5 {
